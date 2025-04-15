@@ -1,4 +1,4 @@
-    from aw_client import ActivityWatchClient
+from aw_client import ActivityWatchClient
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
