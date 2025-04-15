@@ -641,8 +641,8 @@ def create_report(window_df, web_df, afk_data, category_df, output_path, date_ra
 def main():
     # Create command line arguments
     parser = argparse.ArgumentParser(description='Generate ActivityWatch usage report')
-    parser.add_argument('--output', type=str, default='C:/Users/Dejan/PycharmProjects/watcher/Watcher 2/index.html',
-                        help='Output file path (default: C:/Users/Dejan/PycharmProjects/watcher/Watcher 2/index.html)')
+    parser.add_argument('--output', type=str, default='C:/Users/Dejan/PycharmProjects/watcher/index.html',
+                        help='Output file path (default: C:/Users/Dejan/PycharmProjects/watcher/index.html)')
     parser.add_argument('--show-all-days', action='store_true',
                         help='Show all days of the week even if it is Monday')
     args = parser.parse_args()
