@@ -1,0 +1,72 @@
+ 
+[Tue 04/15/2025 20:21:36.96] Starting update 
+Requirement already satisfied: aw-client in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (0.5.15)
+Requirement already satisfied: pandas in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (2.2.3)
+Requirement already satisfied: plotly in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (6.0.1)
+Requirement already satisfied: requests in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (2.32.3)
+Requirement already satisfied: aw-core<0.6.0,>=0.5.16 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (0.5.17)
+Requirement already satisfied: click<9.0,>=8.0 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (8.1.8)
+Requirement already satisfied: persist-queue in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (1.0.0)
+Requirement already satisfied: tabulate in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (0.9.0)
+Requirement already satisfied: typing-extensions in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (4.13.2)
+Requirement already satisfied: numpy>=1.22.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2.0.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: narwhals>=1.15.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from plotly) (1.34.1)
+Requirement already satisfied: packaging in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from plotly) (24.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (2025.1.31)
+Requirement already satisfied: deprecation in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (2.1.0)
+Requirement already satisfied: iso8601 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (2.1.0)
+Requirement already satisfied: jsonschema<5.0,>=4.3 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (4.23.0)
+Requirement already satisfied: peewee==3.* in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (3.17.9)
+Requirement already satisfied: platformdirs==3.10 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (3.10.0)
+Requirement already satisfied: rfc3339-validator<0.2.0,>=0.1.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.1.4)
+Requirement already satisfied: strict-rfc3339<0.8,>=0.7 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.7)
+Requirement already satisfied: timeslot in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.1.2)
+Requirement already satisfied: tomlkit in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.13.2)
+Requirement already satisfied: colorama in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from click<9.0,>=8.0->aw-client) (0.4.6)
+Requirement already satisfied: six>=1.5 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: attrs>=22.2.0 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (25.3.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (2024.10.1)
+Requirement already satisfied: referencing>=0.28.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (0.24.0)
+[Tue 04/15/2025 20:21:40.87] Checking Git configuration... 
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+core.longpaths=true
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=PeakyCommerce
+user.email=Dejanrm01@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+[Tue 04/15/2025 20:21:40.97] Pulling latest changes... 
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[Tue 04/15/2025 20:21:41.26] Git pull failed 
