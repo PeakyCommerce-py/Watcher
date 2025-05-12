@@ -1,22 +1,22 @@
 const activityData = {
   "start_date": "Monday, May 12, 2025",
   "end_date": "Monday, May 12, 2025",
-  "total_hours": 15.22485111111108,
-  "active_hours": 7.904611388888857,
-  "active_percentage": 51.91913754164781,
+  "total_hours": 15.227918888888858,
+  "active_hours": 7.907679166666635,
+  "active_percentage": 51.928823789812284,
   "afk_hours": 7.320239722222223,
-  "afk_percentage": 48.080862458352186,
-  "productive_hours": 2.88815027777778,
-  "productive_percentage": 36.53753658070424,
+  "afk_percentage": 48.07117621018772,
+  "productive_hours": 2.8912180555555578,
+  "productive_percentage": 36.56215679238676,
   "non_productive_hours": 0.07655750000000003,
-  "non_productive_percentage": 0.9685169356663544,
+  "non_productive_percentage": 0.9681412002995019,
   "other_hours": 4.9399036111110775,
-  "other_percentage": 62.4939464836294,
+  "other_percentage": 62.469702007313735,
   "labels": [
     "2025-05-12"
   ],
   "productive": [
-    2.88815027777778
+    2.8912180555555578
   ],
   "non_productive": [
     0.07655750000000003
@@ -38,7 +38,7 @@ const activityData = {
     6.269660555555527,
     0.6024783333333341,
     0.3473013888888885,
-    0.1553988888888889,
+    0.15846666666666664,
     0.1527036111111111
   ],
   "top_apps_colors": [
@@ -52,7 +52,7 @@ const activityData = {
     "2025-05-12"
   ],
   "trend_data": [
-    2.88815027777778
+    2.8912180555555578
   ],
   "hour_labels": [
     "0:00",
@@ -101,7 +101,7 @@ const activityData = {
     0.6822872222222219,
     0.9718252777777776,
     0.9074466666666697,
-    0.029383888888888886,
+    0.03245166666666667,
     0,
     0,
     0
@@ -121,7 +121,7 @@ const activityData = {
   "category_data": [
     4.663107777777758,
     0.8907191666666661,
-    0.8078183333333346,
+    0.8108861111111125,
     0.616725277777779,
     0.3786991666666664,
     0.27679583333333313,

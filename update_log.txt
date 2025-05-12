@@ -1,10 +1,10 @@
  
-[Mon 05/12/2025 19:01:50.20] Starting update 
-[Mon 05/12/2025 19:01:50.20] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 05/12/2025 19:01:50.21] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/12/2025 19:01:54.92] Starting update 
+[Mon 05/12/2025 19:01:54.92] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/12/2025 19:01:54.93] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 05/12/2025 19:01:50.35] ActivityWatch is already running 
-[Mon 05/12/2025 19:01:50.35] Running export script... 
+[Mon 05/12/2025 19:01:55.07] ActivityWatch is already running 
+[Mon 05/12/2025 19:01:55.07] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -27,7 +27,7 @@ Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
 
 Processing events...
-Found 4302 events
+Found 4303 events
 
 Significant event:
 App: opera.exe
@@ -39,7 +39,7 @@ Data Collection Summary:
 - Total tracking time: 15.2 hours
 - Active time: 7.9 hours (51.9%)
 - AFK time: 7.3 hours (48.1%)
-- Productive time: 2.9 hours (36.5% of active time)
+- Productive time: 2.9 hours (36.6% of active time)
 - Non-productive time: 0.1 hours (1.0% of active time)
 - Other time: 4.9 hours (62.5% of active time)
 
@@ -52,8 +52,8 @@ Using direct UTC+4 offset time: 2025-05-12 21:01
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 05/12/2025 19:01:51.22] Checking file modifications... 
-[Mon 05/12/2025 19:01:51.23] data.js last modified: 05/12/2025 07:01 PM 
-[Mon 05/12/2025 19:01:51.23] index.html last modified: 05/12/2025 07:01 PM 
-[Mon 05/12/2025 19:01:51.25] Setting up Git credential helper... 
-[Mon 05/12/2025 19:01:51.31] Adding files to Git... 
+[Mon 05/12/2025 19:01:55.94] Checking file modifications... 
+[Mon 05/12/2025 19:01:55.95] data.js last modified: 05/12/2025 07:01 PM 
+[Mon 05/12/2025 19:01:55.95] index.html last modified: 05/12/2025 07:01 PM 
+[Mon 05/12/2025 19:01:55.97] Setting up Git credential helper... 
+[Mon 05/12/2025 19:01:56.01] Adding files to Git... 
