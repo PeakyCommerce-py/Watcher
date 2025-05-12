@@ -1,10 +1,10 @@
  
-[Mon 05/12/2025 18:35:45.18] Starting update 
-[Mon 05/12/2025 18:35:45.20] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 05/12/2025 18:35:45.20] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/12/2025 18:35:51.48] Starting update 
+[Mon 05/12/2025 18:35:51.48] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/12/2025 18:35:51.49] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 05/12/2025 18:35:45.35] ActivityWatch is already running 
-[Mon 05/12/2025 18:35:45.35] Running export script... 
+[Mon 05/12/2025 18:35:51.64] ActivityWatch is already running 
+[Mon 05/12/2025 18:35:51.64] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -22,7 +22,7 @@ Processing web events...
 Found 19 web events
 
 Processing events...
-Found 3824 events
+Found 3830 events
 
 Significant event:
 App: opera.exe
@@ -46,8 +46,8 @@ Updating index.html...
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 05/12/2025 18:35:49.16] Checking file modifications... 
-[Mon 05/12/2025 18:35:49.17] data.js last modified: 05/12/2025 06:35 PM 
-[Mon 05/12/2025 18:35:49.17] index.html last modified: 05/12/2025 06:35 PM 
-[Mon 05/12/2025 18:35:49.19] Setting up Git credential helper... 
-[Mon 05/12/2025 18:35:49.24] Adding files to Git... 
+[Mon 05/12/2025 18:35:52.76] Checking file modifications... 
+[Mon 05/12/2025 18:35:52.76] data.js last modified: 05/12/2025 06:35 PM 
+[Mon 05/12/2025 18:35:52.76] index.html last modified: 05/12/2025 06:35 PM 
+[Mon 05/12/2025 18:35:52.78] Setting up Git credential helper... 
+[Mon 05/12/2025 18:35:52.83] Adding files to Git... 
