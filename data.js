@@ -1,28 +1,28 @@
 const activityData = {
   "start_date": "Monday, May 12, 2025",
   "end_date": "Monday, May 12, 2025",
-  "total_hours": 17.700255277777742,
-  "active_hours": 9.703215277777744,
-  "active_percentage": 54.81963466346107,
+  "total_hours": 18.24801222222219,
+  "active_hours": 10.25097222222219,
+  "active_percentage": 56.17582944041813,
   "afk_hours": 7.997039999999999,
-  "afk_percentage": 45.180365336538934,
-  "productive_hours": 3.2429394444444495,
-  "productive_percentage": 33.42128718788104,
+  "afk_percentage": 43.82417055958187,
+  "productive_hours": 3.3166016666666733,
+  "productive_percentage": 32.35402062135044,
   "non_productive_hours": 0.07655750000000003,
-  "non_productive_percentage": 0.788991048929231,
-  "other_hours": 6.383718333333294,
-  "other_percentage": 65.78972176318972,
+  "non_productive_percentage": 0.746831601338629,
+  "other_hours": 6.857813055555516,
+  "other_percentage": 66.89914777731092,
   "labels": [
     "2025-05-12"
   ],
   "productive": [
-    3.2429394444444495
+    3.3166016666666733
   ],
   "non_productive": [
     0.07655750000000003
   ],
   "other": [
-    6.383718333333294
+    6.857813055555516
   ],
   "afk": [
     7.997039999999999
@@ -35,7 +35,7 @@ const activityData = {
     "chrome.exe"
   ],
   "top_apps_data": [
-    7.512249999999975,
+    8.059711944444418,
     0.6895891666666671,
     0.3728913888888886,
     0.36195500000000036,
@@ -52,7 +52,7 @@ const activityData = {
     "2025-05-12"
   ],
   "trend_data": [
-    3.2429394444444495
+    3.3166016666666733
   ],
   "hour_labels": [
     "0:00",
@@ -102,14 +102,14 @@ const activityData = {
     0.9718252777777776,
     0.9074466666666697,
     1.030061666666666,
-    0.7979261111111108,
-    0,
+    0.9397647222222223,
+    0.4059183333333333,
     0
   ],
   "categories": [
     "General > Browsing",
-    "Work > AI Chatting",
     "Work > Programming > ActivityWatch",
+    "Work > AI Chatting",
     "Work > Programming > Coding",
     "Work > Communication",
     "Uncategorized",
@@ -120,13 +120,13 @@ const activityData = {
     "Work > Programming"
   ],
   "category_data": [
-    6.0653233333333025,
+    6.539418055555523,
+    0.9551713888888899,
     0.8907191666666661,
-    0.8818041666666674,
     0.7038361111111116,
     0.40428916666666653,
     0.3183949999999995,
-    0.19412027777777793,
+    0.19441527777777792,
     0.12583555555555556,
     0.07655750000000003,
     0.032094722222222226,
@@ -150,20 +150,20 @@ const activityData = {
     "docs",
     "claude",
     "admin",
-    "github"
+    "localhost:5600"
   ],
   "web_data": [
-    0.5469474999999999,
-    0.40669166666666684,
+    0.8167694444444442,
+    0.5025311111111112,
     0.2985427777777778,
     0.11797250000000001,
-    0.05762777777777777
+    0.08205111111111112
   ],
   "web_colors": [
     "#FFC107",
     "#FFC107",
     "#FFC107",
     "#FFC107",
-    "#4CAF50"
+    "#FFC107"
   ]
 };
