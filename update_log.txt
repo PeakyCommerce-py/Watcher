@@ -1,99 +1,50 @@
  
-[Tue 04/15/2025 21:39:12.97] Starting update 
-[Tue 04/15/2025 21:39:13.31] ActivityWatch is already running. 
-[Tue 04/15/2025 21:39:13.31] Ensuring Python packages are installed... 
-Requirement already satisfied: aw-client in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (0.5.15)
-Requirement already satisfied: pandas in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (2.2.3)
-Requirement already satisfied: plotly in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (6.0.1)
-Requirement already satisfied: requests in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (2.32.3)
-Requirement already satisfied: aw-core<0.6.0,>=0.5.16 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (0.5.17)
-Requirement already satisfied: click<9.0,>=8.0 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (8.1.8)
-Requirement already satisfied: persist-queue in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (1.0.0)
-Requirement already satisfied: tabulate in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (0.9.0)
-Requirement already satisfied: typing-extensions in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-client) (4.13.2)
-Requirement already satisfied: numpy>=1.22.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2.0.2)
-Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2.9.0.post0)
-Requirement already satisfied: pytz>=2020.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2025.2)
-Requirement already satisfied: tzdata>=2022.7 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from pandas) (2025.2)
-Requirement already satisfied: narwhals>=1.15.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from plotly) (1.34.1)
-Requirement already satisfied: packaging in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from plotly) (24.2)
-Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (3.4.1)
-Requirement already satisfied: idna<4,>=2.5 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (3.10)
-Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (2.4.0)
-Requirement already satisfied: certifi>=2017.4.17 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from requests) (2025.1.31)
-Requirement already satisfied: deprecation in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (2.1.0)
-Requirement already satisfied: iso8601 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (2.1.0)
-Requirement already satisfied: jsonschema<5.0,>=4.3 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (4.23.0)
-Requirement already satisfied: peewee==3.* in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (3.17.9)
-Requirement already satisfied: platformdirs==3.10 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (3.10.0)
-Requirement already satisfied: rfc3339-validator<0.2.0,>=0.1.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.1.4)
-Requirement already satisfied: strict-rfc3339<0.8,>=0.7 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.7)
-Requirement already satisfied: timeslot in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.1.2)
-Requirement already satisfied: tomlkit in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from aw-core<0.6.0,>=0.5.16->aw-client) (0.13.2)
-Requirement already satisfied: colorama in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from click<9.0,>=8.0->aw-client) (0.4.6)
-Requirement already satisfied: six>=1.5 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
-Requirement already satisfied: attrs>=22.2.0 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (25.3.0)
-Requirement already satisfied: jsonschema-specifications>=2023.03.6 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (2024.10.1)
-Requirement already satisfied: referencing>=0.28.4 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (0.36.2)
-Requirement already satisfied: rpds-py>=0.7.1 in c:\users\dejan\pycharmprojects\watcher\venv\lib\site-packages (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client) (0.24.0)
-[Tue 04/15/2025 21:39:14.17] Changed directory to C:\Users\Dejan\PycharmProjects\watcher 
-[Tue 04/15/2025 21:39:14.17] Running Python script: C:\Users\Dejan\PycharmProjects\watcher\export_activity Github.py 
-Analyzing data from 2025-04-14 00:00:00+00:00 to 2025-04-15 19:39:15.151399+00:00
-Date range: This week (Monday, Apr 14 to Tuesday, Apr 15)
-Found 4141 window events
-Found 138 web events
-Found 90 AFK events
-Created productivity categorization based on app names
-Report generated successfully at C:/Users/Dejan/PycharmProjects/watcher/index.html
-[Tue 04/15/2025 21:39:16.32] Python script finished. 
-[Tue 04/15/2025 21:39:16.33] Checking Git configuration... 
-diff.astextplain.textconv=astextplain
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-http.sslbackend=openssl
-http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
-core.autocrlf=true
-core.fscache=true
-core.symlinks=false
-core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
-core.longpaths=true
-pull.rebase=false
-credential.helper=manager
-credential.https://dev.azure.com.usehttppath=true
-init.defaultbranch=master
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-user.name=PeakyCommerce
-user.email=Dejanrm01@gmail.com
-core.repositoryformatversion=0
-core.filemode=false
-core.bare=false
-core.logallrefupdates=true
-core.symlinks=false
-core.ignorecase=true
-remote.origin.url=https://github.com/PeakyCommerce-py/Watcher.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-origin	https://github.com/PeakyCommerce-py/Watcher.git (fetch)
-origin	https://github.com/PeakyCommerce-py/Watcher.git (push)
-[Tue 04/15/2025 21:39:16.44] Pulling latest changes from master... 
-From https://github.com/PeakyCommerce-py/Watcher
- * branch            master     -> FETCH_HEAD
-Already up to date.
-[Tue 04/15/2025 21:39:17.31] Staging index.html for Git... 
-[Tue 04/15/2025 21:39:17.38] Checking Git status for changes... 
- M "export_activity Github.py"
-M  index.html
- M update_log.txt
- M update_report.bat
-[Tue 04/15/2025 21:39:17.50] Changes detected. Proceeding with commit. 
-[Tue 04/15/2025 21:39:17.50] Committing changes... 
-[master 7359dcc] Daily report update
- 1 file changed, 10 insertions(+), 10 deletions(-)
-[Tue 04/15/2025 21:39:17.61] Pushing to GitHub (master branch)... 
-To https://github.com/PeakyCommerce-py/Watcher.git
-   56d69ed..7359dcc  master -> master
-[Tue 04/15/2025 21:39:19.37] Update completed successfully 
+[Mon 05/12/2025 17:56:41.13] Starting update 
+[Mon 05/12/2025 17:56:41.13] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/12/2025 17:56:41.14] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+Python 3.9.0
+[Mon 05/12/2025 17:56:41.29] ActivityWatch is already running 
+[Mon 05/12/2025 17:56:41.29] Running export script... 
+
+Available buckets:
+- aw-watcher-afk_DESKTOP-FRC9TT4
+- aw-watcher-window_DESKTOP-FRC9TT4
+- aw-watcher-web-opera_DESKTOP-FRC9TT4
+- aw-watcher-web-chrome_DESKTOP-FRC9TT4
+- aw-stopwatch
+
+Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
+
+Querying host: DESKTOP-FRC9TT4
+Time period: Monday, May 12, 2025 to Monday, May 12, 2025
+
+Processing events...
+Found 3373 events
+
+Significant event:
+App: opera.exe
+Title: ChatGPT - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
+Data Collection Summary:
+- Total tracking time: 14.0 hours
+- Active time: 6.9 hours (49.4%)
+- AFK time: 7.1 hours (50.6%)
+- Productive time: 2.0 hours (29.3% of active time)
+- Non-productive time: 0.1 hours (1.1% of active time)
+- Other time: 4.8 hours (69.6% of active time)
+
+Writing data to data.js...
+✓ Successfully wrote data.js
+
+Updating index.html...
+✓ Successfully updated index.html
+
+✓ Data has been updated successfully!
+  Open 'index.html' in a browser to view the activity charts and statistics.
+[Mon 05/12/2025 17:56:42.26] Checking file modifications... 
+[Mon 05/12/2025 17:56:42.27] data.js last modified: 05/12/2025 05:56 PM 
+[Mon 05/12/2025 17:56:42.27] index.html last modified: 05/12/2025 05:56 PM 
+[Mon 05/12/2025 17:56:42.29] Setting up Git credential helper... 
+[Mon 05/12/2025 17:56:42.34] Adding files to Git... 
