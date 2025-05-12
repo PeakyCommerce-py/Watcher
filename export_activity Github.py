@@ -1,724 +1,411 @@
 from aw_client import ActivityWatchClient
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from datetime import datetime, timezone, timedelta
-import os
-import argparse
+from datetime import datetime, timedelta
 import json
-import requests
+from collections import defaultdict
+import pytz
+import argparse
 import re
+from dateutil.parser import parse as parse_date
+import os
+import sys
+import io
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-def get_window_activity(client, start_date, end_date, bucket_id=None):
-    """Get window activity data and return as DataFrame"""
-    if bucket_id is None:
-        buckets = client.get_buckets()
-        window_buckets = [bid for bid in buckets.keys() if 'aw-watcher-window' in bid]
-        if not window_buckets:
-            raise Exception("No window watcher buckets found")
-        bucket_id = window_buckets[0]
-        print(f"Using window bucket: {bucket_id}")
-
-    events = client.get_events(bucket_id, start=start_date, end=end_date)
-    print(f"Found {len(events)} window events")
-
-    app_times = {}
-    for event in events:
-        # Handle both dictionary and string data formats
-        if isinstance(event.data, str):
-            try:
-                event_data = json.loads(event.data)
-            except json.JSONDecodeError:
-                event_data = {"app": "Unknown"}
-        else:
-            event_data = event.data
-
-        app_name = event_data.get('app', 'Unknown')
-        duration_seconds = event.duration.total_seconds()
-        if app_name in app_times:
-            app_times[app_name] += duration_seconds
-        else:
-            app_times[app_name] = duration_seconds
-
-    # Create DataFrame and sort by duration
-    df = pd.DataFrame(list(app_times.items()), columns=['app_name', 'duration']).sort_values('duration',
-                                                                                             ascending=False)
-    df['duration_hours'] = df['duration'] / 3600
-
-    return df
-
-
-def get_web_activity(client, start_date, end_date, bucket_id=None):
-    """Get web activity data and return as DataFrame"""
-    if bucket_id is None:
-        buckets = client.get_buckets()
-        web_buckets = [bid for bid in buckets.keys() if 'aw-watcher-web' in bid]
-        if not web_buckets:
-            print("No web watcher buckets found, skipping web activity")
-            return pd.DataFrame()
-        bucket_id = web_buckets[0]
-        print(f"Using web bucket: {bucket_id}")
-
-    events = client.get_events(bucket_id, start=start_date, end=end_date)
-    print(f"Found {len(events)} web events")
-
-    website_times = {}
-    for event in events:
-        # Handle both dictionary and string data formats
-        if isinstance(event.data, str):
-            try:
-                event_data = json.loads(event.data)
-            except json.JSONDecodeError:
-                event_data = {"title": "Unknown", "url": "Unknown"}
-        else:
-            event_data = event.data
-
-        title = event_data.get('title', 'Unknown')
-        url = event_data.get('url', 'Unknown')
-        # Extract domain from URL
-        domain = url.split('//')[-1].split('/')[0]
-        duration_seconds = event.duration.total_seconds()
-
-        key = domain
-        if key in website_times:
-            website_times[key] += duration_seconds
-        else:
-            website_times[key] = duration_seconds
-
-    # Create DataFrame and sort by duration
-    if website_times:
-        df = pd.DataFrame(list(website_times.items()), columns=['website', 'duration']).sort_values('duration',
-                                                                                                    ascending=False)
-        df['duration_hours'] = df['duration'] / 3600
-        return df
-    return pd.DataFrame()
-
-
-def get_afk_data(client, start_date, end_date, bucket_id=None):
-    """Get AFK (away from keyboard) data"""
-    if bucket_id is None:
-        buckets = client.get_buckets()
-        afk_buckets = [bid for bid in buckets.keys() if 'aw-watcher-afk' in bid]
-        if not afk_buckets:
-            raise Exception("No AFK watcher buckets found")
-        bucket_id = afk_buckets[0]
-        print(f"Using AFK bucket: {bucket_id}")
-
-    events = client.get_events(bucket_id, start=start_date, end=end_date)
-    print(f"Found {len(events)} AFK events")
-
-    # Categorize time as AFK or active
-    afk_time = 0
-    active_time = 0
-
-    for event in events:
-        # Handle both dictionary and string data formats
-        if isinstance(event.data, str):
-            try:
-                event_data = json.loads(event.data)
-            except json.JSONDecodeError:
-                event_data = {"status": "unknown"}
-        else:
-            event_data = event.data
-
-        if event_data.get('status') == 'afk':
-            afk_time += event.duration.total_seconds()
-        else:
-            active_time += event.duration.total_seconds()
-
-    return {
-        'afk_time': afk_time,
-        'active_time': active_time,
-        'afk_hours': afk_time / 3600,
-        'active_hours': active_time / 3600
-    }
-
-
-def get_category_data(client, start_date, end_date, window_df=None, web_df=None):
-    """Get categorized data from ActivityWatch"""
-    # Productivity categories
-    productive_categories = ['Work', 'Programming', 'Education', 'Productivity']
-    unproductive_categories = ['Media', 'Games', 'Entertainment', 'Social Media', 'Uncategorized']
-
+def load_category_rules(json_file='aw-category-export.json'):
+    """Load category rules from the exported JSON file."""
+    # Get the directory where the script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, json_file)
+    
     try:
-        # Try to get categorized events from ActivityWatch
-        buckets = client.get_buckets()
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+        
+        rules = []
+        for category in data['categories']:
+            if category['rule']['type'] == 'regex' and 'regex' in category['rule']:
+                rules.append({
+                    'name': category['name'],
+                    'regex': category['rule']['regex'],
+                    'ignore_case': category['rule'].get('ignore_case', False)
+                })
+        return rules
+    except FileNotFoundError:
+        print(f"\nWarning: Category rules file not found at {json_path}")
+        print("Creating default category rules...")
+        default_rules = {
+            'categories': [
+                {
+                    'name': 'Work',
+                    'rule': {'type': 'regex', 'regex': '(code|visual studio|intellij|pycharm|cursor|github|gitlab)', 'ignore_case': True}
+                },
+                {
+                    'name': 'Media',
+                    'rule': {'type': 'regex', 'regex': '(youtube|netflix|spotify|game|steam|epic|origin)', 'ignore_case': True}
+                }
+            ]
+        }
+        
+        # Save default rules
+        with open(json_path, 'w') as f:
+            json.dump(default_rules, f, indent=2)
+        
+        return load_category_rules(json_file)  # Try loading again
 
-        # First attempt: try to query for categorized events from QueryView
-        try:
-            # ActivityWatch Query - this is the proper way to query the API
-            # Note that we can't use client.post directly as it doesn't exist
+def categorize_event(event, rules):
+    """Categorize an event using the loaded rules."""
+    title = event['data'].get('title', '')
+    app = event['data'].get('app', '')
+    text = f"{app} {title}"
+    
+    for rule in rules:
+        pattern = rule['regex']
+        flags = re.IGNORECASE if rule.get('ignore_case', False) else 0
+        if re.search(pattern, text, flags=flags):
+            return rule['name']
+    
+    return ['Uncategorized']
 
-            # Get the server address from the client
-            server_address = client.server_address
+# Parse command line arguments
+parser = argparse.ArgumentParser(description='Export ActivityWatch data to visualizations')
+parser.add_argument('--host', default='DESKTOP-FRC9TT4', help='Host to query (e.g., DESKTOP-FRC9TT4 or DESKTOP-FRC9TT4-MacBook-Pro.local)')
+parser.add_argument('--date', help='Date to analyze (YYYY-MM-DD)')
+args = parser.parse_args()
 
-            # Set up the query
-            query = {
-                "timeperiods": [
-                    {
-                        "type": "timeperiod",
-                        "start": start_date.isoformat(),
-                        "end": end_date.isoformat()
-                    }
-                ],
-                "query": ["categorize"]
-            }
+# Load category rules
+category_rules = load_category_rules()
 
-            # Call the query endpoint directly
-            url = f"{server_address}/api/0/query/"
-            headers = {"Content-Type": "application/json"}
+# Initialize client
+client = ActivityWatchClient("chart-client")
 
-            response = requests.post(url, json=query, headers=headers)
+# List available buckets
+buckets = client.get_buckets()
+print("\nAvailable buckets:")
+for bucket_id in buckets:
+    print(f"- {bucket_id}")
 
-            if response.status_code == 200:
-                result = response.json()
-                print("Successfully retrieved categorized events from ActivityWatch")
+# Set the host
+HOST = args.host
 
-                # Process categories
-                category_times = {}
-                for event in result:
-                    category = event.get('data', {}).get('category', 'Uncategorized')
-                    duration = event.get('duration', 0)
+# Find web bucket
+web_bucket = None
+for bucket_id in buckets:
+    if bucket_id.startswith("aw-watcher-web"):
+        web_bucket = bucket_id
+        break
 
-                    if category in category_times:
-                        category_times[category] += duration
-                    else:
-                        category_times[category] = duration
+if web_bucket:
+    print(f"\nFound web bucket: {web_bucket}")
+else:
+    print("\nNo web bucket found")
 
-                # Create DataFrame
-                if category_times:
-                    df = pd.DataFrame(list(category_times.items()), columns=['category', 'duration']).sort_values(
-                        'duration', ascending=False)
-                    df['duration_hours'] = df['duration'] / 3600
+# Set the date range
+if args.date:
+    # If a specific date is provided, use that
+    start_time = parse_date(args.date).replace(tzinfo=pytz.UTC)
+    end_time = start_time + timedelta(days=1) - timedelta(microseconds=1)
+    start_time = start_time.replace(hour=0, minute=0, second=0, microsecond=0)
+else:
+    # Get current time in UTC
+    current_time = datetime.now(pytz.UTC)
+    
+    # Calculate the start of the current week (Monday)
+    days_since_monday = current_time.weekday()
+    start_time = current_time - timedelta(days=days_since_monday)
+    start_time = start_time.replace(hour=0, minute=0, second=0, microsecond=0)
+    
+    # End time is current time
+    end_time = current_time
 
-                    # Add productivity classification
-                    df['productivity'] = df['category'].apply(
-                        lambda x: 'Productive' if x in productive_categories else 'Unproductive')
+print(f"\nQuerying host: {HOST}")
+print(f"Time period: {start_time.strftime('%A, %b %d, %Y')} to {end_time.strftime('%A, %b %d, %Y')}")
 
-                    return df
+# Define the query to get window events
+query = f"""
+afk_events = query_bucket(find_bucket("aw-watcher-afk_{HOST}"));
+window_events = query_bucket(find_bucket("aw-watcher-window_{HOST}"));
+window_events = filter_period_intersect(window_events, filter_keyvals(afk_events, "status", ["not-afk"]));
+RETURN = sort_by_duration(window_events);
+"""
 
-        except Exception as e:
-            print(f"Could not get categorized events via query API: {e}")
+# Add web activity query if web bucket is found
+web_query = None
+if web_bucket:
+    web_query = f"""
+    afk_events = query_bucket(find_bucket("aw-watcher-afk_{HOST}"));
+    web_events = query_bucket("{web_bucket}");
+    web_events = filter_period_intersect(web_events, filter_keyvals(afk_events, "status", ["not-afk"]));
+    RETURN = sort_by_duration(web_events);
+    """
 
-        # Second attempt: Try to get category data via ActivityWatch's rules directly
-        try:
-            # Get rule data directly from ActivityWatch's rules
-            url = f"{client.server_address}/api/0/rules"
-            response = requests.get(url)
-
-            if response.status_code == 200:
-                rules = response.json()
-                print(f"Got {len(rules)} rules from ActivityWatch")
-
-                # Now get all window events and apply the rules manually
-                window_events = []
-                for bucket_id in buckets:
-                    if 'aw-watcher-window' in bucket_id:
-                        window_events.extend(client.get_events(bucket_id, start=start_date, end=end_date))
-
-                # Apply rules manually to events
-                categorized_events = {}
-                for event in window_events:
-                    app_name = event.data.get('app', 'Unknown')
-                    # Simple rule matching based on app name
-                    category = 'Uncategorized'
-                    for rule in rules:
-                        if 'rule' in rule and 'type' in rule['rule'] and rule['rule']['type'] == 'regex':
-                            if 'regex' in rule['rule'] and re.search(rule['rule']['regex'], app_name, re.IGNORECASE):
-                                category = rule.get('category', 'Uncategorized')
-                                break
-
-                    duration = event.duration.total_seconds()
-                    if category in categorized_events:
-                        categorized_events[category] += duration
-                    else:
-                        categorized_events[category] = duration
-
-                if categorized_events:
-                    df = pd.DataFrame(list(categorized_events.items()), columns=['category', 'duration']).sort_values(
-                        'duration', ascending=False)
-                    df['duration_hours'] = df['duration'] / 3600
-                    df['productivity'] = df['category'].apply(
-                        lambda x: 'Productive' if x in productive_categories else 'Unproductive')
-                    return df
-        except Exception as e:
-            print(f"Could not get categorized events from rules: {e}")
-
-        # Third attempt: Use rules-based categorization based on app names
-        if window_df is not None:
-            # Define productivity rules (example rules, can be expanded)
-            productive_apps = ['code', 'visual studio', 'excel', 'word', 'powerpoint', 'outlook', 'teams',
-                               'chrome', 'edge', 'firefox', 'safari', 'notion', 'slack', 'terminal',
-                               'powershell', 'cmd', 'intellij', 'pycharm', 'webstorm', 'rider', 'goland',
-                               'jupyter', 'postman', 'figma', 'adobe', 'zoom', 'github', 'gitlab', 'bitbucket',
-                               'stackoverflow', 'jira', 'confluence', 'cursor', 'vscode']
-
-            unproductive_apps = ['youtube', 'netflix', 'disney+', 'hbo', 'spotify', 'steam', 'epic games',
-                                 'discord', 'telegram', 'whatsapp', 'messenger', 'instagram', 'facebook',
-                                 'twitter', 'tiktok', 'reddit', 'games', 'twitch', 'hulu', 'prime video']
-
-            # Function to categorize app
-            def categorize_app(app_name):
-                app_lower = app_name.lower()
-                for prod_app in productive_apps:
-                    if prod_app.lower() in app_lower:
-                        return 'Productive'
-                for unprod_app in unproductive_apps:
-                    if unprod_app.lower() in app_lower:
-                        return 'Unproductive'
-                return 'Uncategorized'
-
-            # Add productivity category to window_df
-            window_df['productivity'] = window_df['app_name'].apply(categorize_app)
-
-            # Group by productivity
-            productivity_df = window_df.groupby('productivity')['duration'].sum().reset_index()
-            productivity_df['duration_hours'] = productivity_df['duration'] / 3600
-
-            print("Created productivity categorization based on app names")
-            return productivity_df
-
-    except Exception as e:
-        print(f"Error processing category data: {e}")
-
-    # Fallback to basic empty DataFrame with productivity columns
-    df = pd.DataFrame({'productivity': ['Productive', 'Unproductive', 'Uncategorized'],
-                       'duration': [0, 0, 0],
-                       'duration_hours': [0, 0, 0]})
-    return df
-
-
-def create_report(window_df, web_df, afk_data, category_df, output_path, date_range_text=None):
-    """Create HTML report with visualizations"""
-    # App usage pie chart - Top 10 apps
-    top_apps = window_df.head(10).copy()
-    other_time = window_df.iloc[10:]['duration'].sum() if len(window_df) > 10 else 0
-
-    if other_time > 0:
-        other_row = pd.DataFrame([{'app_name': 'Other', 'duration': other_time, 'duration_hours': other_time / 3600}])
-        top_apps = pd.concat([top_apps, other_row], ignore_index=True)
-
-    # Ensure duration is numeric and sort by duration
-    top_apps['duration'] = pd.to_numeric(top_apps['duration'])
-    top_apps = top_apps.sort_values('duration', ascending=False)
-
+try:
+    # Execute queries
+    result = client.query(query, [(start_time, end_time)])
+    events = result[0]
+    
+    # Get web events if web bucket exists
+    web_events = []
+    if web_query:
+        web_result = client.query(web_query, [(start_time, end_time)])
+        web_events = web_result[0]
+    
+    # Process the categorized events
+    daily_data = defaultdict(lambda: {"productive": 0, "non_productive": 0, "other": 0, "afk": 0})
+    app_time = defaultdict(lambda: {"duration": 0, "category": None})
+    category_time = defaultdict(float)
+    hourly_activity = defaultdict(float)
+    web_time = defaultdict(float)  # New dictionary for web activity
+    
+    # Process web events
+    if web_events:
+        print("\nProcessing web events...")
+        print(f"Found {len(web_events)} web events")
+        
+        for event in web_events:
+            # Get timestamp and duration
+            timestamp = datetime.fromisoformat(event['timestamp'])
+            duration = event['duration']
+            
+            # Skip very short events (less than 1 second)
+            if duration < 1:
+                continue
+                
+            # Get URL and title
+            url = event['data'].get('url', '')
+            title = event['data'].get('title', '')
+            
+            # Extract domain from URL
+            try:
+                domain = url.split('/')[2] if len(url.split('/')) > 2 else url
+                # Clean up domain (remove www. and common TLDs)
+                domain = domain.replace('www.', '')
+                domain = domain.split('.')[0]  # Take just the main domain name
+            except:
+                domain = url
+            
+            # Print significant web events (more than 5 minutes)
+            if duration > 300:
+                print(f"\nSignificant web event:")
+                print(f"Domain: {domain}")
+                print(f"Title: {title}")
+                print(f"Duration: {duration / 3600:.2f} hours")
+            
+            # Update web statistics
+            web_time[domain] += duration
+    
+    # Process events
+    print("\nProcessing events...")
+    print(f"Found {len(events)} events")
+    
+    for event in events:
+        # Get timestamp and duration
+        timestamp = datetime.fromisoformat(event['timestamp'])
+        duration = event['duration']
+        
+        # Skip very short events (less than 1 second)
+        if duration < 1:
+            continue
+            
+        day = timestamp.date()
+        
+        # Update hourly activity
+        hour = timestamp.hour
+        hourly_activity[hour] += duration
+        
+        # Get app and category information
+        app = event['data'].get('app', 'Unknown')
+        title = event['data'].get('title', '')
+        categories = categorize_event(event, category_rules)
+        
+        # Print significant events (more than 5 minutes)
+        if duration > 300:
+            print(f"\nSignificant event:")
+            print(f"App: {app}")
+            print(f"Title: {title}")
+            print(f"Categories: {' > '.join(categories) if categories else 'Uncategorized'}")
+            print(f"Duration: {duration / 3600:.2f} hours")
+        
+        # Update app statistics
+        app_time[app]['duration'] += duration
+        if categories:
+            app_time[app]['category'] = categories[0]
+        
+        # Update category statistics
+        if categories:
+            # Store full category path
+            category_path = ' > '.join(categories)
+            category_time[category_path] += duration
+            
+            # Update daily statistics based on top-level category
+            if categories[0] == 'Work':
+                daily_data[day]["productive"] += duration
+            elif categories[0] == 'Media':
+                daily_data[day]["non_productive"] += duration
+            else:
+                daily_data[day]["other"] += duration
+    
+    # Get AFK time
+    afk_query = f"""
+    afk_events = query_bucket(find_bucket("aw-watcher-afk_{HOST}"));
+    RETURN = filter_keyvals(afk_events, "status", ["afk"]);
+    """
+    afk_result = client.query(afk_query, [(start_time, end_time)])
+    afk_events = afk_result[0]
+    
+    # Process AFK events
+    for event in afk_events:
+        timestamp = datetime.fromisoformat(event['timestamp'])
+        duration = event['duration']
+        day = timestamp.date()
+        daily_data[day]["afk"] += duration
+    
+    # Calculate summary statistics
+    total_active_seconds = sum(
+        data["productive"] + data["non_productive"] + data["other"]
+        for data in daily_data.values()
+    )
+    total_afk_seconds = sum(data["afk"] for data in daily_data.values())
+    total_seconds = total_active_seconds + total_afk_seconds
+    
+    # Convert to hours
+    total_hours = total_seconds / 3600
+    active_hours = total_active_seconds / 3600
+    afk_hours = total_afk_seconds / 3600
+    
+    productive_seconds = sum(data["productive"] for data in daily_data.values())
+    non_productive_seconds = sum(data["non_productive"] for data in daily_data.values())
+    other_seconds = sum(data["other"] for data in daily_data.values())
+    
+    productive_hours = productive_seconds / 3600
+    non_productive_hours = non_productive_seconds / 3600
+    other_hours = other_seconds / 3600
+    
     # Calculate percentages
-    total_app_time = top_apps['duration'].sum()
-    top_apps['percentage'] = (top_apps['duration'] / total_app_time * 100).round(1)
-    top_apps['label'] = top_apps.apply(lambda row: f"{row['app_name']}: {row['percentage']}%", axis=1)
-
-    # Create custom pie chart using graph_objects for more control
-    app_pie_fig = go.Figure(data=[go.Pie(
-        labels=top_apps['app_name'],
-        values=top_apps['duration'],
-        text=top_apps['label'],
-        textinfo='text',
-        textposition='outside',
-        hole=0.4
-    )])
-
-    app_pie_fig.update_layout(
-        title=f"Application Usage",
-        uniformtext_minsize=10,
-        uniformtext_mode='hide'
-    )
-
-    # Website pie chart if available
-    if not web_df.empty:
-        top_websites = web_df.head(10).copy()
-        other_web_time = web_df.iloc[10:]['duration'].sum() if len(web_df) > 10 else 0
-
-        if other_web_time > 0:
-            other_web_row = pd.DataFrame(
-                [{'website': 'Other', 'duration': other_web_time, 'duration_hours': other_web_time / 3600}])
-            top_websites = pd.concat([top_websites, other_web_row], ignore_index=True)
-
-        # Ensure duration is numeric and sort by duration
-        top_websites['duration'] = pd.to_numeric(top_websites['duration'])
-        top_websites = top_websites.sort_values('duration', ascending=False)
-
-        # Calculate percentages
-        total_web_time = top_websites['duration'].sum()
-        top_websites['percentage'] = (top_websites['duration'] / total_web_time * 100).round(1)
-        top_websites['label'] = top_websites.apply(lambda row: f"{row['website']}: {row['percentage']}%", axis=1)
-
-        # Use graph_objects for website pie chart too
-        web_pie_fig = go.Figure(data=[go.Pie(
-            labels=top_websites['website'],
-            values=top_websites['duration'],
-            text=top_websites['label'],
-            textinfo='text',
-            textposition='outside',
-            hole=0.4
-        )])
-
-        web_pie_fig.update_layout(
-            title=f"Website Usage",
-            uniformtext_minsize=10,
-            uniformtext_mode='hide'
-        )
-
-        web_html = web_pie_fig.to_html(full_html=False, include_plotlyjs=False)
-    else:
-        web_html = "<p>No web activity data available.</p>"
-
-    # AFK vs Active time
-    total_tracked = afk_data['afk_time'] + afk_data['active_time']
-    afk_percent = (afk_data['afk_time'] / total_tracked * 100) if total_tracked > 0 else 0
-    active_percent = (afk_data['active_time'] / total_tracked * 100) if total_tracked > 0 else 0
-
-    afk_fig = go.Figure()
-    afk_fig.add_trace(go.Bar(
-        x=['Computer Activity'],
-        y=[afk_data['active_hours']],
-        name='Active',
-        marker_color='#2ca02c'
-    ))
-    afk_fig.add_trace(go.Bar(
-        x=['Computer Activity'],
-        y=[afk_data['afk_hours']],
-        name='AFK',
-        marker_color='#d62728'
-    ))
-    afk_fig.update_layout(
-        barmode='stack',
-        title=f"Active vs. AFK Time",
-        yaxis=dict(title='Hours'),
-        annotations=[
-            dict(
-                x='Computer Activity',
-                y=afk_data['active_hours'] / 2,
-                text=f"{active_percent:.1f}%",
-                showarrow=False,
-                font=dict(color='white')
-            ),
-            dict(
-                x='Computer Activity',
-                y=afk_data['active_hours'] + afk_data['afk_hours'] / 2,
-                text=f"{afk_percent:.1f}%",
-                showarrow=False,
-                font=dict(color='white')
-            )
-        ]
-    )
-
-    # Productivity chart
-    if 'productivity' in category_df.columns:
-        # Ensure we have numeric values for duration
-        category_df['duration'] = pd.to_numeric(category_df['duration'])
-
-        # Group by productivity if it hasn't been done yet
-        if len(category_df) > 2:  # Assuming there are more rows, we need to group
-            productivity_df = category_df.groupby('productivity')['duration'].sum().reset_index()
-        else:
-            productivity_df = category_df.copy()
-
-        # Make sure we have all three categories, adding zeros for missing ones
-        all_categories = ['Productive', 'Unproductive', 'Uncategorized']
-        for category in all_categories:
-            if category not in productivity_df['productivity'].values:
-                productivity_df = pd.concat([productivity_df,
-                                             pd.DataFrame({'productivity': [category], 'duration': [0]})],
-                                            ignore_index=True)
-
-        # Calculate total time and percentages
-        total_time = productivity_df['duration'].sum()
-        if total_time > 0:
-            productivity_df['percentage'] = (productivity_df['duration'] / total_time * 100).round(1)
-            productivity_df['hours'] = productivity_df['duration'] / 3600
-            productivity_df['label'] = productivity_df.apply(
-                lambda row: f"{row['productivity']}: {row['percentage']}%", axis=1)
-
-            # Create pie chart using go.Pie for better control
-            colors = {'Productive': '#2ca02c', 'Unproductive': '#d62728', 'Uncategorized': '#7f7f7f'}
-            productivity_fig = go.Figure(data=[go.Pie(
-                labels=productivity_df['productivity'],
-                values=productivity_df['duration'],
-                text=productivity_df['label'],
-                textinfo='text',
-                textposition='outside',
-                marker=dict(colors=[colors.get(p, '#7f7f7f') for p in productivity_df['productivity']]),
-                hole=0.4
-            )])
-
-            productivity_fig.update_layout(
-                title="Productivity Distribution",
-                uniformtext_minsize=10,
-                uniformtext_mode='hide'
-            )
-
-            productivity_html = productivity_fig.to_html(full_html=False, include_plotlyjs=False)
-
-            # Create bar chart for productivity
-            prod_bar_fig = go.Figure()
-
-            for idx, row in productivity_df.iterrows():
-                color = colors.get(row['productivity'], '#7f7f7f')
-                prod_bar_fig.add_trace(go.Bar(
-                    x=[row['productivity']],
-                    y=[row['hours']],
-                    name=row['productivity'],
-                    marker_color=color,
-                    text=f"{row['percentage']:.1f}%",
-                    textposition='auto'
-                ))
-
-            prod_bar_fig.update_layout(
-                title="Productivity Hours",
-                yaxis=dict(title='Hours'),
-                xaxis=dict(title='')
-            )
-
-            productivity_bar_html = prod_bar_fig.to_html(full_html=False, include_plotlyjs=False)
-        else:
-            productivity_html = "<p>No productivity data available.</p>"
-            productivity_bar_html = "<p>No productivity data available.</p>"
-    else:
-        productivity_html = "<p>No productivity categorization available.</p>"
-        productivity_bar_html = "<p>No productivity data available.</p>"
-
-    # Top 10 apps bar chart
-    bar_data = window_df.head(10).copy()
-    bar_fig = px.bar(
-        bar_data,
-        x='app_name',
-        y='duration_hours',
-        title=f"Top 10 Applications by Time Spent",
-        labels={'app_name': 'Application', 'duration_hours': 'Hours'},
-        color_discrete_sequence=['#1f77b4']
-    )
-    bar_fig.update_layout(xaxis_tickangle=-45)
-
-    # Write HTML file with all charts
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(f'''<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>ActivityWatch Usage Report</title>
-    <style>
-        body {{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }}
-        .container {{
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }}
-        h1, h2 {{
-            color: #333;
-        }}
-        .chart {{
-            margin-bottom: 30px;
-        }}
-        .summary {{
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }}
-        .toggle-section {{
-            margin-bottom: 20px;
-        }}
-        .toggle-button {{
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }}
-        .toggle-content {{
-            display: none;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-top: 10px;
-        }}
-        .footer {{
-            margin-top: 30px;
-            text-align: center;
-            color: #777;
-            font-size: 0.9em;
-        }}
-        .productivity-section {{
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }}
-        .productive {{
-            color: #2ca02c;
-            font-weight: bold;
-        }}
-        .unproductive {{
-            color: #d62728;
-            font-weight: bold;
-        }}
-    </style>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script>
-        function toggleContent(id) {{
-            var content = document.getElementById(id);
-            if (content.style.display === "block") {{
-                content.style.display = "none";
-            }} else {{
-                content.style.display = "block";
-            }}
-        }}
-
-        // Show the default view when page loads
-        window.onload = function() {{
-            document.getElementById('productivity-content').style.display = "block";
-        }}
-    </script>
-</head>
-<body>
-    <div class="container">
-        <h1>ActivityWatch Usage Report</h1>
-        <div class="summary">
-            <h2>Summary</h2>
-            <p>Time period: {date_range_text}</p>
-            <p>Total tracking time: {total_tracked / 3600:.1f} hours</p>
-            <p>Active time: {afk_data['active_hours']:.1f} hours ({active_percent:.1f}%)</p>
-            <p>AFK time: {afk_data['afk_hours']:.1f} hours ({afk_percent:.1f}%)</p>
-        </div>
-
-        <div class="toggle-section">
-            <button class="toggle-button" onclick="toggleContent('productivity-content')">Toggle Productivity Chart</button>
-            <div id="productivity-content" class="toggle-content">
-                <h2>Productivity Overview</h2>
-                {productivity_html}
-                {productivity_bar_html}
-            </div>
-        </div>
-
-        <div class="toggle-section">
-            <button class="toggle-button" onclick="toggleContent('afk-content')">Toggle AFK/Active Chart</button>
-            <div id="afk-content" class="toggle-content">
-                <h2>AFK vs. Active Time</h2>
-                {afk_fig.to_html(full_html=False, include_plotlyjs=False)}
-            </div>
-        </div>
-
-        <div class="chart">
-            <h2>Application Usage Distribution</h2>
-            {app_pie_fig.to_html(full_html=False, include_plotlyjs=False)}
-        </div>
-
-        <div class="chart">
-            <h2>Website Usage Distribution</h2>
-            {web_html}
-        </div>
-
-        <div class="chart">
-            <h2>Top Applications</h2>
-            {bar_fig.to_html(full_html=False, include_plotlyjs=False)}
-        </div>
-
-        <div class="footer">
-            <p>Generated on {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
-        </div>
-    </div>
-</body>
-</html>''')
-
-    print(f"Report generated successfully at {output_path}")
-
-
-def main():
-    # Create command line arguments
-    parser = argparse.ArgumentParser(description='Generate ActivityWatch usage report')
-    parser.add_argument('--output', type=str, default='C:/Users/Dejan/PycharmProjects/watcher/index.html',
-                        help='Output file path (default: C:/Users/Dejan/PycharmProjects/watcher/index.html)')
-    parser.add_argument('--show-all-days', action='store_true',
-                        help='Show all days of the week even if it is Monday')
-    args = parser.parse_args()
-
-    # Get current date and determine the start and end of current week
-    today = datetime.now(timezone.utc)
-    start_of_week = today - timedelta(days=today.weekday())  # Monday
-    start_date = datetime(start_of_week.year, start_of_week.month, start_of_week.day,
-                          0, 0, 0, tzinfo=timezone.utc)
-
-    # If today is Monday, only get today's data unless show-all-days is specified
-    if today.weekday() == 0 and not args.show_all_days:  # Monday is 0
-        end_date = today
-        date_range_text = f"Today ({today.strftime('%A, %b %d')})"
-    else:
-        # Otherwise get data up to now
-        end_date = today
-        date_range_text = f"This week ({start_date.strftime('%A, %b %d')} to {today.strftime('%A, %b %d')})"
-
-    print(f"Analyzing data from {start_date} to {end_date}")
-    print(f"Date range: {date_range_text}")
-
+    active_percentage = (total_active_seconds / total_seconds * 100) if total_seconds > 0 else 0
+    afk_percentage = (total_afk_seconds / total_seconds * 100) if total_seconds > 0 else 0
+    productive_percentage = (productive_seconds / total_active_seconds * 100) if total_active_seconds > 0 else 0
+    non_productive_percentage = (non_productive_seconds / total_active_seconds * 100) if total_active_seconds > 0 else 0
+    other_percentage = (other_seconds / total_active_seconds * 100) if total_active_seconds > 0 else 0
+    
+    # Get top 5 apps
+    top_apps = sorted(app_time.items(), key=lambda x: x[1]["duration"], reverse=True)[:5]
+    
+    # Get top 5 web domains
+    top_web = sorted(web_time.items(), key=lambda x: x[1], reverse=True)[:5] if web_time else []
+    
+    # Generate hour data
+    hour_data = [hourly_activity[h] / 3600 for h in range(24)]
+    
+    # Sort categories by duration
+    sorted_categories = sorted(category_time.items(), key=lambda x: x[1], reverse=True)
+    
+    # Prepare visualization data
+    data = {
+        "start_date": start_time.strftime("%A, %b %d, %Y"),
+        "end_date": end_time.strftime("%A, %b %d, %Y"),
+        "total_hours": total_hours,
+        "active_hours": active_hours,
+        "active_percentage": active_percentage,
+        "afk_hours": afk_hours,
+        "afk_percentage": afk_percentage,
+        "productive_hours": productive_hours,
+        "productive_percentage": productive_percentage,
+        "non_productive_hours": non_productive_hours,
+        "non_productive_percentage": non_productive_percentage,
+        "other_hours": other_hours,
+        "other_percentage": other_percentage,
+        "labels": [str(day) for day in daily_data.keys()],
+        "productive": [daily_data[day]["productive"] / 3600 for day in daily_data.keys()],
+        "non_productive": [daily_data[day]["non_productive"] / 3600 for day in daily_data.keys()],
+        "other": [daily_data[day]["other"] / 3600 for day in daily_data.keys()],
+        "afk": [daily_data[day]["afk"] / 3600 for day in daily_data.keys()],
+        "top_apps_labels": [app[0] for app in top_apps],
+        "top_apps_data": [app[1]["duration"] / 3600 for app in top_apps],
+        "top_apps_colors": [
+            '#4CAF50' if app[1]["category"] == "Work" else
+            '#FF5722' if app[1]["category"] == "Media" else
+            '#FFC107'
+            for app in top_apps
+        ],
+        "trend_labels": [str(day) for day in daily_data.keys()],
+        "trend_data": [daily_data[day]["productive"] / 3600 for day in daily_data.keys()],
+        "hour_labels": [f"{h}:00" for h in range(24)],
+        "hour_data": hour_data,
+        "categories": [cat[0] for cat in sorted_categories],
+        "category_data": [cat[1] / 3600 for cat in sorted_categories],
+        "category_colors": [
+            '#4CAF50' if cat[0].startswith('Work') else
+            '#FF5722' if cat[0].startswith('Media') else
+            '#FFC107'
+            for cat in sorted_categories
+        ],
+        "web_labels": [web[0] for web in top_web],
+        "web_data": [web[1] / 3600 for web in top_web],
+        "web_colors": [
+            '#4CAF50' if any(work_domain in web[0].lower() for work_domain in ['github', 'stackoverflow', 'docs.google']) else
+            '#FF5722' if any(media_domain in web[0].lower() for media_domain in ['youtube', 'netflix', 'spotify']) else
+            '#FFC107'
+            for web in top_web
+        ] if top_web else []
+    }
+    
+    # Print summary
+    print("\nData Collection Summary:")
+    print(f"- Total tracking time: {total_hours:.1f} hours")
+    print(f"- Active time: {active_hours:.1f} hours ({active_percentage:.1f}%)")
+    print(f"- AFK time: {afk_hours:.1f} hours ({afk_percentage:.1f}%)")
+    print(f"- Productive time: {productive_hours:.1f} hours ({productive_percentage:.1f}% of active time)")
+    print(f"- Non-productive time: {non_productive_hours:.1f} hours ({non_productive_percentage:.1f}% of active time)")
+    print(f"- Other time: {other_hours:.1f} hours ({other_percentage:.1f}% of active time)")
+    
+    # Write data to JavaScript file
     try:
-        # Initialize client
-        client = ActivityWatchClient()
-
-        # Test connection to ActivityWatch
-        try:
-            response = requests.get(f"{client.server_address}/api/0/buckets")
-            if response.status_code != 200:
-                print(f"Warning: ActivityWatch server returned status code {response.status_code}")
-        except Exception as e:
-            print(f"Warning: Could not connect to ActivityWatch server: {e}")
-            print("Make sure ActivityWatch is running and accessible.")
-
-        # Get specific bucket IDs for your system (DESKTOP-FRC9TT4)
-        buckets = client.get_buckets()
-        window_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-window_DESKTOP-FRC9TT4' in bid), None)
-        afk_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-afk_DESKTOP-FRC9TT4' in bid), None)
-        web_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-web-opera_DESKTOP-FRC9TT4' in bid), None)
-
-        if not window_bucket:
-            print("Warning: Could not find window bucket with '_DESKTOP-FRC9TT4' suffix.")
-            window_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-window' in bid), None)
-            print(f"Using fallback window bucket: {window_bucket}")
-
-        if not afk_bucket:
-            print("Warning: Could not find AFK bucket with '_DESKTOP-FRC9TT4' suffix.")
-            afk_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-afk' in bid), None)
-            print(f"Using fallback AFK bucket: {afk_bucket}")
-
-        if not web_bucket:
-            print("Warning: Could not find web bucket with '_DESKTOP-FRC9TT4' suffix.")
-            web_bucket = next((bid for bid in buckets.keys() if 'aw-watcher-web' in bid), None)
-            print(f"Using fallback web bucket: {web_bucket}")
-
-        # Get window activity data
-        window_df = get_window_activity(client, start_date, end_date, window_bucket)
-
-        # Get web activity data if available
-        web_df = get_web_activity(client, start_date, end_date, web_bucket)
-
-        # Get AFK data
-        afk_data = get_afk_data(client, start_date, end_date, afk_bucket)
-
-        # Get productivity categorized data
-        category_df = get_category_data(client, start_date, end_date, window_df, web_df)
-
-        # Create report
-        create_report(window_df, web_df, afk_data, category_df, args.output, date_range_text)
-
+        print("\nWriting data to data.js...")
+        with open("data.js", "w") as f:
+            f.write(f"const activityData = {json.dumps(data, indent=2)};")
+        print("✓ Successfully wrote data.js")
     except Exception as e:
-        print(f"Error generating report: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"Error writing data.js: {str(e)}")
+        raise
+    
+    # Update the last update time in index.html
+    try:
+        print("\nUpdating index.html...")
+        with open("index.html", "r", encoding='utf-8') as f:
+            html_content = f.read()
+        
+        # Update the last update time
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M")
+        
+        # Try to find and replace existing update time
+        if '<div class="last-update">' in html_content:
+            new_html_content = re.sub(
+                r'<div class="last-update">.*?</div>',
+                f'<div class="last-update">Updated at: {current_time}</div>',
+                html_content,
+                flags=re.DOTALL
+            )
+        else:
+            # If no update div exists, add it after the h1 title
+            new_html_content = re.sub(
+                r'(<h1>ActivityWatch Data Visualizations</h1>)',
+                f'\\1\n        <div class="last-update">Updated at: {current_time}</div>',
+                html_content
+            )
+        
+        with open("index.html", "w", encoding='utf-8') as f:
+            f.write(new_html_content)
+        print("✓ Successfully updated index.html")
+    except Exception as e:
+        print(f"Error updating index.html: {str(e)}")
+        raise
+    
+    print("\n✓ Data has been updated successfully!")
+    print("  Open 'index.html' in a browser to view the activity charts and statistics.")
 
-
-if __name__ == '__main__':
-    main()
+except Exception as e:
+    print(f"\nError executing query: {str(e)}")
+    if hasattr(e, 'response') and e.response is not None:
+        print(f"Error message received: {e.response.text}")
+    raise
