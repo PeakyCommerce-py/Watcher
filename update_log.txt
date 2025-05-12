@@ -1,10 +1,10 @@
  
-[Mon 05/12/2025 19:01:54.92] Starting update 
-[Mon 05/12/2025 19:01:54.92] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 05/12/2025 19:01:54.93] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/12/2025 19:08:09.66] Starting update 
+[Mon 05/12/2025 19:08:09.67] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/12/2025 19:08:09.67] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 05/12/2025 19:01:55.07] ActivityWatch is already running 
-[Mon 05/12/2025 19:01:55.07] Running export script... 
+[Mon 05/12/2025 19:08:09.85] ActivityWatch is already running 
+[Mon 05/12/2025 19:08:09.85] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -19,7 +19,7 @@ Querying host: DESKTOP-FRC9TT4
 Time period: Monday, May 12, 2025 to Monday, May 12, 2025
 
 Processing web events...
-Found 41 web events
+Found 50 web events
 
 Significant web event:
 Domain: claude
@@ -27,7 +27,7 @@ Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
 
 Processing events...
-Found 4303 events
+Found 4404 events
 
 Significant event:
 App: opera.exe
@@ -36,24 +36,24 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 15.2 hours
-- Active time: 7.9 hours (51.9%)
-- AFK time: 7.3 hours (48.1%)
-- Productive time: 2.9 hours (36.6% of active time)
+- Total tracking time: 15.3 hours
+- Active time: 8.0 hours (52.3%)
+- AFK time: 7.3 hours (47.7%)
+- Productive time: 3.0 hours (37.0% of active time)
 - Non-productive time: 0.1 hours (1.0% of active time)
-- Other time: 4.9 hours (62.5% of active time)
+- Other time: 5.0 hours (62.1% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-12 21:01
-✓ Successfully updated index.html with time: 2025-05-12 21:01
+Using direct UTC+4 offset time: 2025-05-12 19:08
+✓ Successfully updated index.html with time: 2025-05-12 19:08
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 05/12/2025 19:01:55.94] Checking file modifications... 
-[Mon 05/12/2025 19:01:55.95] data.js last modified: 05/12/2025 07:01 PM 
-[Mon 05/12/2025 19:01:55.95] index.html last modified: 05/12/2025 07:01 PM 
-[Mon 05/12/2025 19:01:55.97] Setting up Git credential helper... 
-[Mon 05/12/2025 19:01:56.01] Adding files to Git... 
+[Mon 05/12/2025 19:08:10.71] Checking file modifications... 
+[Mon 05/12/2025 19:08:10.73] data.js last modified: 05/12/2025 07:08 PM 
+[Mon 05/12/2025 19:08:10.73] index.html last modified: 05/12/2025 07:08 PM 
+[Mon 05/12/2025 19:08:10.74] Setting up Git credential helper... 
+[Mon 05/12/2025 19:08:10.80] Adding files to Git... 
