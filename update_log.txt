@@ -1,272 +1,10 @@
  
-[Mon 05/12/2025 18:16:39.85] Starting update 
-[Mon 05/12/2025 18:16:39.85] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 05/12/2025 18:16:39.86] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/12/2025 18:29:51.27] Starting update 
+[Mon 05/12/2025 18:29:51.27] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/12/2025 18:29:51.28] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 05/12/2025 18:16:39.89] Installing required packages... 
-Collecting aw-client
-  Downloading aw_client-0.5.15-py3-none-any.whl.metadata (4.2 kB)
-Collecting pandas
-  Downloading pandas-2.2.3-cp39-cp39-win_amd64.whl.metadata (19 kB)
-Collecting plotly
-  Downloading plotly-6.0.1-py3-none-any.whl.metadata (6.7 kB)
-Collecting requests
-  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
-Collecting aw-core<0.6.0,>=0.5.16 (from aw-client)
-  Downloading aw_core-0.5.17-py3-none-any.whl.metadata (2.6 kB)
-Collecting click<9.0,>=8.0 (from aw-client)
-  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
-Collecting persist-queue (from aw-client)
-  Downloading persist_queue-1.0.0-py3-none-any.whl.metadata (22 kB)
-Collecting tabulate (from aw-client)
-  Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
-Collecting typing-extensions (from aw-client)
-  Downloading typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
-Collecting deprecation (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
-Collecting iso8601 (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading iso8601-2.1.0-py3-none-any.whl.metadata (3.7 kB)
-Collecting jsonschema<5.0,>=4.3 (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading jsonschema-4.23.0-py3-none-any.whl.metadata (7.9 kB)
-Collecting peewee==3.* (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading peewee-3.18.1.tar.gz (3.0 MB)
-     ---------------------------------------- 3.0/3.0 MB 13.5 MB/s eta 0:00:00
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting platformdirs==3.10 (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading platformdirs-3.10.0-py3-none-any.whl.metadata (11 kB)
-Collecting rfc3339-validator<0.2.0,>=0.1.4 (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
-Collecting strict-rfc3339<0.8,>=0.7 (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading strict-rfc3339-0.7.tar.gz (17 kB)
-  Preparing metadata (setup.py): started
-  Preparing metadata (setup.py): finished with status 'done'
-Collecting timeslot (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading timeslot-0.1.2-py3-none-any.whl.metadata (2.2 kB)
-Collecting tomlkit (from aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading tomlkit-0.13.2-py3-none-any.whl.metadata (2.7 kB)
-Collecting colorama (from click<9.0,>=8.0->aw-client)
-  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
-Collecting attrs>=22.2.0 (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
-Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl.metadata (2.9 kB)
-Collecting referencing>=0.28.4 (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
-Collecting rpds-py>=0.7.1 (from jsonschema<5.0,>=4.3->aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading rpds_py-0.24.0-cp39-cp39-win_amd64.whl.metadata (4.2 kB)
-Collecting six (from rfc3339-validator<0.2.0,>=0.1.4->aw-core<0.6.0,>=0.5.16->aw-client)
-  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
-Collecting numpy>=1.22.4 (from pandas)
-  Downloading numpy-2.0.2-cp39-cp39-win_amd64.whl.metadata (59 kB)
-Collecting python-dateutil>=2.8.2 (from pandas)
-  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
-Collecting pytz>=2020.1 (from pandas)
-  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
-Collecting tzdata>=2022.7 (from pandas)
-  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
-Collecting narwhals>=1.15.1 (from plotly)
-  Downloading narwhals-1.39.0-py3-none-any.whl.metadata (11 kB)
-Collecting packaging (from plotly)
-  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
-Collecting charset-normalizer<4,>=2 (from requests)
-  Downloading charset_normalizer-3.4.2-cp39-cp39-win_amd64.whl.metadata (36 kB)
-Collecting idna<4,>=2.5 (from requests)
-  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
-Collecting urllib3<3,>=1.21.1 (from requests)
-  Downloading urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
-Collecting certifi>=2017.4.17 (from requests)
-  Downloading certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
-Downloading aw_client-0.5.15-py3-none-any.whl (21 kB)
-Downloading aw_core-0.5.17-py3-none-any.whl (47 kB)
-Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
-Downloading click-8.1.8-py3-none-any.whl (98 kB)
-Downloading jsonschema-4.23.0-py3-none-any.whl (88 kB)
-Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
-Downloading pandas-2.2.3-cp39-cp39-win_amd64.whl (11.6 MB)
-   ---------------------------------------- 11.6/11.6 MB 13.7 MB/s eta 0:00:00
-Downloading plotly-6.0.1-py3-none-any.whl (14.8 MB)
-   ---------------------------------------- 14.8/14.8 MB 12.8 MB/s eta 0:00:00
-Downloading requests-2.32.3-py3-none-any.whl (64 kB)
-Downloading charset_normalizer-3.4.2-cp39-cp39-win_amd64.whl (105 kB)
-Downloading idna-3.10-py3-none-any.whl (70 kB)
-Downloading urllib3-2.4.0-py3-none-any.whl (128 kB)
-Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
-Downloading certifi-2025.4.26-py3-none-any.whl (159 kB)
-Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
-Downloading narwhals-1.39.0-py3-none-any.whl (339 kB)
-Downloading numpy-2.0.2-cp39-cp39-win_amd64.whl (15.9 MB)
-   ---------------------------------------- 15.9/15.9 MB 13.4 MB/s eta 0:00:00
-Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
-Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
-Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
-Downloading rpds_py-0.24.0-cp39-cp39-win_amd64.whl (234 kB)
-Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
-Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
-Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
-Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
-Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
-Downloading iso8601-2.1.0-py3-none-any.whl (7.5 kB)
-Downloading packaging-25.0-py3-none-any.whl (66 kB)
-Downloading persist_queue-1.0.0-py3-none-any.whl (39 kB)
-Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
-Downloading timeslot-0.1.2-py3-none-any.whl (3.1 kB)
-Downloading tomlkit-0.13.2-py3-none-any.whl (37 kB)
-Building wheels for collected packages: peewee, strict-rfc3339
-  Building wheel for peewee (pyproject.toml): started
-  Building wheel for peewee (pyproject.toml): finished with status 'done'
-  Created wheel for peewee: filename=peewee-3.18.1-py3-none-any.whl size=139099 sha256=b9b6337501d30a5ce3c24c2d86bdcfd5193b899f311b239044515c7dbd9d8637
-  Stored in directory: C:\Users\Dejan\AppData\Local\Temp\pip-ephem-wheel-cache-v9a0875u\wheels\e7\09\87\1f1a87eb25af98d0a1f60ef184a9779d81c6a2e8d28bc67d7f
-  DEPRECATION: Building 'strict-rfc3339' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'strict-rfc3339'. Discussion can be found at https://github.com/pypa/pip/issues/6334
-  Building wheel for strict-rfc3339 (setup.py): started
-  Building wheel for strict-rfc3339 (setup.py): finished with status 'done'
-  Created wheel for strict-rfc3339: filename=strict_rfc3339-0.7-py3-none-any.whl size=18156 sha256=d534677e469650847d4197ff7169e29c9857f0968efb51005751c8c081d815ac
-  Stored in directory: C:\Users\Dejan\AppData\Local\Temp\pip-ephem-wheel-cache-v9a0875u\wheels\25\38\74\7ec7f77ec64b2907430120931ba588b40e6e26f02d4df5be35
-Successfully built peewee strict-rfc3339
-Installing collected packages: strict-rfc3339, pytz, persist-queue, peewee, urllib3, tzdata, typing-extensions, tomlkit, timeslot, tabulate, six, rpds-py, platformdirs, packaging, numpy, narwhals, iso8601, idna, colorama, charset-normalizer, certifi, attrs, rfc3339-validator, requests, referencing, python-dateutil, plotly, deprecation, click, pandas, jsonschema-specifications, jsonschema, aw-core, aw-client
-  Attempting uninstall: strict-rfc3339
-    Found existing installation: strict-rfc3339 0.7
-    Uninstalling strict-rfc3339-0.7:
-      Successfully uninstalled strict-rfc3339-0.7
-  Attempting uninstall: pytz
-    Found existing installation: pytz 2025.2
-    Uninstalling pytz-2025.2:
-      Successfully uninstalled pytz-2025.2
-  Attempting uninstall: persist-queue
-    Found existing installation: persist-queue 1.0.0
-    Uninstalling persist-queue-1.0.0:
-      Successfully uninstalled persist-queue-1.0.0
-  Attempting uninstall: peewee
-    Found existing installation: peewee 3.17.9
-    Uninstalling peewee-3.17.9:
-      Successfully uninstalled peewee-3.17.9
-  Attempting uninstall: urllib3
-    Found existing installation: urllib3 2.4.0
-    Uninstalling urllib3-2.4.0:
-      Successfully uninstalled urllib3-2.4.0
-  Attempting uninstall: tzdata
-    Found existing installation: tzdata 2025.2
-    Uninstalling tzdata-2025.2:
-      Successfully uninstalled tzdata-2025.2
-  Attempting uninstall: typing-extensions
-    Found existing installation: typing_extensions 4.13.2
-    Uninstalling typing_extensions-4.13.2:
-      Successfully uninstalled typing_extensions-4.13.2
-  Attempting uninstall: tomlkit
-    Found existing installation: tomlkit 0.13.2
-    Uninstalling tomlkit-0.13.2:
-      Successfully uninstalled tomlkit-0.13.2
-  Attempting uninstall: timeslot
-    Found existing installation: timeslot 0.1.2
-    Uninstalling timeslot-0.1.2:
-      Successfully uninstalled timeslot-0.1.2
-  Attempting uninstall: tabulate
-    Found existing installation: tabulate 0.9.0
-    Uninstalling tabulate-0.9.0:
-      Successfully uninstalled tabulate-0.9.0
-  Attempting uninstall: six
-    Found existing installation: six 1.17.0
-    Uninstalling six-1.17.0:
-      Successfully uninstalled six-1.17.0
-  Attempting uninstall: rpds-py
-    Found existing installation: rpds-py 0.24.0
-    Uninstalling rpds-py-0.24.0:
-      Successfully uninstalled rpds-py-0.24.0
-  Attempting uninstall: platformdirs
-    Found existing installation: platformdirs 3.10.0
-    Uninstalling platformdirs-3.10.0:
-      Successfully uninstalled platformdirs-3.10.0
-  Attempting uninstall: packaging
-    Found existing installation: packaging 24.2
-    Uninstalling packaging-24.2:
-      Successfully uninstalled packaging-24.2
-  Attempting uninstall: numpy
-    Found existing installation: numpy 2.0.2
-    Uninstalling numpy-2.0.2:
-      Successfully uninstalled numpy-2.0.2
-  Attempting uninstall: narwhals
-    Found existing installation: narwhals 1.34.1
-    Uninstalling narwhals-1.34.1:
-      Successfully uninstalled narwhals-1.34.1
-  Attempting uninstall: iso8601
-    Found existing installation: iso8601 2.1.0
-    Uninstalling iso8601-2.1.0:
-      Successfully uninstalled iso8601-2.1.0
-  Attempting uninstall: idna
-    Found existing installation: idna 3.10
-    Uninstalling idna-3.10:
-      Successfully uninstalled idna-3.10
-  Attempting uninstall: colorama
-    Found existing installation: colorama 0.4.6
-    Uninstalling colorama-0.4.6:
-      Successfully uninstalled colorama-0.4.6
-  Attempting uninstall: charset-normalizer
-    Found existing installation: charset-normalizer 3.4.1
-    Uninstalling charset-normalizer-3.4.1:
-      Successfully uninstalled charset-normalizer-3.4.1
-  Attempting uninstall: certifi
-    Found existing installation: certifi 2025.1.31
-    Uninstalling certifi-2025.1.31:
-      Successfully uninstalled certifi-2025.1.31
-  Attempting uninstall: attrs
-    Found existing installation: attrs 25.3.0
-    Uninstalling attrs-25.3.0:
-      Successfully uninstalled attrs-25.3.0
-  Attempting uninstall: rfc3339-validator
-    Found existing installation: rfc3339-validator 0.1.4
-    Uninstalling rfc3339-validator-0.1.4:
-      Successfully uninstalled rfc3339-validator-0.1.4
-  Attempting uninstall: requests
-    Found existing installation: requests 2.32.3
-    Uninstalling requests-2.32.3:
-      Successfully uninstalled requests-2.32.3
-  Attempting uninstall: referencing
-    Found existing installation: referencing 0.36.2
-    Uninstalling referencing-0.36.2:
-      Successfully uninstalled referencing-0.36.2
-  Attempting uninstall: python-dateutil
-    Found existing installation: python-dateutil 2.9.0.post0
-    Uninstalling python-dateutil-2.9.0.post0:
-      Successfully uninstalled python-dateutil-2.9.0.post0
-  Attempting uninstall: plotly
-    Found existing installation: plotly 6.0.1
-    Uninstalling plotly-6.0.1:
-      Successfully uninstalled plotly-6.0.1
-  Attempting uninstall: deprecation
-    Found existing installation: deprecation 2.1.0
-    Uninstalling deprecation-2.1.0:
-      Successfully uninstalled deprecation-2.1.0
-  Attempting uninstall: click
-    Found existing installation: click 8.1.8
-    Uninstalling click-8.1.8:
-      Successfully uninstalled click-8.1.8
-  Attempting uninstall: pandas
-    Found existing installation: pandas 2.2.3
-    Uninstalling pandas-2.2.3:
-      Successfully uninstalled pandas-2.2.3
-  Attempting uninstall: jsonschema-specifications
-    Found existing installation: jsonschema-specifications 2024.10.1
-    Uninstalling jsonschema-specifications-2024.10.1:
-      Successfully uninstalled jsonschema-specifications-2024.10.1
-  Attempting uninstall: jsonschema
-    Found existing installation: jsonschema 4.23.0
-    Uninstalling jsonschema-4.23.0:
-      Successfully uninstalled jsonschema-4.23.0
-  Attempting uninstall: aw-core
-    Found existing installation: aw-core 0.5.17
-    Uninstalling aw-core-0.5.17:
-      Successfully uninstalled aw-core-0.5.17
-  Attempting uninstall: aw-client
-    Found existing installation: aw-client 0.5.15
-    Uninstalling aw-client-0.5.15:
-      Successfully uninstalled aw-client-0.5.15
-
-Successfully installed attrs-25.3.0 aw-client-0.5.15 aw-core-0.5.17 certifi-2025.4.26 charset-normalizer-3.4.2 click-8.1.8 colorama-0.4.6 deprecation-2.1.0 idna-3.10 iso8601-2.1.0 jsonschema-4.23.0 jsonschema-specifications-2025.4.1 narwhals-1.39.0 numpy-2.0.2 packaging-25.0 pandas-2.2.3 peewee-3.18.1 persist-queue-1.0.0 platformdirs-3.10.0 plotly-6.0.1 python-dateutil-2.9.0.post0 pytz-2025.2 referencing-0.36.2 requests-2.32.3 rfc3339-validator-0.1.4 rpds-py-0.24.0 six-1.17.0 strict-rfc3339-0.7 tabulate-0.9.0 timeslot-0.1.2 tomlkit-0.13.2 typing-extensions-4.13.2 tzdata-2025.2 urllib3-2.4.0
-[Mon 05/12/2025 18:23:16.42] Running export script... 
+[Mon 05/12/2025 18:29:51.46] ActivityWatch is already running 
+[Mon 05/12/2025 18:29:51.46] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -281,10 +19,10 @@ Querying host: DESKTOP-FRC9TT4
 Time period: Monday, May 12, 2025 to Monday, May 12, 2025
 
 Processing web events...
-Found 15 web events
+Found 16 web events
 
 Processing events...
-Found 3712 events
+Found 3727 events
 
 Significant event:
 App: opera.exe
@@ -293,12 +31,12 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 14.4 hours
-- Active time: 7.3 hours (50.6%)
-- AFK time: 7.1 hours (49.4%)
-- Productive time: 2.3 hours (32.1% of active time)
+- Total tracking time: 14.6 hours
+- Active time: 7.3 hours (49.9%)
+- AFK time: 7.3 hours (50.1%)
+- Productive time: 2.4 hours (32.3% of active time)
 - Non-productive time: 0.1 hours (1.1% of active time)
-- Other time: 4.9 hours (66.9% of active time)
+- Other time: 4.9 hours (66.7% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
@@ -308,8 +46,8 @@ Updating index.html...
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 05/12/2025 18:23:18.58] Checking file modifications... 
-[Mon 05/12/2025 18:23:18.59] data.js last modified: 05/12/2025 06:23 PM 
-[Mon 05/12/2025 18:23:18.59] index.html last modified: 05/12/2025 06:23 PM 
-[Mon 05/12/2025 18:23:18.61] Setting up Git credential helper... 
-[Mon 05/12/2025 18:23:18.66] Adding files to Git... 
+[Mon 05/12/2025 18:29:52.51] Checking file modifications... 
+[Mon 05/12/2025 18:29:52.52] data.js last modified: 05/12/2025 06:29 PM 
+[Mon 05/12/2025 18:29:52.52] index.html last modified: 05/12/2025 06:29 PM 
+[Mon 05/12/2025 18:29:52.54] Setting up Git credential helper... 
+[Mon 05/12/2025 18:29:52.60] Adding files to Git... 
