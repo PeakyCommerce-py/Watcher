@@ -1,10 +1,10 @@
  
-[Tue 05/13/2025 11:05:02.38] Starting update 
-[Tue 05/13/2025 11:05:02.39] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 05/13/2025 11:05:02.39] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 05/13/2025 17:57:45.69] Starting update 
+[Tue 05/13/2025 17:57:45.69] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 05/13/2025 17:57:45.70] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 05/13/2025 11:05:02.52] ActivityWatch is already running 
-[Tue 05/13/2025 11:05:02.52] Running export script... 
+[Tue 05/13/2025 17:57:45.83] ActivityWatch is already running 
+[Tue 05/13/2025 17:57:45.83] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -15,25 +15,38 @@ Available buckets:
 
 Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
-Querying host: DESKTOP-FRC9TT4
+Querying weekly data:
 Time period: Monday, May 12, 2025 to Tuesday, May 13, 2025
+Found 1370 web events
 
-Processing web events...
-Found 603 web events
+Significant web event:
+Domain: claude
+Title: Fixing Time Formatting in ActivityWatch Export - Claude
+Duration: 0.15 hours
 
 Significant web event:
 Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
-
-Processing events...
-Found 5741 events
+Found 7580 events
 
 Significant event:
 App: msedge.exe
 Title: Product Description Generator - Everyday Commodities - Skillfusion and 2 more pages - Personal - Microsoft​ Edge
 Categories: General > Browsing
 Duration: 0.15 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.12 hours
 
 Significant event:
 App: opera.exe
@@ -53,25 +66,73 @@ Title: Bloomingville Meta Titel Gener | Google AI Studio - Opera
 Categories: General > Browsing
 Duration: 0.09 hours
 
+Significant event:
+App: opera.exe
+Title: Gmail - Your Exclusive RED Experience awaits - Opera
+Categories: Work > Communication > Email
+Duration: 0.09 hours
+
 Data Collection Summary:
-- Total tracking time: 19.7 hours
-- Active time: 11.2 hours (56.9%)
-- AFK time: 8.5 hours (43.1%)
-- Productive time: 3.4 hours (30.5% of active time)
-- Non-productive time: 0.1 hours (0.7% of active time)
-- Other time: 7.7 hours (68.8% of active time)
+- Total tracking time: 28.0 hours
+- Active time: 16.5 hours (59.2%)
+- AFK time: 11.4 hours (40.8%)
+- Productive time: 5.0 hours (30.1% of active time)
+- Non-productive time: 0.1 hours (0.5% of active time)
+- Other time: 11.5 hours (69.4% of active time)
+
+Querying today's data:
+Time period: Tuesday, May 13, 2025 to Tuesday, May 13, 2025
+Found 835 web events
+
+Significant web event:
+Domain: claude
+Title: Fixing Time Formatting in ActivityWatch Export - Claude
+Duration: 0.15 hours
+Found 2018 events
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.12 hours
+
+Significant event:
+App: opera.exe
+Title: Produktnamnlängd: Faktorer och | Google AI Studio - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
+
+Significant event:
+App: opera.exe
+Title: Gmail - Your Exclusive RED Experience awaits - Opera
+Categories: Work > Communication > Email
+Duration: 0.09 hours
+
+Data Collection Summary:
+- Total tracking time: 9.3 hours
+- Active time: 5.9 hours (63.2%)
+- AFK time: 3.4 hours (36.8%)
+- Productive time: 1.6 hours (27.6% of active time)
+- Non-productive time: 0.0 hours (0.2% of active time)
+- Other time: 4.2 hours (72.2% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-13 11:05
-✓ Successfully updated index.html with time: 2025-05-13 11:05
+Using direct UTC+4 offset time: 2025-05-13 17:57
+✓ Successfully updated index.html with time: 2025-05-13 17:57
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 05/13/2025 11:05:03.67] Checking file modifications... 
-[Tue 05/13/2025 11:05:03.68] data.js last modified: 05/13/2025 11:05 AM 
-[Tue 05/13/2025 11:05:03.68] index.html last modified: 05/13/2025 11:05 AM 
-[Tue 05/13/2025 11:05:03.70] Setting up Git credential helper... 
-[Tue 05/13/2025 11:05:03.75] Adding files to Git... 
+[Tue 05/13/2025 17:57:47.70] Checking file modifications... 
+[Tue 05/13/2025 17:57:47.71] data.js last modified: 05/13/2025 05:57 PM 
+[Tue 05/13/2025 17:57:47.71] index.html last modified: 05/13/2025 05:57 PM 
+[Tue 05/13/2025 17:57:47.73] Setting up Git credential helper... 
+[Tue 05/13/2025 17:57:47.77] Adding files to Git... 

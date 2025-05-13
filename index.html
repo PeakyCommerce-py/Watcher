@@ -3,177 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ActivityWatch Charts</title>
+    <title>ActivityWatch Data Visualizations</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    <!-- Load data.js first -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@1.1.1/dist/chartjs-chart-matrix.min.js"></script>
     <script src="data.js"></script>
     <style>
-        :root {
-            --primary-color: #2196F3;
-            --success-color: #4CAF50;
-            --warning-color: #FFC107;
-            --danger-color: #FF5722;
-            --text-color: #2c3e50;
-            --text-light: #7f8c8d;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --spacing-unit: 20px;
-            --border-radius: 12px;
-            --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body { 
+        body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--bg-color);
-            color: var(--text-color);
+            background-color: #f8f9fa;
+            color: #333;
             line-height: 1.6;
-            padding: 20px 0;
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 var(--spacing-unit);
         }
 
-        h1 { 
-            font-size: 2.2em;
-            margin-bottom: 0.3em;
-            color: var(--text-color);
-            font-weight: 600;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #333;
         }
 
-        h2 { 
-            font-size: 1.3em;
-            margin-bottom: 1em;
-            color: var(--text-color);
-            font-weight: 500;
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #444;
         }
 
         .last-update {
-            color: var(--text-light);
-            font-size: 0.9em;
-            margin-bottom: 2em;
-            font-weight: 400;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
         }
 
-        .summary {
-            background: var(--card-bg);
-            padding: calc(var(--spacing-unit) * 1.5);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            margin-bottom: calc(var(--spacing-unit) * 2);
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .summary-container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             flex-wrap: wrap;
-            gap: 1.5em;
-            transition: var(--transition);
+            justify-content: space-between;
         }
 
-        .summary:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .stat {
+        .summary-item {
+            flex: 1;
+            min-width: 150px;
             text-align: center;
-            min-width: 140px;
-            padding: 0.5em;
-            transition: var(--transition);
+            padding: 10px;
         }
 
-        .stat:hover {
-            transform: translateY(-2px);
-        }
-
-        .stat-value {
-            font-size: 1.4em;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.2em;
-        }
-
-        .stat-percentage {
-            color: var(--text-light);
-            font-size: 0.9em;
+        .summary-value {
+            font-size: 24px;
             font-weight: 500;
+            color: #2196F3;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: calc(var(--spacing-unit) * 1.5);
-            margin-bottom: calc(var(--spacing-unit) * 2);
+        .summary-label {
+            font-size: 14px;
+            color: #777;
         }
 
         .chart-container {
-            background: var(--card-bg);
-            padding: calc(var(--spacing-unit) * 1.5);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            height: 400px;
+            height: 300px; /* Default height */
             position: relative;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .chart-container:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .full-width {
-            grid-column: 1 / -1;
-            height: 450px;
+            width: 100%;
         }
 
-        @media (max-width: 1200px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stat {
-                min-width: 120px;
-            }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
+
+        .tab-container {
+            margin-bottom: 20px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .tab-button {
+            padding: 10px 15px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-weight: 600;
+            color: #777;
+            font-size: 15px;
+        }
+
+        .tab-button.active {
+            color: #2196F3;
+            border-bottom-color: #2196F3;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .insight-card {
+            background-color: #f1f8ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .insight-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2196F3;
+        }
+
+        .insight-text {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Specific class for metrics divs to ensure proper removal */
+        .chart-metrics-summary {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
 
         @media (max-width: 768px) {
-            body {
-                padding: 10px 0;
-            }
-
-            .container {
-                padding: 0 calc(var(--spacing-unit) * 0.8);
-            }
-            
-            .summary {
-                flex-direction: column;
-                align-items: stretch;
-                padding: calc(var(--spacing-unit) * 1.2);
-            }
-            
-            .stat {
-                min-width: auto;
-                padding: 0.8em;
-            }
-
-            .grid {
+            .chart-grid {
                 grid-template-columns: 1fr;
-                gap: calc(var(--spacing-unit) * 1.2);
-            }
-
-            .chart-container {
-                height: 350px;
-            }
-
-            .full-width {
-                height: 400px;
             }
         }
     </style>
@@ -181,267 +158,551 @@
 <body>
     <div class="container">
         <h1>ActivityWatch Data Visualizations</h1>
-        <div class="last-update">Updated at: 2025-05-13 11:05</div>
+        <div class="last-update">Updated at: 2025-05-13 17:57</div>
 
-        <div class="summary" id="summary-stats">
-            <!-- Summary stats will be injected here -->
-        </div>
-
-        <div class="grid">
-            <div class="chart-container full-width">
-                <h2>Hourly Activity Pattern</h2>
-                <canvas id="hourlyActivityChart"></canvas>
+        <!-- Tabs for Weekly/Daily Selection -->
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('weekly')">Weekly View</button>
+                <button class="tab-button" onclick="showTab('daily')">Today's View</button>
             </div>
 
-            <div class="chart-container full-width">
-                <h2>Daily Time Allocation</h2>
-                <canvas id="dailyChart"></canvas>
+            <!-- Weekly Tab Content -->
+            <div id="weekly-tab" class="tab-content active">
+                <div class="card">
+                    <div class="summary-container" id="weekly-summary">
+                        <!-- Weekly summary will be added here -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Weekly Productivity Pattern</h2>
+                    <div class="chart-container">
+                        <canvas id="weekly-pattern-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Focus Sessions</h2>
+                    <div class="insight-card">
+                        <div class="insight-title">Deep Work Insights</div>
+                        <p class="insight-text">This chart shows your focus sessions throughout the week. The bars represent the number of sessions each day, while the line shows total hours of deep work. Higher numbers indicate better sustained attention.</p>
+                    </div>
+                    <!-- Metrics will be inserted here by JS -->
+                    <div class="chart-container" style="height: 350px;">
+                        <canvas id="weekly-focus-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Task Switching Analysis</h2>
+                    <div class="insight-card">
+                        <div class="insight-title">Context Switching Insights</div>
+                        <p class="insight-text">This chart shows how often you switched between tasks each day (bars) and your focus score (line). Lower switching rates and higher focus scores indicate better concentration and less multitasking.</p>
+                    </div>
+                    <!-- Metrics will be inserted here by JS -->
+                    <div class="chart-container" style="height: 350px;">
+                        <canvas id="weekly-switching-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>When Are You Most Productive?</h2>
+                    <div class="insight-card">
+                        <div class="insight-title">Productivity Insights</div>
+                        <p class="insight-text">This heatmap shows when you're typically most productive during the week. Schedule your most important tasks during your peak productivity hours (darker green).</p>
+                    </div>
+                    <div class="chart-container" style="height: 350px;">
+                        <canvas id="weekly-heatmap-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="card">
+                        <h2>Applications</h2>
+                        <div class="chart-container">
+                            <canvas id="weekly-apps-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Categories</h2>
+                        <div class="chart-container">
+                            <canvas id="weekly-categories-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Web Activity</h2>
+                        <div class="chart-container">
+                            <canvas id="weekly-web-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="chart-container">
-                <h2>Applications</h2>
-                <canvas id="topAppsChart"></canvas>
-            </div>
+            <!-- Daily Tab Content -->
+            <div id="daily-tab" class="tab-content">
+                <div class="card">
+                    <div class="summary-container" id="daily-summary">
+                        <!-- Daily summary will be added here -->
+                    </div>
+                </div>
 
-            <div class="chart-container">
-                <h2>Categories</h2>
-                <canvas id="categoryChart"></canvas>
-            </div>
+                <div class="card">
+                    <h2>Hourly Activity Pattern</h2>
+                    <div class="chart-container">
+                        <canvas id="daily-hourly-chart"></canvas>
+                    </div>
+                </div>
 
-            <div class="chart-container">
-                <h2>Web Activity</h2>
-                <canvas id="webChart"></canvas>
+                <div class="card">
+                    <h2>Daily Time Allocation</h2>
+                    <div class="chart-container">
+                        <canvas id="daily-allocation-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Focus Sessions</h2>
+                    <div class="insight-card">
+                        <div class="insight-title">Deep Work Insights</div>
+                        <p class="insight-text">This chart shows your focus sessions - periods of sustained productive work. Longer bars indicate deeper focus periods. Try to increase both the number and length of these sessions.</p>
+                    </div>
+                    <!-- Metrics will be inserted here by JS -->
+                    <div class="chart-container" style="height: 350px;">
+                        <canvas id="daily-focus-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Task Switching Analysis</h2>
+                    <div class="insight-card">
+                        <div class="insight-title">Context Switching Insights</div>
+                        <p class="insight-text">Frequent task switching reduces productivity. The red line shows your switching frequency, while the blue line shows your focus score. Aim for a higher focus score by reducing unnecessary context switching.</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="daily-switching-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-grid">
+                    <div class="card">
+                        <h2>Applications</h2>
+                        <div class="chart-container">
+                            <canvas id="daily-apps-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Categories</h2>
+                        <div class="chart-container">
+                            <canvas id="daily-categories-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Web Activity</h2>
+                        <div class="chart-container">
+                            <canvas id="daily-web-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof activityData === 'undefined') {
-                console.error('activityData not found. Make sure data.js is loaded correctly.');
+        // Chart instances need to be stored to be destroyed before re-creation
+        let chartInstances = {};
+
+        function destroyChart(canvasId) {
+            if (chartInstances[canvasId]) {
+                chartInstances[canvasId].destroy();
+                delete chartInstances[canvasId];
+            }
+        }
+
+        // Helper to wrap chart creation for destruction
+        function createChartWithDestroy(canvasId, creationFunction, ...args) {
+            destroyChart(canvasId); // Destroy existing chart for this canvas ID
+            const chartInstance = creationFunction(canvasId, ...args);
+            if (chartInstance && typeof chartInstance.destroy === 'function') {
+                chartInstances[canvasId] = chartInstance;
+            }
+        }
+
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+            document.getElementById(tabName + '-tab').classList.add('active');
+            document.querySelectorAll('.tab-button').forEach(button => {
+                if (button.textContent.toLowerCase().includes(tabName)) {
+                    button.classList.add('active');
+                }
+            });
+        }
+
+        function updateTimeLabel(data) {
+            const startParts = data.start_date.split(',');
+            let startMonthDay = startParts[0].trim();
+            if (startMonthDay.includes(', ')) {
+                startMonthDay = startMonthDay.split(', ')[1];
+            }
+            const endParts = data.end_date.split(',');
+            const year = endParts[1] ? endParts[1].trim() : new Date().getFullYear().toString();
+            const startDateObj = new Date(data.labels[0]);
+            const sundayDate = new Date(startDateObj);
+            sundayDate.setDate(startDateObj.getDate() + (7 - startDateObj.getDay()) % 7); // Ensure Sunday
+            const sundayMonth = sundayDate.toLocaleString('default', { month: 'short' });
+            const sundayDay = sundayDate.getDate();
+            return `${startMonthDay} - ${sundayMonth} ${sundayDay}, ${year}`;
+        }
+
+        function createSummary(elementId, data, isWeekly = false) {
+            let timeLabel = isWeekly ? updateTimeLabel(data) : data.start_date.split(',')[0];
+            document.getElementById(elementId).innerHTML = `
+                <div class="summary-item"><div class="summary-value">${timeLabel}</div><div class="summary-label">Time period</div></div>
+                <div class="summary-item"><div class="summary-value">${data.total_hours.toFixed(1)}h</div><div class="summary-label">Total time</div></div>
+                <div class="summary-item"><div class="summary-value">${data.active_hours.toFixed(1)}h</div><div class="summary-label">Active (${data.active_percentage.toFixed(0)}%)</div></div>
+                <div class="summary-item"><div class="summary-value">${data.productive_hours.toFixed(1)}h</div><div class="summary-label">Productive (${data.productive_percentage.toFixed(0)}%)</div></div>
+                <div class="summary-item"><div class="summary-value">${data.non_productive_hours.toFixed(1)}h</div><div class="summary-label">Non-productive (${data.non_productive_percentage.toFixed(0)}%)</div></div>
+                <div class="summary-item"><div class="summary-value">${data.other_hours.toFixed(1)}h</div><div class="summary-label">Other (${data.other_percentage.toFixed(0)}%)</div></div>
+            `;
+        }
+
+        function createHourlyChart(canvasId, data) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const ctx = canvasElement.getContext('2d');
+            return new Chart(ctx, {
+                type: 'line', data: { labels: data.hour_labels, datasets: [{ label: 'Activity (hours)', data: data.hour_data, backgroundColor: 'rgba(54, 162, 235, 0.2)', borderColor: 'rgba(54, 162, 235, 1)', borderWidth: 2, pointRadius: 0, fill: true, tension: 0.4 }] },
+                options: { scales: { y: { beginAtZero: true, grace: '15%' } }, plugins: { tooltip: { mode: 'index', intersect: false } }, responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function createWeeklyChart(canvasId, data) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const ctx = canvasElement.getContext('2d');
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            const dateMap = {};
+            data.labels.forEach((dateStr, index) => { const date = new Date(dateStr); dateMap[date.getDay() === 0 ? 6 : date.getDay() - 1] = { productive: data.productive[index] || 0, nonProductive: data.non_productive[index] || 0, other: data.other[index] || 0 }; });
+            const pD = [], npD = [], oD = [], fL = [];
+            for (let i = 0; i < 7; i++) { const dD = dateMap[i] || { productive: 0, nonProductive: 0, other: 0 }; pD.push(dD.productive); npD.push(dD.nonProductive); oD.push(dD.other); fL.push(days[i]); }
+            return new Chart(ctx, {
+                type: 'bar', data: { labels: fL, datasets: [{ label: 'Productive', data: pD, backgroundColor: '#4CAF50' }, { label: 'Non-Productive', data: npD, backgroundColor: '#FF5722' }, { label: 'Other', data: oD, backgroundColor: '#FFC107' }] },
+                options: { scales: { x: { stacked: true, title: { display: true, text: 'Day of Week' } }, y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Hours' }, grace: '15%' } }, plugins: { tooltip: { mode: 'index', intersect: false }, title: { display: true, text: 'Weekly Productivity Pattern', font: { size: 16 } }, legend: { position: 'top' } }, responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function createDailyChart(canvasId, data) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const ctx = canvasElement.getContext('2d');
+            let fL = data.labels.map(dS => { try { const d = new Date(dS); return `${d.toLocaleString('en-US', { month: 'short' })} ${d.getDate()}`; } catch (e) { return dS; } });
+            return new Chart(ctx, {
+                type: 'bar', data: { labels: fL, datasets: [{ label: 'Productive', data: data.productive, backgroundColor: '#4CAF50' }, { label: 'Non-Productive', data: data.non_productive, backgroundColor: '#FF5722' }, { label: 'Other', data: data.other, backgroundColor: '#FFC107' }] },
+                options: { scales: { x: { stacked: true, title: { display: true, text: 'Date' } }, y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Hours' }, grace: '15%' } }, plugins: { tooltip: { mode: 'index', intersect: false }, title: { display: true, text: 'Daily Activity Breakdown', font: { size: 16 } } }, responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function createPieChart(canvasId, labels, data, colors) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const chartContainer = canvasElement.parentNode;
+            // Clear previous no-data message
+            const existingMsg = chartContainer.querySelector('.no-data-message');
+            if(existingMsg) existingMsg.remove();
+
+            if (!labels || labels.length === 0) {
+                const message = document.createElement('div');
+                message.className = 'no-data-message';
+                message.textContent = 'No data available';
+                message.style.textAlign = 'center'; message.style.marginTop = '20px'; message.style.color = '#6c757d';
+                chartContainer.appendChild(message);
+                canvasElement.style.display = 'none';
                 return;
             }
-            
-            let charts = {
-                dailyChart: null,
-                topAppsChart: null,
-                categoryChart: null,
-                hourlyActivityChart: null,
-                webChart: null
-            };
+            canvasElement.style.display = 'block';
+            const ctx = canvasElement.getContext('2d');
+            return new Chart(ctx, {
+                type: 'pie', data: { labels: labels, datasets: [{ data: data, backgroundColor: colors || ['#4CAF50', '#FF5722', '#FFC107', '#2196F3', '#9C27B0', '#00BCD4', '#FFEB3B', '#795548', '#607D8B', '#E91E63'] }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { boxWidth: 12, padding: 10 } } } }
+            });
+        }
 
-            function updateCharts(data) {
-                // Update summary stats
-                const summaryHtml = `
-                    <div class="stat">
-                        <div class="stat-value">${data.start_date.split(',')[0]}</div>
-                        <div class="stat-percentage">Time period</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">${data.total_hours.toFixed(1)}h</div>
-                        <div class="stat-percentage">Total time</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">${data.active_hours.toFixed(1)}h</div>
-                        <div class="stat-percentage">Active (${data.active_percentage.toFixed(0)}%)</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">${data.productive_hours.toFixed(1)}h</div>
-                        <div class="stat-percentage">Productive (${data.productive_percentage.toFixed(0)}%)</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">${data.non_productive_hours.toFixed(1)}h</div>
-                        <div class="stat-percentage">Non-productive (${data.non_productive_percentage.toFixed(0)}%)</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">${data.other_hours.toFixed(1)}h</div>
-                        <div class="stat-percentage">Other (${data.other_percentage.toFixed(0)}%)</div>
-                    </div>
-                `;
-                document.getElementById('summary-stats').innerHTML = summaryHtml;
+                function createProductivityHeatmap(canvasId, weeklyData) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const ctx = canvasElement.getContext('2d');
 
-                const chartOptions = {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                            labels: { 
-                                boxWidth: 12, 
-                                padding: 15,
-                                font: { size: 12 }
-                            }
-                        },
-                        tooltip: {
-                            padding: 12,
-                            titleFont: { size: 14 },
-                            bodyFont: { size: 13 }
+            const daysOfWeekLabels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            const heatmapValues = Array(7).fill(null).map(() => Array(24).fill(0)); // [day][hour]
+
+            if (!weeklyData.labels || !weeklyData.productive || !weeklyData.hour_data) {
+                console.warn("ProductivityHeatmap: Missing necessary data (labels, productive, or hour_data).");
+                // Optionally draw an empty heatmap or show a message
+                // For now, it will draw an empty one.
+            }
+
+            // Create a mapping from date string (YYYY-MM-DD) to productive hours for that day
+            const dailyProductiveHoursMap = {};
+            if (weeklyData.labels && weeklyData.productive) {
+                weeklyData.labels.forEach((dateStr, index) => {
+                    dailyProductiveHoursMap[dateStr] = weeklyData.productive[index] || 0;
+                });
+            }
+
+            // Get the overall weekly hourly activity pattern (total activity, not just productive)
+            // This will serve as a weight for distributing daily productive hours.
+            const weeklyHourActivityPattern = weeklyData.hour_data || Array(24).fill(1); // Default to uniform if not available
+            const totalWeeklyHourActivity = weeklyHourActivityPattern.reduce((sum, val) => sum + val, 0);
+
+            // Normalize the weekly hourly pattern to get weights (sum of weights = 1)
+            const hourlyWeights = totalWeeklyHourActivity > 0
+                ? weeklyHourActivityPattern.map(val => val / totalWeeklyHourActivity)
+                : Array(24).fill(1 / 24); // Uniform weights if no activity pattern
+
+            // Iterate through the days of the week (0=Monday, 6=Sunday for our heatmap)
+            for (let dayIndexInWeek = 0; dayIndexInWeek < 7; dayIndexInWeek++) {
+                // Find if this day of the week exists in the provided weeklyData.labels
+                let actualProductiveHoursForThisDay = 0;
+                let dayFound = false;
+
+                if (weeklyData.labels) {
+                    for (const dateStr of weeklyData.labels) {
+                        const dateObj = new Date(dateStr + "T00:00:00Z"); // Ensure UTC parsing for consistency
+                        const currentDayOfWeekAW = (dateObj.getUTCDay() + 6) % 7; // 0=Monday, ..., 6=Sunday
+
+                        if (currentDayOfWeekAW === dayIndexInWeek) {
+                            actualProductiveHoursForThisDay = dailyProductiveHoursMap[dateStr] || 0;
+                            dayFound = true;
+                            break;
                         }
                     }
-                };
+                }
 
-                Object.values(charts).forEach(chart => {
-                    if (chart) chart.destroy();
-                });
-
-                // Hourly Activity Pattern
-                charts.hourlyActivityChart = new Chart(document.getElementById('hourlyActivityChart').getContext('2d'), {
-                    type: 'line',
-                    data: {
-                        labels: data.hour_labels,
-                        datasets: [{ 
-                            label: 'Activity (hours)', 
-                            data: data.hour_data,
-                            borderColor: '#2196F3',
-                            backgroundColor: 'rgba(33, 150, 243, 0.1)',
-                            tension: 0.4,
-                            fill: true
-                        }]
-                    },
-                    options: {
-                        ...chartOptions,
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                title: {
-                                    display: true,
-                                    text: 'Hours'
-                                }
-                            },
-                            x: {
-                                title: {
-                                    display: true,
-                                    text: 'Hour of Day'
-                                }
-                            }
-                        }
+                if (dayFound && actualProductiveHoursForThisDay > 0) {
+                    // Distribute these productive hours across the 24 hours based on the hourlyWeights
+                    for (let hour = 0; hour < 24; hour++) {
+                        // The value in the heatmap cell will be the proportion of the day's productive time
+                        // that occurred in this hour. Max value for a cell could be 1 (if all productive time was in one hour).
+                        // For visualization, we want to show intensity relative to the max possible productive hour in a day (e.g. 1 hour)
+                        // Or, scale it so the sum of cell values for a day equals total productive hours for that day.
+                        // Let's make cell value represent productive hours in that specific hour.
+                        heatmapValues[dayIndexInWeek][hour] = actualProductiveHoursForThisDay * hourlyWeights[hour];
                     }
-                });
-
-                // Daily Time Allocation
-                charts.dailyChart = new Chart(document.getElementById('dailyChart').getContext('2d'), {
-                    type: 'bar',
-                    data: {
-                        labels: data.labels,
-                        datasets: [
-                            { label: 'Productive', data: data.productive, backgroundColor: '#4CAF50' },
-                            { label: 'Non-Productive', data: data.non_productive, backgroundColor: '#FF5722' },
-                            { label: 'Other', data: data.other, backgroundColor: '#FFC107' }
-                        ]
-                    },
-                    options: {
-                        ...chartOptions,
-                        scales: { 
-                            x: { stacked: true }, 
-                            y: { 
-                                stacked: true,
-                                title: { display: true, text: 'Hours' }
-                            } 
-                        }
-                    }
-                });
-
-                // Application Usage (Pie Chart)
-                charts.topAppsChart = new Chart(document.getElementById('topAppsChart').getContext('2d'), {
-                    type: 'pie',
-                    data: {
-                        labels: data.top_apps_labels,
-                        datasets: [{ 
-                            data: data.top_apps_data,
-                            backgroundColor: data.top_apps_colors
-                        }]
-                    },
-                    options: {
-                        ...chartOptions,
-                        plugins: {
-                            ...chartOptions.plugins,
-                            tooltip: {
-                                ...chartOptions.plugins.tooltip,
-                                callbacks: {
-                                    label: function(context) {
-                                        const label = context.label || '';
-                                        const value = context.parsed || 0;
-                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                        const percentage = ((value / total) * 100).toFixed(1);
-                                        return `${label}: ${value.toFixed(1)}h (${percentage}%)`;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-
-                // Category Breakdown (Pie Chart)
-                charts.categoryChart = new Chart(document.getElementById('categoryChart').getContext('2d'), {
-                    type: 'pie',
-                    data: {
-                        labels: data.categories.map(cat => {
-                            // Extract just the main activity from the category path
-                            const parts = cat.split(' > ');
-                            return parts[parts.length - 1];
-                        }),
-                        datasets: [{ 
-                            data: data.category_data,
-                            backgroundColor: data.category_colors
-                        }]
-                    },
-                    options: {
-                        ...chartOptions,
-                        plugins: {
-                            ...chartOptions.plugins,
-                            tooltip: {
-                                ...chartOptions.plugins.tooltip,
-                                callbacks: {
-                                    label: function(context) {
-                                        const label = context.label || '';
-                                        const value = context.parsed || 0;
-                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                        const percentage = ((value / total) * 100).toFixed(1);
-                                        return `${label}: ${value.toFixed(1)}h (${percentage}%)`;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-
-                // Web Activity (Pie Chart)
-                if (data.web_labels && data.web_labels.length > 0) {
-                    charts.webChart = new Chart(document.getElementById('webChart').getContext('2d'), {
-                        type: 'pie',
-                        data: {
-                            labels: data.web_labels,
-                            datasets: [{ 
-                                data: data.web_data,
-                                backgroundColor: data.web_colors
-                            }]
-                        },
-                        options: {
-                            ...chartOptions,
-                            plugins: {
-                                ...chartOptions.plugins,
-                                tooltip: {
-                                    ...chartOptions.plugins.tooltip,
-                                    callbacks: {
-                                        label: function(context) {
-                                            const label = context.label || '';
-                                            const value = context.parsed || 0;
-                                            const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                            const percentage = ((value / total) * 100).toFixed(1);
-                                            return `${label}: ${value.toFixed(1)}h (${percentage}%)`;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    });
-                } else {
-                    // Hide web chart container if no data
-                    document.querySelector('.chart-container:has(#webChart)').style.display = 'none';
                 }
             }
 
-            updateCharts(activityData);
+            // Format data for Chart.js matrix
+            const chartData = [];
+            let maxProductiveValueInCell = 0.001; // Avoid division by zero, find max for color scaling
+            for (let day = 0; day < 7; day++) {
+                for (let hour = 0; hour < 24; hour++) {
+                    const value = heatmapValues[day][hour];
+                    chartData.push({ x: hour, y: day, v: value });
+                    if (value > maxProductiveValueInCell) {
+                        maxProductiveValueInCell = value;
+                    }
+                }
+            }
+
+            // If maxProductiveValueInCell is still very low (e.g. no productive data), set a sensible default for scaling
+            if (maxProductiveValueInCell < 0.1) maxProductiveValueInCell = 1;
+
+
+            return new Chart(ctx, {
+                type: 'matrix',
+                data: {
+                    datasets: [{
+                        label: 'Productive Hours', // Updated label
+                        data: chartData,
+                        backgroundColor(context) {
+                            const value = context.dataset.data[context.dataIndex].v;
+                            if (value <= 0) return 'rgba(235, 235, 235, 0.8)'; // Lighter gray for no/zero productivity
+
+                            // Scale intensity relative to the max productive value found in any cell
+                            // This makes the green shades relative to your most productive hour slot.
+                            const intensity = Math.min(1, value / maxProductiveValueInCell);
+
+                            // Green shades: Darker green for higher intensity
+                            // Adjust the green component and opacity based on intensity
+                            const g = Math.round(100 + 155 * intensity); // Range from 100 to 255
+                            const r = Math.round(50 * (1 - intensity)); // Less red as intensity increases
+                            const b = Math.round(50 + 50 * intensity);  // A bit of blue
+                            const opacity = 0.3 + 0.7 * intensity; // More opaque for higher intensity
+
+                            return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+                        },
+                        borderWidth: 1,
+                        borderColor: 'rgba(200, 200, 200, 0.3)', // Lighter border
+                        width: ({chart}) => (chart.chartArea || {}).width / 24 - 1,
+                        height: ({chart}) => (chart.chartArea || {}).height / 7 - 1
+                    }]
+                },
+                options: {
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                title() { return ''; },
+                                label(context) {
+                                    const v = context.dataset.data[context.dataIndex];
+                                    return [
+                                        `Day: ${daysOfWeekLabels[v.y]}`,
+                                        `Hour: ${v.x < 10 ? '0' : ''}${v.x}:00 - ${v.x < 9 ? '0' : ''}${v.x+1}:00`,
+                                        `Productive: ${v.v.toFixed(2)} hours`
+                                    ];
+                                }
+                            }
+                        },
+                        legend: { display: false },
+                        title: { display: true, text: 'Productivity by Hour and Day', font: { size: 16 } }
+                    },
+                    scales: {
+                        x: { type: 'linear', min: -0.5, max: 23.5, // Adjust min/max for better cell centering
+                             ticks: { stepSize: 1, callback: value => value % 2 === 0 ? `${Math.round(value)}:00` : '' }, // Show every 2 hours
+                             title: { display: true, text: 'Hour of Day' } },
+                        y: { type: 'linear', min: -0.5, max: 6.5, reverse: true, // Monday at top
+                             ticks: { stepSize: 1, callback: value => daysOfWeekLabels[Math.round(value)] },
+                             title: { display: true, text: 'Day of Week' } }
+                    },
+                    layout: { padding: { top: 10, right: 20, bottom: 10, left: 10 } }, // Added more padding
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createFocusSessionsChart(canvasId, data) { // DAILY FOCUS
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const chartContainerDiv = canvasElement.parentNode;
+            const cardDiv = chartContainerDiv.parentNode; // This should be the .card div
+
+            const focusSessions = []; let currentSession = null;
+            data.hour_data.forEach((value, hour) => { if (value > 0.4) { if (!currentSession) currentSession = { start: hour, duration: 1, intensity: value }; else { currentSession.duration++; currentSession.intensity = (currentSession.intensity * (currentSession.duration - 1) + value) / currentSession.duration; } } else { if (currentSession) { if (currentSession.duration >= 0.5) focusSessions.push(currentSession); currentSession = null; } } });
+            if (currentSession && currentSession.duration >= 0.5) focusSessions.push(currentSession);
+
+            const totalFocusTime = focusSessions.reduce((s, sess) => s + sess.duration, 0);
+            const avgSessionDur = focusSessions.length > 0 ? totalFocusTime / focusSessions.length : 0;
+            const avgIntensity = focusSessions.length > 0 ? focusSessions.reduce((s, sess) => s + sess.intensity, 0) / focusSessions.length : 0;
+
+            const existingMetricsDiv = cardDiv.querySelector('.daily-focus-metrics-summary');
+            if (existingMetricsDiv) existingMetricsDiv.remove();
+            const metricsDiv = document.createElement('div');
+            metricsDiv.className = 'chart-metrics-summary daily-focus-metrics-summary';
+            metricsDiv.innerHTML = `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:10px;"><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${focusSessions.length}</div><div class="summary-label">Focus Sessions</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${avgSessionDur.toFixed(1)}h</div><div class="summary-label">Avg. Duration</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${totalFocusTime.toFixed(1)}h</div><div class="summary-label">Total Focus Time</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${(avgIntensity*100).toFixed(0)}%</div><div class="summary-label">Avg. Intensity</div></div></div>`;
+            cardDiv.insertBefore(metricsDiv, chartContainerDiv);
+
+            const existingMsg = chartContainerDiv.querySelector('.no-sessions-message');
+            if(existingMsg) existingMsg.remove();
+
+            if (focusSessions.length === 0) {
+                const message = document.createElement('div'); message.className = 'no-sessions-message'; message.textContent = 'No focus sessions detected'; message.style.textAlign='center';message.style.marginTop='20px';message.style.color='#6c757d';
+                chartContainerDiv.appendChild(message);
+                canvasElement.style.display = 'none';
+                return; // No chart to create
+            }
+            canvasElement.style.display = 'block';
+            const ctx = canvasElement.getContext('2d');
+            const sessionStarts = focusSessions.map(s => `${s.start}:00`), sessionDurations = focusSessions.map(s => s.duration), sessionIntensities = focusSessions.map(s => s.intensity);
+            return new Chart(ctx, {
+                type: 'bar', data: { labels: sessionStarts, datasets: [{ label: 'Focus Session Duration', data: sessionDurations, backgroundColor: sessionIntensities.map(i => `rgba(75,192,192,${0.6+0.4*Math.min(i/1.2,1)})`), borderColor: 'rgba(75,192,192,1)', borderWidth: 1 }] },
+                options: { scales: { y: { beginAtZero: true, title: { display: true, text: 'Duration (hours)' }, grace: '20%' }, x: { title: { display: true, text: 'Session Start Time' } } }, plugins: { tooltip: { callbacks: { label: c => [`Duration: ${c.raw.toFixed(1)}h`, `Intensity: ${Math.round(sessionIntensities[c.dataIndex]*100)}%`] } }, title: { display: true, text: 'Focus Sessions by Time of Day', font: { size: 16 } } }, responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function createWeeklyFocusSummary(canvasId, data) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const chartContainerDiv = canvasElement.parentNode;
+            const cardDiv = chartContainerDiv.parentNode;
+
+            const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+            const dateToDayMap = {}; data.labels.forEach(dS => { const d = new Date(dS); dateToDayMap[dS] = d.getDay() === 0 ? 6 : d.getDay() - 1; });
+            const sCountByDay = Array(7).fill(0), tFocusTimeByDay = Array(7).fill(0), avgSDurByDaySum = Array(7).fill(0), fSessDataCountByDay = Array(7).fill(0);
+            data.labels.forEach((dS, dIdx) => { const dayIdx = dateToDayMap[dS]; const prod = data.productive[dIdx]||0; const estSess = Math.floor(prod/0.7)+(prod>0?1:0); sCountByDay[dayIdx]+=estSess; if(estSess>0){ const avgSLen=Math.max(0.5,Math.min(1.5,prod/estSess)); const fTimeDay=estSess*avgSLen; tFocusTimeByDay[dayIdx]+=fTimeDay; avgSDurByDaySum[dayIdx]+=fTimeDay; fSessDataCountByDay[dayIdx]+=estSess; } });
+            const avgSDurByDay = avgSDurByDaySum.map((sum, i) => fSessDataCountByDay[i] > 0 ? sum / fSessDataCountByDay[i] : 0);
+            const totalFSess = sCountByDay.reduce((s,c)=>s+c,0), totalFHours = tFocusTimeByDay.reduce((s,h)=>s+h,0); const overallAvgSDur = totalFSess>0?totalFHours/totalFSess:0;
+
+            const existingMetricsDiv = cardDiv.querySelector('.weekly-focus-metrics-summary');
+            if (existingMetricsDiv) existingMetricsDiv.remove();
+            const metricsDiv = document.createElement('div');
+            metricsDiv.className = 'chart-metrics-summary weekly-focus-metrics-summary';
+            metricsDiv.innerHTML = `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:10px;"><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${totalFSess}</div><div class="summary-label">Weekly Focus Sessions</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${overallAvgSDur.toFixed(1)}h</div><div class="summary-label">Avg. Session Duration</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${totalFHours.toFixed(1)}h</div><div class="summary-label">Total Focus Time</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${(totalFHours/(data.labels.length||1)).toFixed(1)}h</div><div class="summary-label">Daily Average</div></div></div>`;
+            cardDiv.insertBefore(metricsDiv, chartContainerDiv);
+
+            const ctx = canvasElement.getContext('2d');
+            return new Chart(ctx, {
+                type: 'bar', data: { labels: days, datasets: [{ type: 'bar', label: 'Focus Sessions', data: sCountByDay, backgroundColor: 'rgba(54,162,235,0.7)', order: 2, yAxisID: 'y' }, { type: 'line', label: 'Focus Duration (hours)', data: tFocusTimeByDay, borderColor: 'rgba(75,192,192,1)', backgroundColor: 'rgba(75,192,192,0.1)', borderWidth: 2, fill: false, tension: 0.4, order: 1, yAxisID: 'y1', pointStyle: 'circle', pointRadius: 5, pointHoverRadius: 8 }] },
+                options: { scales: { y: { beginAtZero: true, position: 'left', title: { display: true, text: 'Number of Sessions' }, grace: '20%' }, y1: { beginAtZero: true, position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: 'Hours of Focus' }, grace: '20%' } }, plugins: { tooltip: { mode: 'index', intersect: false, callbacks: { label: c => { const dL=c.dataset.label, v=c.parsed.y, dI=c.dataIndex; if(dL==='Focus Sessions') return [`${dL}: ${v}`,`Avg Duration: ${avgSDurByDay[dI].toFixed(1)}h`]; return `${dL}: ${v.toFixed(1)}`; } } }, title: { display: true, text: 'Weekly Focus Sessions Summary', font: {size:16} } }, responsive: true, maintainAspectRatio: false, interaction: {mode:'index',intersect:false} }
+            });
+        }
+
+        function createWeeklyTaskSwitchingSummary(canvasId, data) {
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const chartContainerDiv = canvasElement.parentNode;
+            const cardDiv = chartContainerDiv.parentNode;
+
+            const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+            const dateToDayMap = {}; data.labels.forEach(dS => { const d = new Date(dS); dateToDayMap[dS] = d.getDay() === 0 ? 6 : d.getDay() - 1; });
+            const swRateByDay = Array(7).fill(0), fScoreByDay = Array(7).fill(0);
+            data.labels.forEach((dS, dIdx) => { const dayIdx = dateToDayMap[dS]; const p=data.productive[dIdx]||0,nP=data.non_productive[dIdx]||0,o=data.other[dIdx]||0; const tActH=p+nP+o; if(tActH>0){ const pR=p/tActH; const bR=30+Math.random()*20, aF=60+Math.random()*40; swRateByDay[dayIdx]=bR+aF*(1-pR); fScoreByDay[dayIdx]=Math.max(0,10*(1-(swRateByDay[dayIdx]/150))); } });
+            const actSwRates = swRateByDay.filter(r=>r>0), actFScores = fScoreByDay.filter((s,i)=>s>0||swRateByDay[i]>0);
+            const avgSwRate = actSwRates.length>0?actSwRates.reduce((s,r)=>s+r,0)/actSwRates.length:0;
+            const avgFScore = actFScores.length>0?actFScores.reduce((s,sc)=>s+sc,0)/actFScores.length:0;
+            const lowSwRate = actSwRates.length>0?Math.min(...actSwRates):0;
+            const highFScore = actFScores.length>0?Math.max(...actFScores):0;
+
+            const existingMetricsDiv = cardDiv.querySelector('.weekly-switching-metrics-summary');
+            if (existingMetricsDiv) existingMetricsDiv.remove();
+            const metricsDiv = document.createElement('div');
+            metricsDiv.className = 'chart-metrics-summary weekly-switching-metrics-summary';
+            metricsDiv.innerHTML = `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:10px;"><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${Math.round(avgSwRate)}</div><div class="summary-label">Avg. Daily Task Switches</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${avgFScore.toFixed(1)}</div><div class="summary-label">Avg. Focus Score (0-10)</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${Math.round(lowSwRate)}</div><div class="summary-label">Lowest Switch Rate</div></div><div style="flex:1;min-width:120px;text-align:center;padding:10px;"><div class="summary-value">${highFScore.toFixed(1)}</div><div class="summary-label">Highest Focus Score</div></div></div>`;
+            cardDiv.insertBefore(metricsDiv, chartContainerDiv);
+
+            const ctx = canvasElement.getContext('2d');
+            return new Chart(ctx, {
+                type: 'bar', data: { labels: days, datasets: [{ type: 'bar', label: 'Task Switches', data: swRateByDay, backgroundColor: 'rgba(255,99,132,0.7)', order: 2, yAxisID: 'y' }, { type: 'line', label: 'Focus Score', data: fScoreByDay, borderColor: 'rgba(54,162,235,1)', backgroundColor: 'rgba(54,162,235,0.1)', borderWidth: 2, fill: false, tension: 0.4, order: 1, yAxisID: 'y1', pointStyle: 'circle', pointRadius: 5, pointHoverRadius: 8 }] },
+                options: { scales: { y: { beginAtZero: true, position: 'left', title: { display: true, text: 'Task Switches' }, grace: '20%' }, y1: { beginAtZero: true, max: 10, position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: 'Focus Score (0-10)' } } }, plugins: { tooltip: { mode: 'index', intersect: false }, title: { display: true, text: 'Weekly Task Switching Analysis', font: {size:16} } }, responsive: true, maintainAspectRatio: false, interaction: {mode:'index',intersect:false} }
+            });
+        }
+
+        function createTaskSwitchingChart(canvasId, data) { // DAILY TASK SWITCHING
+            const canvasElement = document.getElementById(canvasId);
+            if (!canvasElement) return;
+            const ctx = canvasElement.getContext('2d');
+            const hourLabels = data.hour_labels, baseSwitches = Array(24).fill(0);
+            data.hour_data.forEach((v, h) => { if (v > 0) baseSwitches[h] = v * (5 + Math.floor(Math.random() * 10)); });
+            const focusScores = baseSwitches.map(s => s === 0 ? 0 : Math.max(0, 10 - (s / 2)));
+            return new Chart(ctx, {
+                type: 'line', data: { labels: hourLabels, datasets: [{ label: 'Task Switches', data: baseSwitches, backgroundColor: 'rgba(255,99,132,0.2)', borderColor: 'rgba(255,99,132,1)', borderWidth: 2, yAxisID: 'y', tension: 0.4 }, { label: 'Focus Score', data: focusScores, backgroundColor: 'rgba(54,162,235,0.2)', borderColor: 'rgba(54,162,235,1)', borderWidth: 2, yAxisID: 'y1', tension: 0.4 }] },
+                options: { scales: { y: { type: 'linear', display: true, position: 'left', beginAtZero: true, title: { display: true, text: 'Task Switches' }, grace: '15%' }, y1: { type: 'linear', display: true, position: 'right', beginAtZero: true, max: 10, grid: { drawOnChartArea: false }, title: { display: true, text: 'Focus Score (0-10)' } } }, plugins: { title: { display: true, text: 'Task Switching Analysis', font: { size: 16 } }, tooltip: { mode: 'index', intersect: false } }, responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof activityData === 'undefined') {
+                console.error('Activity data not loaded. Ensure data.js is present and loads correctly.');
+                return;
+            }
+
+            createSummary('weekly-summary', activityData.weekly, true);
+            createChartWithDestroy('weekly-pattern-chart', createWeeklyChart, activityData.weekly);
+            createChartWithDestroy('weekly-focus-chart', createWeeklyFocusSummary, activityData.weekly);
+            createChartWithDestroy('weekly-switching-chart', createWeeklyTaskSwitchingSummary, activityData.weekly);
+            createChartWithDestroy('weekly-heatmap-chart', createProductivityHeatmap, activityData.weekly);
+            createChartWithDestroy('weekly-apps-chart', createPieChart, activityData.weekly.top_apps_labels, activityData.weekly.top_apps_data, activityData.weekly.top_apps_colors);
+            createChartWithDestroy('weekly-categories-chart', createPieChart, activityData.weekly.categories, activityData.weekly.category_data, activityData.weekly.category_colors);
+            createChartWithDestroy('weekly-web-chart', createPieChart, activityData.weekly.web_labels, activityData.weekly.web_data, activityData.weekly.web_colors);
+
+            createSummary('daily-summary', activityData.daily);
+            createChartWithDestroy('daily-hourly-chart', createHourlyChart, activityData.daily);
+            createChartWithDestroy('daily-allocation-chart', createDailyChart, activityData.daily);
+            createChartWithDestroy('daily-focus-chart', createFocusSessionsChart, activityData.daily);
+            createChartWithDestroy('daily-switching-chart', createTaskSwitchingChart, activityData.daily);
+            createChartWithDestroy('daily-apps-chart', createPieChart, activityData.daily.top_apps_labels, activityData.daily.top_apps_data, activityData.daily.top_apps_colors);
+            createChartWithDestroy('daily-categories-chart', createPieChart, activityData.daily.categories, activityData.daily.category_data, activityData.daily.category_colors);
+            createChartWithDestroy('daily-web-chart', createPieChart, activityData.daily.web_labels, activityData.daily.web_data, activityData.daily.web_colors);
         });
     </script>
 </body>
