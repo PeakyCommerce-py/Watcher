@@ -1,10 +1,10 @@
  
-[Tue 05/13/2025 18:52:27.85] Starting update 
-[Tue 05/13/2025 18:52:27.85] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 05/13/2025 18:52:27.86] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 05/13/2025 19:22:27.88] Starting update 
+[Tue 05/13/2025 19:22:27.88] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 05/13/2025 19:22:27.89] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 05/13/2025 18:52:27.99] ActivityWatch is already running 
-[Tue 05/13/2025 18:52:27.99] Running export script... 
+[Tue 05/13/2025 19:22:28.02] ActivityWatch is already running 
+[Tue 05/13/2025 19:22:28.03] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 12, 2025 to Tuesday, May 13, 2025
-Found 1431 web events
+Found 1469 web events
 
 Significant web event:
 Domain: claude
@@ -26,9 +26,14 @@ Duration: 0.15 hours
 
 Significant web event:
 Domain: claude
+Title: Optimizing SKU Structure for Large Ecommerce Inventory - Claude
+Duration: 0.10 hours
+
+Significant web event:
+Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
-Found 7686 events
+Found 7734 events
 
 Significant event:
 App: opera.exe
@@ -79,22 +84,27 @@ Categories: Work > Communication > Email
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 31.0 hours
-- Active time: 17.0 hours (54.8%)
-- AFK time: 14.0 hours (45.2%)
-- Productive time: 5.1 hours (29.9% of active time)
+- Total tracking time: 31.9 hours
+- Active time: 17.2 hours (54.0%)
+- AFK time: 14.7 hours (46.0%)
+- Productive time: 5.2 hours (30.4% of active time)
 - Non-productive time: 0.1 hours (0.5% of active time)
-- Other time: 11.8 hours (69.6% of active time)
+- Other time: 11.9 hours (69.1% of active time)
 
 Querying today's data:
 Time period: Tuesday, May 13, 2025 to Tuesday, May 13, 2025
-Found 896 web events
+Found 934 web events
 
 Significant web event:
 Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.15 hours
-Found 2124 events
+
+Significant web event:
+Domain: claude
+Title: Optimizing SKU Structure for Large Ecommerce Inventory - Claude
+Duration: 0.10 hours
+Found 2172 events
 
 Significant event:
 App: opera.exe
@@ -127,24 +137,24 @@ Categories: Work > Communication > Email
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 12.3 hours
-- Active time: 6.3 hours (51.3%)
-- AFK time: 6.0 hours (48.7%)
-- Productive time: 1.7 hours (27.2% of active time)
+- Total tracking time: 13.2 hours
+- Active time: 6.6 hours (49.7%)
+- AFK time: 6.7 hours (50.3%)
+- Productive time: 1.9 hours (28.8% of active time)
 - Non-productive time: 0.0 hours (0.2% of active time)
-- Other time: 4.6 hours (72.6% of active time)
+- Other time: 4.7 hours (71.1% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-13 18:52
-✓ Successfully updated index.html with time: 2025-05-13 18:52
+Using direct UTC+4 offset time: 2025-05-13 19:22
+✓ Successfully updated index.html with time: 2025-05-13 19:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 05/13/2025 18:52:29.75] Checking file modifications... 
-[Tue 05/13/2025 18:52:29.76] data.js last modified: 05/13/2025 06:52 PM 
-[Tue 05/13/2025 18:52:29.76] index.html last modified: 05/13/2025 06:52 PM 
-[Tue 05/13/2025 18:52:29.78] Setting up Git credential helper... 
-[Tue 05/13/2025 18:52:29.82] Adding files to Git... 
+[Tue 05/13/2025 19:22:29.90] Checking file modifications... 
+[Tue 05/13/2025 19:22:29.91] data.js last modified: 05/13/2025 07:22 PM 
+[Tue 05/13/2025 19:22:29.91] index.html last modified: 05/13/2025 07:22 PM 
+[Tue 05/13/2025 19:22:29.93] Setting up Git credential helper... 
+[Tue 05/13/2025 19:22:29.98] Adding files to Git... 
