@@ -1,10 +1,10 @@
  
-[Wed 05/14/2025 21:22:27.87] Starting update 
-[Wed 05/14/2025 21:22:27.87] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Wed 05/14/2025 21:22:27.88] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Thu 05/15/2025 10:22:27.92] Starting update 
+[Thu 05/15/2025 10:22:27.92] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Thu 05/15/2025 10:22:27.93] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Wed 05/14/2025 21:22:28.05] ActivityWatch is already running 
-[Wed 05/14/2025 21:22:28.05] Running export script... 
+[Thu 05/15/2025 10:22:28.07] ActivityWatch is already running 
+[Thu 05/15/2025 10:22:28.07] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -16,8 +16,8 @@ Available buckets:
 Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
-Time period: Monday, May 12, 2025 to Wednesday, May 14, 2025
-Found 2681 web events
+Time period: Monday, May 12, 2025 to Thursday, May 15, 2025
+Found 2765 web events
 
 Significant web event:
 Domain: claude
@@ -38,7 +38,7 @@ Significant web event:
 Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
-Found 10036 events
+Found 10155 events
 
 Significant event:
 App: opera.exe
@@ -69,6 +69,12 @@ App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.13 hours
+
+Significant event:
+App: opera.exe
+Title: Google Sheet Formulas - Claude - Opera
+Categories: Work > AI Chatting
+Duration: 0.12 hours
 
 Significant event:
 App: opera.exe
@@ -125,78 +131,37 @@ Categories: Work > Communication > Email
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 46.7 hours
-- Active time: 25.1 hours (53.7%)
-- AFK time: 21.6 hours (46.3%)
-- Productive time: 6.9 hours (27.4% of active time)
-- Non-productive time: 0.1 hours (0.6% of active time)
-- Other time: 18.1 hours (72.0% of active time)
+- Total tracking time: 47.6 hours
+- Active time: 25.5 hours (53.6%)
+- AFK time: 22.1 hours (46.4%)
+- Productive time: 7.0 hours (27.5% of active time)
+- Non-productive time: 0.1 hours (0.5% of active time)
+- Other time: 18.4 hours (72.0% of active time)
 
 Querying today's data:
-Time period: Wednesday, May 14, 2025 to Wednesday, May 14, 2025
-Found 992 web events
-
-Significant web event:
-Domain: docs
-Title: 🫰THE PIM🫰 - Google Sheets
-Duration: 0.08 hours
-Found 1818 events
-
-Significant event:
-App: opera.exe
-Title: 9 - Google Kalkylark - Opera
-Categories: General > Browsing
-Duration: 0.15 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.13 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing SKU Structure for Large Ecommerce Inventory - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.09 hours
+Time period: Thursday, May 15, 2025 to Thursday, May 15, 2025
+Found 13 web events
+Found 39 events
 
 Data Collection Summary:
-- Total tracking time: 12.5 hours
-- Active time: 6.5 hours (52.0%)
-- AFK time: 6.0 hours (48.0%)
-- Productive time: 1.4 hours (21.0% of active time)
-- Non-productive time: 0.1 hours (0.8% of active time)
-- Other time: 5.1 hours (78.2% of active time)
+- Total tracking time: 0.6 hours
+- Active time: 0.1 hours (14.9%)
+- AFK time: 0.5 hours (85.1%)
+- Productive time: 0.0 hours (1.3% of active time)
+- Non-productive time: 0.0 hours (0.0% of active time)
+- Other time: 0.1 hours (98.7% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-14 21:22
-✓ Successfully updated index.html with time: 2025-05-14 21:22
+Using direct UTC+4 offset time: 2025-05-15 10:22
+✓ Successfully updated index.html with time: 2025-05-15 10:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Wed 05/14/2025 21:22:30.34] Checking file modifications... 
-[Wed 05/14/2025 21:22:30.35] data.js last modified: 05/14/2025 09:22 PM 
-[Wed 05/14/2025 21:22:30.35] index.html last modified: 05/14/2025 09:22 PM 
-[Wed 05/14/2025 21:22:30.37] Setting up Git credential helper... 
-[Wed 05/14/2025 21:22:30.45] Adding files to Git... 
+[Thu 05/15/2025 10:22:30.24] Checking file modifications... 
+[Thu 05/15/2025 10:22:30.24] data.js last modified: 05/15/2025 10:22 AM 
+[Thu 05/15/2025 10:22:30.24] index.html last modified: 05/15/2025 10:22 AM 
+[Thu 05/15/2025 10:22:30.26] Setting up Git credential helper... 
+[Thu 05/15/2025 10:22:30.33] Adding files to Git... 
