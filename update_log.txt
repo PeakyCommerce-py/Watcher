@@ -1,10 +1,10 @@
  
-[Thu 05/15/2025 18:22:27.86] Starting update 
-[Thu 05/15/2025 18:22:27.86] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Thu 05/15/2025 18:22:27.87] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Thu 05/15/2025 18:52:27.98] Starting update 
+[Thu 05/15/2025 18:52:27.98] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Thu 05/15/2025 18:52:27.99] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Thu 05/15/2025 18:22:28.02] ActivityWatch is already running 
-[Thu 05/15/2025 18:22:28.02] Running export script... 
+[Thu 05/15/2025 18:52:28.15] ActivityWatch is already running 
+[Thu 05/15/2025 18:52:28.15] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -149,9 +149,9 @@ Categories: Work > Communication > Email
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 57.3 hours
-- Active time: 30.5 hours (53.2%)
-- AFK time: 26.9 hours (46.8%)
+- Total tracking time: 57.8 hours
+- Active time: 30.5 hours (52.7%)
+- AFK time: 27.4 hours (47.3%)
 - Productive time: 8.1 hours (26.5% of active time)
 - Non-productive time: 0.2 hours (0.7% of active time)
 - Other time: 22.2 hours (72.8% of active time)
@@ -180,9 +180,9 @@ Categories: General > Browsing
 Duration: 0.10 hours
 
 Data Collection Summary:
-- Total tracking time: 10.3 hours
-- Active time: 5.0 hours (49.0%)
-- AFK time: 5.2 hours (51.0%)
+- Total tracking time: 10.8 hours
+- Active time: 5.0 hours (46.7%)
+- AFK time: 5.7 hours (53.3%)
 - Productive time: 1.1 hours (21.2% of active time)
 - Non-productive time: 0.1 hours (1.6% of active time)
 - Other time: 3.9 hours (77.2% of active time)
@@ -191,13 +191,13 @@ Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-15 18:22
-✓ Successfully updated index.html with time: 2025-05-15 18:22
+Using direct UTC+4 offset time: 2025-05-15 18:52
+✓ Successfully updated index.html with time: 2025-05-15 18:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Thu 05/15/2025 18:22:30.50] Checking file modifications... 
-[Thu 05/15/2025 18:22:30.50] data.js last modified: 05/15/2025 06:22 PM 
-[Thu 05/15/2025 18:22:30.50] index.html last modified: 05/15/2025 06:22 PM 
-[Thu 05/15/2025 18:22:30.52] Setting up Git credential helper... 
-[Thu 05/15/2025 18:22:30.57] Adding files to Git... 
+[Thu 05/15/2025 18:52:30.69] Checking file modifications... 
+[Thu 05/15/2025 18:52:30.70] data.js last modified: 05/15/2025 06:52 PM 
+[Thu 05/15/2025 18:52:30.70] index.html last modified: 05/15/2025 06:52 PM 
+[Thu 05/15/2025 18:52:30.72] Setting up Git credential helper... 
+[Thu 05/15/2025 18:52:30.77] Adding files to Git... 
