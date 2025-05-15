@@ -1,10 +1,10 @@
  
-[Thu 05/15/2025 15:22:27.88] Starting update 
-[Thu 05/15/2025 15:22:27.89] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Thu 05/15/2025 15:22:27.89] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Thu 05/15/2025 15:52:27.89] Starting update 
+[Thu 05/15/2025 15:52:27.89] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Thu 05/15/2025 15:52:27.90] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Thu 05/15/2025 15:22:28.13] ActivityWatch is already running 
-[Thu 05/15/2025 15:22:28.13] Running export script... 
+[Thu 05/15/2025 15:52:28.08] ActivityWatch is already running 
+[Thu 05/15/2025 15:52:28.08] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 12, 2025 to Thursday, May 15, 2025
-Found 3636 web events
+Found 3704 web events
 
 Significant web event:
 Domain: claude
@@ -38,7 +38,7 @@ Significant web event:
 Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
-Found 11504 events
+Found 11736 events
 
 Significant event:
 App: opera.exe
@@ -85,6 +85,12 @@ Duration: 0.12 hours
 Significant event:
 App: opera.exe
 Title: Produktnamnlängd: Faktorer och | Google AI Studio - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.11 hours
 
@@ -143,17 +149,23 @@ Categories: Work > Communication > Email
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 53.8 hours
-- Active time: 29.4 hours (54.6%)
-- AFK time: 24.4 hours (45.4%)
-- Productive time: 8.0 hours (27.1% of active time)
+- Total tracking time: 54.4 hours
+- Active time: 30.0 hours (55.1%)
+- AFK time: 24.4 hours (44.9%)
+- Productive time: 8.1 hours (27.0% of active time)
 - Non-productive time: 0.2 hours (0.7% of active time)
-- Other time: 21.2 hours (72.2% of active time)
+- Other time: 21.7 hours (72.3% of active time)
 
 Querying today's data:
 Time period: Thursday, May 15, 2025 to Thursday, May 15, 2025
-Found 884 web events
-Found 1388 events
+Found 952 web events
+Found 1620 events
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
 
 Significant event:
 App: opera.exe
@@ -168,24 +180,24 @@ Categories: General > Browsing
 Duration: 0.10 hours
 
 Data Collection Summary:
-- Total tracking time: 6.8 hours
-- Active time: 3.9 hours (58.3%)
-- AFK time: 2.8 hours (41.7%)
-- Productive time: 0.9 hours (24.0% of active time)
-- Non-productive time: 0.1 hours (2.0% of active time)
-- Other time: 2.9 hours (74.0% of active time)
+- Total tracking time: 7.3 hours
+- Active time: 4.5 hours (61.6%)
+- AFK time: 2.8 hours (38.4%)
+- Productive time: 1.1 hours (23.6% of active time)
+- Non-productive time: 0.1 hours (1.8% of active time)
+- Other time: 3.4 hours (74.6% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-15 15:22
-✓ Successfully updated index.html with time: 2025-05-15 15:22
+Using direct UTC+4 offset time: 2025-05-15 15:52
+✓ Successfully updated index.html with time: 2025-05-15 15:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Thu 05/15/2025 15:22:30.67] Checking file modifications... 
-[Thu 05/15/2025 15:22:30.68] data.js last modified: 05/15/2025 03:22 PM 
-[Thu 05/15/2025 15:22:30.68] index.html last modified: 05/15/2025 03:22 PM 
-[Thu 05/15/2025 15:22:30.70] Setting up Git credential helper... 
-[Thu 05/15/2025 15:22:30.75] Adding files to Git... 
+[Thu 05/15/2025 15:52:31.01] Checking file modifications... 
+[Thu 05/15/2025 15:52:31.02] data.js last modified: 05/15/2025 03:52 PM 
+[Thu 05/15/2025 15:52:31.02] index.html last modified: 05/15/2025 03:52 PM 
+[Thu 05/15/2025 15:52:31.05] Setting up Git credential helper... 
+[Thu 05/15/2025 15:52:31.12] Adding files to Git... 
