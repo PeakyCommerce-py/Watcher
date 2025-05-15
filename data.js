@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 12, 2025",
     "end_date": "Thursday, May 15, 2025",
-    "total_hours": 55.27892083333323,
-    "active_hours": 30.462844999999902,
-    "active_percentage": 55.1075247866105,
-    "afk_hours": 24.816075833333336,
-    "afk_percentage": 44.89247521338952,
+    "total_hours": 55.83268694444435,
+    "active_hours": 30.481751388888792,
+    "active_percentage": 54.59481364244443,
+    "afk_hours": 25.350935555555555,
+    "afk_percentage": 45.40518635755557,
     "productive_hours": 8.08460833333334,
-    "productive_percentage": 26.539242586611223,
+    "productive_percentage": 26.52278154948912,
     "non_productive_hours": 0.21780750000000004,
-    "non_productive_percentage": 0.7149939541103293,
-    "other_hours": 22.16042916666656,
-    "other_percentage": 72.74576345927845,
+    "non_productive_percentage": 0.714550477173025,
+    "other_hours": 22.179335555555454,
+    "other_percentage": 72.76266797333786,
     "labels": [
       "2025-05-13",
       "2025-05-12",
@@ -35,13 +35,13 @@ const activityData = {
       5.764176944444428,
       7.231471666666621,
       5.295886111111077,
-      3.8688944444444386
+      3.8878008333333267
     ],
     "afk": [
       7.589002222222224,
       7.997039999999999,
       6.016683055555555,
-      3.213350555555556
+      3.748210277777779
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -51,7 +51,7 @@ const activityData = {
       "msedge.exe"
     ],
     "top_apps_data": [
-      26.0839077777779,
+      26.102814166666786,
       1.1151027777777789,
       0.9908141666666662,
       0.6443833333333328,
@@ -120,7 +120,7 @@ const activityData = {
       3.257782222222227,
       3.2956608333333355,
       3.9087072222222154,
-      2.6566166666666695,
+      2.675523055555558,
       2.34764333333334,
       1.998247777777779,
       2.049950000000001,
@@ -143,7 +143,7 @@ const activityData = {
       "Work > Programming"
     ],
     "category_data": [
-      21.535256666666772,
+      21.554163055555662,
       3.239505277777782,
       1.7970308333333334,
       1.1352794444444458,
@@ -178,7 +178,7 @@ const activityData = {
       "chatgpt"
     ],
     "web_data": [
-      5.9098097222222234,
+      5.918141666666668,
       2.8272469444444432,
       2.547091666666669,
       0.8597888888888897,
@@ -195,17 +195,17 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, May 15, 2025",
     "end_date": "Thursday, May 15, 2025",
-    "total_hours": 8.229457499999995,
-    "active_hours": 5.016106944444439,
-    "active_percentage": 60.95306943919987,
-    "afk_hours": 3.213350555555556,
-    "afk_percentage": 39.04693056080013,
+    "total_hours": 8.783223611111106,
+    "active_hours": 5.035013333333327,
+    "active_percentage": 57.32534609461436,
+    "afk_hours": 3.748210277777779,
+    "afk_percentage": 42.67465390538564,
     "productive_hours": 1.0676877777777778,
-    "productive_percentage": 21.285187688438135,
+    "productive_percentage": 21.205262172978937,
     "non_productive_hours": 0.07952472222222225,
-    "non_productive_percentage": 1.5853872954263746,
-    "other_hours": 3.8688944444444386,
-    "other_percentage": 77.12942501613549,
+    "non_productive_percentage": 1.5794341932670621,
+    "other_hours": 3.8878008333333267,
+    "other_percentage": 77.215303633754,
     "labels": [
       "2025-05-15"
     ],
@@ -216,10 +216,10 @@ const activityData = {
       0.07952472222222225
     ],
     "other": [
-      3.8688944444444386
+      3.8878008333333267
     ],
     "afk": [
-      3.213350555555556
+      3.748210277777779
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -229,7 +229,7 @@ const activityData = {
       "ApplicationFrameHost.exe"
     ],
     "top_apps_data": [
-      4.681973333333304,
+      4.700879722222192,
       0.07699833333333334,
       0.07287194444444445,
       0.07163944444444444,
@@ -292,7 +292,7 @@ const activityData = {
       0.8358922222222227,
       0.8077286111111122,
       1.0961544444444444,
-      0.3406663888888888,
+      0.3595727777777778,
       0,
       0,
       0,
@@ -313,7 +313,7 @@ const activityData = {
       "Work > Programming > Coding"
     ],
     "category_data": [
-      3.7828383333333275,
+      3.8017447222222165,
       0.7579719444444445,
       0.14451138888888884,
       0.10404694444444447,
@@ -344,7 +344,7 @@ const activityData = {
       "startpageshared"
     ],
     "web_data": [
-      1.0969250000000001,
+      1.1052569444444444,
       0.6640361111111114,
       0.662190277777778,
       0.5501669444444444,
