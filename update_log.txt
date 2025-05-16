@@ -1,10 +1,10 @@
  
-[Fri 05/16/2025 14:52:27.86] Starting update 
-[Fri 05/16/2025 14:52:27.86] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Fri 05/16/2025 14:52:27.87] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Fri 05/16/2025 15:22:27.86] Starting update 
+[Fri 05/16/2025 15:22:27.86] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Fri 05/16/2025 15:22:27.87] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Fri 05/16/2025 14:52:28.00] ActivityWatch is already running 
-[Fri 05/16/2025 14:52:28.00] Running export script... 
+[Fri 05/16/2025 15:22:28.02] ActivityWatch is already running 
+[Fri 05/16/2025 15:22:28.02] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 12, 2025 to Friday, May 16, 2025
-Found 4181 web events
+Found 4202 web events
 
 Significant web event:
 Domain: docs
@@ -48,7 +48,7 @@ Significant web event:
 Domain: claude
 Title: Fixing Time Formatting in ActivityWatch Export - Claude
 Duration: 0.08 hours
-Found 12795 events
+Found 12817 events
 
 Significant event:
 App: opera.exe
@@ -189,16 +189,16 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 74.3 hours
-- Active time: 34.8 hours (46.8%)
-- AFK time: 39.5 hours (53.2%)
-- Productive time: 8.6 hours (24.8% of active time)
+- Total tracking time: 75.3 hours
+- Active time: 34.9 hours (46.3%)
+- AFK time: 40.4 hours (53.7%)
+- Productive time: 8.7 hours (24.9% of active time)
 - Non-productive time: 0.4 hours (1.2% of active time)
-- Other time: 25.7 hours (74.0% of active time)
+- Other time: 25.8 hours (73.9% of active time)
 
 Querying today's data:
 Time period: Friday, May 16, 2025 to Friday, May 16, 2025
-Found 220 web events
+Found 241 web events
 
 Significant web event:
 Domain: docs
@@ -209,7 +209,7 @@ Significant web event:
 Domain: startpageshared
 Title: Speed Dial
 Duration: 0.09 hours
-Found 309 events
+Found 331 events
 
 Significant event:
 App: opera.exe
@@ -242,24 +242,24 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 6.8 hours
-- Active time: 2.8 hours (40.2%)
-- AFK time: 4.1 hours (59.8%)
-- Productive time: 0.2 hours (6.0% of active time)
-- Non-productive time: 0.2 hours (5.6% of active time)
-- Other time: 2.4 hours (88.4% of active time)
+- Total tracking time: 7.9 hours
+- Active time: 2.8 hours (36.1%)
+- AFK time: 5.0 hours (63.9%)
+- Productive time: 0.2 hours (7.8% of active time)
+- Non-productive time: 0.2 hours (5.4% of active time)
+- Other time: 2.5 hours (86.8% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-16 14:52
-✓ Successfully updated index.html with time: 2025-05-16 14:52
+Using direct UTC+4 offset time: 2025-05-16 15:22
+✓ Successfully updated index.html with time: 2025-05-16 15:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Fri 05/16/2025 14:52:30.28] Checking file modifications... 
-[Fri 05/16/2025 14:52:30.29] data.js last modified: 05/16/2025 02:52 PM 
-[Fri 05/16/2025 14:52:30.29] index.html last modified: 05/16/2025 02:52 PM 
-[Fri 05/16/2025 14:52:30.30] Setting up Git credential helper... 
-[Fri 05/16/2025 14:52:30.35] Adding files to Git... 
+[Fri 05/16/2025 15:22:30.54] Checking file modifications... 
+[Fri 05/16/2025 15:22:30.55] data.js last modified: 05/16/2025 03:22 PM 
+[Fri 05/16/2025 15:22:30.55] index.html last modified: 05/16/2025 03:22 PM 
+[Fri 05/16/2025 15:22:30.56] Setting up Git credential helper... 
+[Fri 05/16/2025 15:22:30.63] Adding files to Git... 
