@@ -1,10 +1,10 @@
  
-[Fri 05/16/2025 19:52:27.78] Starting update 
-[Fri 05/16/2025 19:52:27.78] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Fri 05/16/2025 19:52:27.79] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/19/2025 20:22:27.96] Starting update 
+[Mon 05/19/2025 20:22:27.96] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/19/2025 20:22:27.97] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Fri 05/16/2025 19:52:27.92] ActivityWatch is already running 
-[Fri 05/16/2025 19:52:27.92] Running export script... 
+[Mon 05/19/2025 20:22:28.14] ActivityWatch is already running 
+[Mon 05/19/2025 20:22:28.14] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -16,79 +16,14 @@ Available buckets:
 Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
-Time period: Monday, May 12, 2025 to Friday, May 16, 2025
-Found 4899 web events
+Time period: Monday, May 19, 2025 to Monday, May 19, 2025
+Found 423 web events
 
 Significant web event:
-Domain: docs
-Title: 🫰THE PIM🫰 - Google Sheets
-Duration: 0.15 hours
-
-Significant web event:
-Domain: claude
-Title: Fixing Time Formatting in ActivityWatch Export - Claude
-Duration: 0.15 hours
-
-Significant web event:
-Domain: claude
-Title: Optimizing SKU Structure for Large Ecommerce Inventory - Claude
-Duration: 0.10 hours
-
-Significant web event:
-Domain: claude
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude
-Duration: 0.10 hours
-
-Significant web event:
-Domain: claude
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude
-Duration: 0.10 hours
-
-Significant web event:
-Domain: startpageshared
-Title: Speed Dial
-Duration: 0.09 hours
-
-Significant web event:
-Domain: docs
-Title: 🫰THE PIM🫰 - Google Sheets
-Duration: 0.08 hours
-
-Significant web event:
-Domain: claude
-Title: Fixing Time Formatting in ActivityWatch Export - Claude
-Duration: 0.08 hours
-Found 13614 events
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.41 hours
-
-Significant event:
-App: ApplicationFrameHost.exe
-Title: Media Player
-Categories: Uncategorized
-Duration: 0.18 hours
-
-Significant event:
-App: opera.exe
-Title: 9 - Google Kalkylark - Opera
-Categories: General > Browsing
-Duration: 0.18 hours
-
-Significant event:
-App: msedge.exe
-Title: Product Description Generator - Everyday Commodities - Skillfusion and 2 more pages - Personal - Microsoft​ Edge
-Categories: General > Browsing
-Duration: 0.15 hours
-
-Significant event:
-App: opera.exe
-Title: 9 - Google Kalkylark - Opera
-Categories: General > Browsing
-Duration: 0.15 hours
+Domain: mail
+Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
+Duration: 0.11 hours
+Found 612 events
 
 Significant event:
 App: opera.exe
@@ -100,258 +35,69 @@ Significant event:
 App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
-Duration: 0.13 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.13 hours
-
-Significant event:
-App: opera.exe
-Title: Google Sheet Formulas - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.12 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.12 hours
-
-Significant event:
-App: opera.exe
-Title: Produktnamnlängd: Faktorer och | Google AI Studio - Opera
-Categories: General > Browsing
 Duration: 0.11 hours
 
 Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.11 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.11 hours
-
-Significant event:
-App: opera.exe
-Title: Dragon Battle Monologue - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Generate Media | Google AI Studio - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
+App: Discord.exe
+Title: #【⚔】general-defqon1-talks | Q-dance Official - Discord
+Categories: Work > Communication
 Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing SKU Structure for Large Ecommerce Inventory - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: ChatGPT - Opera
-Categories: General > Browsing
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: Bloomingville Meta Titel Gener | Google AI Studio - Opera
-Categories: General > Browsing
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: Gmail - Your Exclusive RED Experience awaits - Opera
-Categories: Work > Communication > Email
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.08 hours
-
-Data Collection Summary:
-- Total tracking time: 79.9 hours
-- Active time: 38.5 hours (48.2%)
-- AFK time: 41.4 hours (51.8%)
-- Productive time: 10.1 hours (26.3% of active time)
-- Non-productive time: 0.4 hours (1.1% of active time)
-- Other time: 28.0 hours (72.7% of active time)
-
-Querying today's data:
-Time period: Friday, May 16, 2025 to Friday, May 16, 2025
-Found 938 web events
-
-Significant web event:
-Domain: docs
-Title: 🫰THE PIM🫰 - Google Sheets
-Duration: 0.15 hours
-
-Significant web event:
-Domain: claude
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude
-Duration: 0.10 hours
-
-Significant web event:
-Domain: claude
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude
-Duration: 0.10 hours
-
-Significant web event:
-Domain: startpageshared
-Title: Speed Dial
-Duration: 0.09 hours
-Found 1128 events
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.41 hours
-
-Significant event:
-App: ApplicationFrameHost.exe
-Title: Media Player
-Categories: Uncategorized
-Duration: 0.18 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.13 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.11 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Generate Media | Google AI Studio - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: Optimizing Sequential Numbering for E-commerce Product Variants - Claude - Opera
-Categories: Work > AI Chatting
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.08 hours
 
 Data Collection Summary:
 - Total tracking time: 12.5 hours
-- Active time: 6.5 hours (52.3%)
-- AFK time: 5.9 hours (47.7%)
-- Productive time: 1.7 hours (25.5% of active time)
-- Non-productive time: 0.2 hours (2.3% of active time)
-- Other time: 4.7 hours (72.2% of active time)
+- Active time: 2.8 hours (22.0%)
+- AFK time: 9.8 hours (78.0%)
+- Productive time: 0.4 hours (15.7% of active time)
+- Non-productive time: 0.0 hours (0.4% of active time)
+- Other time: 2.3 hours (83.9% of active time)
+
+Querying today's data:
+Time period: Monday, May 19, 2025 to Monday, May 19, 2025
+Found 423 web events
+
+Significant web event:
+Domain: mail
+Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
+Duration: 0.11 hours
+Found 612 events
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
+
+Significant event:
+App: Discord.exe
+Title: #【⚔】general-defqon1-talks | Q-dance Official - Discord
+Categories: Work > Communication
+Duration: 0.09 hours
+
+Data Collection Summary:
+- Total tracking time: 12.5 hours
+- Active time: 2.8 hours (22.0%)
+- AFK time: 9.8 hours (78.0%)
+- Productive time: 0.4 hours (15.7% of active time)
+- Non-productive time: 0.0 hours (0.4% of active time)
+- Other time: 2.3 hours (83.9% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-16 19:52
-✓ Successfully updated index.html with time: 2025-05-16 19:52
+Using direct UTC+4 offset time: 2025-05-19 20:22
+✓ Successfully updated index.html with time: 2025-05-19 20:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Fri 05/16/2025 19:52:30.47] Checking file modifications... 
-[Fri 05/16/2025 19:52:30.48] data.js last modified: 05/16/2025 07:52 PM 
-[Fri 05/16/2025 19:52:30.48] index.html last modified: 05/16/2025 07:52 PM 
-[Fri 05/16/2025 19:52:30.50] Setting up Git credential helper... 
-[Fri 05/16/2025 19:52:30.54] Adding files to Git... 
+[Mon 05/19/2025 20:22:29.34] Checking file modifications... 
+[Mon 05/19/2025 20:22:29.35] data.js last modified: 05/19/2025 08:22 PM 
+[Mon 05/19/2025 20:22:29.35] index.html last modified: 05/19/2025 08:22 PM 
+[Mon 05/19/2025 20:22:29.37] Setting up Git credential helper... 
+[Mon 05/19/2025 20:22:29.44] Adding files to Git... 
