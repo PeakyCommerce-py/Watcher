@@ -1,10 +1,10 @@
  
-[Mon 05/19/2025 20:22:27.96] Starting update 
-[Mon 05/19/2025 20:22:27.96] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 05/19/2025 20:22:27.97] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 05/19/2025 20:52:28.44] Starting update 
+[Mon 05/19/2025 20:52:28.44] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 05/19/2025 20:52:28.45] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 05/19/2025 20:22:28.14] ActivityWatch is already running 
-[Mon 05/19/2025 20:22:28.14] Running export script... 
+[Mon 05/19/2025 20:52:28.60] ActivityWatch is already running 
+[Mon 05/19/2025 20:52:28.60] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,13 +17,13 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 19, 2025 to Monday, May 19, 2025
-Found 423 web events
+Found 463 web events
 
 Significant web event:
 Domain: mail
 Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
 Duration: 0.11 hours
-Found 612 events
+Found 710 events
 
 Significant event:
 App: opera.exe
@@ -44,22 +44,22 @@ Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 12.5 hours
-- Active time: 2.8 hours (22.0%)
-- AFK time: 9.8 hours (78.0%)
-- Productive time: 0.4 hours (15.7% of active time)
-- Non-productive time: 0.0 hours (0.4% of active time)
-- Other time: 2.3 hours (83.9% of active time)
+- Total tracking time: 13.3 hours
+- Active time: 3.0 hours (22.8%)
+- AFK time: 10.3 hours (77.2%)
+- Productive time: 0.5 hours (16.0% of active time)
+- Non-productive time: 0.0 hours (0.3% of active time)
+- Other time: 2.5 hours (83.6% of active time)
 
 Querying today's data:
 Time period: Monday, May 19, 2025 to Monday, May 19, 2025
-Found 423 web events
+Found 463 web events
 
 Significant web event:
 Domain: mail
 Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
 Duration: 0.11 hours
-Found 612 events
+Found 710 events
 
 Significant event:
 App: opera.exe
@@ -80,24 +80,24 @@ Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 12.5 hours
-- Active time: 2.8 hours (22.0%)
-- AFK time: 9.8 hours (78.0%)
-- Productive time: 0.4 hours (15.7% of active time)
-- Non-productive time: 0.0 hours (0.4% of active time)
-- Other time: 2.3 hours (83.9% of active time)
+- Total tracking time: 13.3 hours
+- Active time: 3.0 hours (22.8%)
+- AFK time: 10.3 hours (77.2%)
+- Productive time: 0.5 hours (16.0% of active time)
+- Non-productive time: 0.0 hours (0.3% of active time)
+- Other time: 2.5 hours (83.6% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-19 20:22
-✓ Successfully updated index.html with time: 2025-05-19 20:22
+Using direct UTC+4 offset time: 2025-05-19 20:52
+✓ Successfully updated index.html with time: 2025-05-19 20:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 05/19/2025 20:22:29.34] Checking file modifications... 
-[Mon 05/19/2025 20:22:29.35] data.js last modified: 05/19/2025 08:22 PM 
-[Mon 05/19/2025 20:22:29.35] index.html last modified: 05/19/2025 08:22 PM 
-[Mon 05/19/2025 20:22:29.37] Setting up Git credential helper... 
-[Mon 05/19/2025 20:22:29.44] Adding files to Git... 
+[Mon 05/19/2025 20:52:29.70] Checking file modifications... 
+[Mon 05/19/2025 20:52:29.72] data.js last modified: 05/19/2025 08:52 PM 
+[Mon 05/19/2025 20:52:29.72] index.html last modified: 05/19/2025 08:52 PM 
+[Mon 05/19/2025 20:52:29.75] Setting up Git credential helper... 
+[Mon 05/19/2025 20:52:29.84] Adding files to Git... 
