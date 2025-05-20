@@ -1,10 +1,10 @@
  
-[Tue 05/20/2025 10:52:28.39] Starting update 
-[Tue 05/20/2025 10:52:28.39] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 05/20/2025 10:52:28.40] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 05/20/2025 11:22:28.41] Starting update 
+[Tue 05/20/2025 11:22:28.41] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 05/20/2025 11:22:28.42] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 05/20/2025 10:52:28.49] ActivityWatch is already running 
-[Tue 05/20/2025 10:52:28.49] Running export script... 
+[Tue 05/20/2025 11:22:28.53] ActivityWatch is already running 
+[Tue 05/20/2025 11:22:28.53] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,13 +17,13 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 19, 2025 to Tuesday, May 20, 2025
-Found 559 web events
+Found 580 web events
 
 Significant web event:
 Domain: mail
 Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
 Duration: 0.11 hours
-Found 1024 events
+Found 1054 events
 
 Significant event:
 App: opera.exe
@@ -43,38 +43,50 @@ Title: #【⚔】general-defqon1-talks | Q-dance Official - Discord
 Categories: Work > Communication
 Duration: 0.09 hours
 
+Significant event:
+App: opera.exe
+Title: GPT-4 Vision Alternativ - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
 Data Collection Summary:
-- Total tracking time: 16.7 hours
-- Active time: 3.8 hours (22.9%)
-- AFK time: 12.9 hours (77.1%)
-- Productive time: 0.7 hours (17.2% of active time)
-- Non-productive time: 0.0 hours (0.3% of active time)
-- Other time: 3.2 hours (82.6% of active time)
+- Total tracking time: 18.2 hours
+- Active time: 4.1 hours (22.8%)
+- AFK time: 14.1 hours (77.2%)
+- Productive time: 0.7 hours (15.9% of active time)
+- Non-productive time: 0.0 hours (0.2% of active time)
+- Other time: 3.5 hours (83.9% of active time)
 
 Querying today's data:
 Time period: Tuesday, May 20, 2025 to Tuesday, May 20, 2025
-Found 80 web events
-Found 266 events
+Found 101 web events
+Found 296 events
+
+Significant event:
+App: opera.exe
+Title: GPT-4 Vision Alternativ - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 2.6 hours
-- Active time: 0.6 hours (24.8%)
-- AFK time: 2.0 hours (75.2%)
-- Productive time: 0.1 hours (13.4% of active time)
+- Total tracking time: 4.1 hours
+- Active time: 1.0 hours (23.5%)
+- AFK time: 3.1 hours (76.5%)
+- Productive time: 0.1 hours (9.0% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 0.6 hours (86.6% of active time)
+- Other time: 0.9 hours (91.0% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-20 10:52
-✓ Successfully updated index.html with time: 2025-05-20 10:52
+Using direct UTC+4 offset time: 2025-05-20 11:22
+✓ Successfully updated index.html with time: 2025-05-20 11:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 05/20/2025 10:52:29.18] Checking file modifications... 
-[Tue 05/20/2025 10:52:29.19] data.js last modified: 05/20/2025 10:52 AM 
-[Tue 05/20/2025 10:52:29.19] index.html last modified: 05/20/2025 10:52 AM 
-[Tue 05/20/2025 10:52:29.20] Setting up Git credential helper... 
-[Tue 05/20/2025 10:52:29.24] Adding files to Git... 
+[Tue 05/20/2025 11:22:29.26] Checking file modifications... 
+[Tue 05/20/2025 11:22:29.27] data.js last modified: 05/20/2025 11:22 AM 
+[Tue 05/20/2025 11:22:29.27] index.html last modified: 05/20/2025 11:22 AM 
+[Tue 05/20/2025 11:22:29.28] Setting up Git credential helper... 
+[Tue 05/20/2025 11:22:29.32] Adding files to Git... 

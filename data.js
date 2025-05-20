@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Tuesday, May 20, 2025",
-    "total_hours": 16.733276666666672,
-    "active_hours": 3.8294722222222264,
-    "active_percentage": 22.88536966493049,
-    "afk_hours": 12.903804444444445,
-    "afk_percentage": 77.1146303350695,
+    "total_hours": 18.222301666666674,
+    "active_hours": 4.145646666666671,
+    "active_percentage": 22.750400813801345,
+    "afk_hours": 14.076655000000004,
+    "afk_percentage": 77.24959918619867,
     "productive_hours": 0.6581280555555556,
-    "productive_percentage": 17.18586837466722,
+    "productive_percentage": 15.87516034222779,
     "non_productive_hours": 0.009854722222222223,
-    "non_productive_percentage": 0.2573389138334987,
-    "other_hours": 3.161489444444449,
-    "other_percentage": 82.55679271149928,
+    "non_productive_percentage": 0.2377125455832917,
+    "other_hours": 3.4776638888888933,
+    "other_percentage": 83.88712711218894,
     "labels": [
       "2025-05-19",
       "2025-05-20"
@@ -27,11 +27,11 @@ const activityData = {
     ],
     "other": [
       2.6028869444444487,
-      0.5586025
+      0.8747769444444449
     ],
     "afk": [
       10.945635833333334,
-      1.9581686111111114
+      3.1310191666666682
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -41,7 +41,7 @@ const activityData = {
       "ApplicationFrameHost.exe"
     ],
     "top_apps_data": [
-      3.0911158333333395,
+      3.4072902777777836,
       0.4589572222222223,
       0.06139333333333334,
       0.051769166666666665,
@@ -101,7 +101,7 @@ const activityData = {
       0,
       0.009763611111111112,
       0.6352344444444441,
-      0.14707388888888887,
+      0.4632483333333332,
       0,
       0,
       0,
@@ -126,7 +126,7 @@ const activityData = {
       "Work > General"
     ],
     "category_data": [
-      2.9944602777777836,
+      3.3106347222222277,
       0.4879008333333334,
       0.16702916666666673,
       0.061017777777777775,
@@ -156,8 +156,8 @@ const activityData = {
     ],
     "web_data": [
       1.175826666666666,
-      0.3400200000000001,
-      0.2335213888888888,
+      0.34374500000000013,
+      0.26650361111111104,
       0.22199027777777772,
       0.19275694444444444
     ],
@@ -172,17 +172,17 @@ const activityData = {
   "daily": {
     "start_date": "Tuesday, May 20, 2025",
     "end_date": "Tuesday, May 20, 2025",
-    "total_hours": 2.603166666666667,
-    "active_hours": 0.6449980555555556,
-    "active_percentage": 24.777439870243505,
-    "afk_hours": 1.9581686111111114,
-    "afk_percentage": 75.22256012975649,
+    "total_hours": 4.092191666666668,
+    "active_hours": 0.9611725000000004,
+    "active_percentage": 23.487963866143446,
+    "afk_hours": 3.1310191666666682,
+    "afk_percentage": 76.51203613385655,
     "productive_hours": 0.0863955555555555,
-    "productive_percentage": 13.394700156288147,
+    "productive_percentage": 8.988558823265905,
     "non_productive_hours": 0.0,
     "non_productive_percentage": 0.0,
-    "other_hours": 0.5586025,
-    "other_percentage": 86.60529984371185,
+    "other_hours": 0.8747769444444449,
+    "other_percentage": 91.0114411767341,
     "labels": [
       "2025-05-20"
     ],
@@ -193,10 +193,10 @@ const activityData = {
       0.0
     ],
     "other": [
-      0.5586025
+      0.8747769444444449
     ],
     "afk": [
-      1.9581686111111114
+      3.1310191666666682
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -206,7 +206,7 @@ const activityData = {
       "ShellExperienceHost.exe"
     ],
     "top_apps_data": [
-      0.5690052777777778,
+      0.8851797222222226,
       0.054307777777777774,
       0.009763611111111112,
       0.005530833333333334,
@@ -264,7 +264,7 @@ const activityData = {
       0,
       0.009763611111111112,
       0.6352344444444441,
-      0,
+      0.3161744444444443,
       0,
       0,
       0,
@@ -285,7 +285,7 @@ const activityData = {
       "Work > General"
     ],
     "category_data": [
-      0.5381716666666666,
+      0.8543461111111116,
       0.054307777777777774,
       0.030833611111111114,
       0.020430833333333336,
@@ -300,17 +300,17 @@ const activityData = {
     ],
     "web_labels": [
       "outlook",
-      "europarcs",
-      "platform",
       "chatgpt",
-      "docs"
+      "europarcs",
+      "packoplock",
+      "platform"
     ],
     "web_data": [
       0.1357736111111111,
+      0.09387194444444444,
       0.07116361111111112,
-      0.062398055555555554,
-      0.06088972222222222,
-      0.04652638888888888
+      0.07088833333333334,
+      0.06612305555555555
     ],
     "web_colors": [
       "#FFC107",
