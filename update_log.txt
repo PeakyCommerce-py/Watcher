@@ -1,10 +1,10 @@
  
-[Tue 05/20/2025 19:22:28.40] Starting update 
-[Tue 05/20/2025 19:22:28.40] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 05/20/2025 19:22:28.41] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 05/20/2025 19:52:28.53] Starting update 
+[Tue 05/20/2025 19:52:28.54] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 05/20/2025 19:52:28.54] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 05/20/2025 19:22:28.51] ActivityWatch is already running 
-[Tue 05/20/2025 19:22:28.51] Running export script... 
+[Tue 05/20/2025 19:52:28.68] ActivityWatch is already running 
+[Tue 05/20/2025 19:52:28.68] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,25 +17,30 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 19, 2025 to Tuesday, May 20, 2025
-Found 817 web events
+Found 859 web events
 
 Significant web event:
 Domain: mail
 Title: Inkorgen (296) - dejanrm01@gmail.com - Gmail
 Duration: 0.11 hours
-Found 1686 events
 
-Significant event:
-App: opera.exe
-Title: (24) CyrusTWO | Viewer Oddshots #339 - YouTube - Opera
-Categories: Media > Video
-Duration: 0.14 hours
+Significant web event:
+Domain: 127
+Title: ActivityWatch
+Duration: 0.08 hours
+Found 1655 events
 
 Significant event:
 App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
+Title: ActivityWatch - Opera
+Categories: Work > Programming > ActivityWatch
+Duration: 0.12 hours
 
 Significant event:
 App: opera.exe
@@ -56,23 +61,28 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 30.8 hours
-- Active time: 6.4 hours (20.7%)
-- AFK time: 24.4 hours (79.3%)
-- Productive time: 1.0 hours (15.4% of active time)
-- Non-productive time: 0.2 hours (2.6% of active time)
-- Other time: 5.2 hours (82.0% of active time)
+- Total tracking time: 31.3 hours
+- Active time: 6.3 hours (20.1%)
+- AFK time: 25.0 hours (79.9%)
+- Productive time: 1.1 hours (17.9% of active time)
+- Non-productive time: 0.0 hours (0.3% of active time)
+- Other time: 5.1 hours (81.8% of active time)
 
 Querying today's data:
 Time period: Tuesday, May 20, 2025 to Tuesday, May 20, 2025
-Found 338 web events
-Found 928 events
+Found 380 web events
+
+Significant web event:
+Domain: 127
+Title: ActivityWatch
+Duration: 0.08 hours
+Found 897 events
 
 Significant event:
 App: opera.exe
-Title: (24) CyrusTWO | Viewer Oddshots #339 - YouTube - Opera
-Categories: Media > Video
-Duration: 0.14 hours
+Title: ActivityWatch - Opera
+Categories: Work > Programming > ActivityWatch
+Duration: 0.12 hours
 
 Significant event:
 App: opera.exe
@@ -81,24 +91,24 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 16.6 hours
-- Active time: 3.2 hours (19.1%)
-- AFK time: 13.5 hours (80.9%)
-- Productive time: 0.4 hours (12.9% of active time)
-- Non-productive time: 0.2 hours (4.8% of active time)
-- Other time: 2.6 hours (82.2% of active time)
+- Total tracking time: 17.1 hours
+- Active time: 3.1 hours (18.1%)
+- AFK time: 14.0 hours (81.9%)
+- Productive time: 0.6 hours (17.9% of active time)
+- Non-productive time: 0.0 hours (0.2% of active time)
+- Other time: 2.5 hours (81.9% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-20 19:22
-✓ Successfully updated index.html with time: 2025-05-20 19:22
+Using direct UTC+4 offset time: 2025-05-20 19:52
+✓ Successfully updated index.html with time: 2025-05-20 19:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 05/20/2025 19:22:29.41] Checking file modifications... 
-[Tue 05/20/2025 19:22:29.42] data.js last modified: 05/20/2025 07:22 PM 
-[Tue 05/20/2025 19:22:29.42] index.html last modified: 05/20/2025 07:22 PM 
-[Tue 05/20/2025 19:22:29.44] Setting up Git credential helper... 
-[Tue 05/20/2025 19:22:29.47] Adding files to Git... 
+[Tue 05/20/2025 19:52:30.16] Checking file modifications... 
+[Tue 05/20/2025 19:52:30.17] data.js last modified: 05/20/2025 07:52 PM 
+[Tue 05/20/2025 19:52:30.17] index.html last modified: 05/20/2025 07:52 PM 
+[Tue 05/20/2025 19:52:30.18] Setting up Git credential helper... 
+[Tue 05/20/2025 19:52:30.25] Adding files to Git... 
