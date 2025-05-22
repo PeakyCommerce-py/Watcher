@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 80.54348249999998,
-    "active_hours": 23.27532638888887,
-    "active_percentage": 28.897839609665343,
+    "total_hours": 81.0338647222222,
+    "active_hours": 23.765708611111087,
+    "active_percentage": 29.328119413504577,
     "afk_hours": 57.26815611111112,
-    "afk_percentage": 71.10216039033466,
+    "afk_percentage": 70.67188058649542,
     "productive_hours": 3.8181522222222206,
-    "productive_percentage": 16.404290785992686,
+    "productive_percentage": 16.065804242155586,
     "non_productive_hours": 0.21949555555555553,
-    "non_productive_percentage": 0.9430396458815626,
-    "other_hours": 19.23767861111109,
-    "other_percentage": 82.65266956812573,
+    "non_productive_percentage": 0.9235809423874515,
+    "other_hours": 19.728060833333313,
+    "other_percentage": 83.01061481545696,
     "labels": [
       "2025-05-22",
       "2025-05-21",
@@ -32,7 +32,7 @@ const activityData = {
       0.006864166666666666
     ],
     "other": [
-      7.439713333333334,
+      7.930095555555556,
       6.2388058333333065,
       2.6028869444444487,
       2.956272500000003
@@ -51,7 +51,7 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      20.37218083333342,
+      20.86256305555564,
       1.2982572222222206,
       0.5072194444444442,
       0.4471847222222222,
@@ -123,7 +123,7 @@ const activityData = {
       2.453848888888892,
       2.9334311111111138,
       2.2651300000000014,
-      2.401019444444446,
+      2.89140166666667,
       1.5926858333333358,
       0.4174741666666667,
       0.1492122222222222
@@ -141,7 +141,7 @@ const activityData = {
       "Work > General"
     ],
     "category_data": [
-      18.42108944444459,
+      18.911471666666763,
       1.5814574999999993,
       1.4177286111111087,
       0.8165891666666668,
@@ -189,17 +189,17 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, May 22, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 20.94709861111111,
-    "active_hours": 7.960287777777777,
-    "active_percentage": 38.001863291727425,
+    "total_hours": 21.437480833333332,
+    "active_hours": 8.45067,
+    "active_percentage": 39.4200702298004,
     "afk_hours": 12.986810833333333,
-    "afk_percentage": 61.99813670827259,
+    "afk_percentage": 60.579929770199605,
     "productive_hours": 0.4558405555555555,
-    "productive_percentage": 5.726433117507336,
+    "productive_percentage": 5.394135086987842,
     "non_productive_hours": 0.0647338888888889,
-    "non_productive_percentage": 0.8132104101764049,
-    "other_hours": 7.439713333333334,
-    "other_percentage": 93.46035647231626,
+    "non_productive_percentage": 0.766020787569375,
+    "other_hours": 7.930095555555556,
+    "other_percentage": 93.83984412544278,
     "labels": [
       "2025-05-22"
     ],
@@ -210,7 +210,7 @@ const activityData = {
       0.0647338888888889
     ],
     "other": [
-      7.439713333333334
+      7.930095555555556
     ],
     "afk": [
       12.986810833333333
@@ -223,7 +223,7 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      7.700630833333333,
+      8.191013055555556,
       0.14016277777777778,
       0.02679944444444444,
       0.025735277777777777,
@@ -289,7 +289,7 @@ const activityData = {
       0.7396749999999997,
       0.9453144444444443,
       0.6265283333333332,
-      0.8452130555555555,
+      1.3355952777777778,
       0,
       0,
       0
@@ -306,7 +306,7 @@ const activityData = {
       "Work > Communication > Social Media"
     ],
     "category_data": [
-      7.390487777777778,
+      7.880870000000001,
       0.2308266666666666,
       0.1649936111111111,
       0.0647338888888889,
