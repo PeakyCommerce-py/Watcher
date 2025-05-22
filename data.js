@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 78.87314638888887,
-    "active_hours": 21.87738194444442,
-    "active_percentage": 27.737427687462414,
-    "afk_hours": 56.99576444444445,
-    "afk_percentage": 72.26257231253759,
+    "total_hours": 79.54573305555554,
+    "active_hours": 22.27757694444442,
+    "active_percentage": 28.005998673600175,
+    "afk_hours": 57.26815611111112,
+    "afk_percentage": 71.99400132639981,
     "productive_hours": 3.8181522222222206,
-    "productive_percentage": 17.452509774332523,
+    "productive_percentage": 17.13899241261241,
     "non_productive_hours": 0.21949555555555553,
-    "non_productive_percentage": 1.003299005854284,
-    "other_hours": 17.839734166666645,
-    "other_percentage": 81.54419121981321,
+    "non_productive_percentage": 0.9852757151414229,
+    "other_hours": 18.239929166666645,
+    "other_percentage": 81.87573187224618,
     "labels": [
       "2025-05-22",
       "2025-05-21",
@@ -32,13 +32,13 @@ const activityData = {
       0.006864166666666666
     ],
     "other": [
-      6.041768888888886,
+      6.441963888888888,
       6.2388058333333065,
       2.6028869444444487,
       2.956272500000003
     ],
     "afk": [
-      6.170126111111111,
+      6.442517777777779,
       22.973458333333344,
       10.945635833333334,
       16.906544166666663
@@ -51,7 +51,7 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      18.97423638888896,
+      19.374431388888983,
       1.2982572222222206,
       0.5072194444444442,
       0.4471847222222222,
@@ -122,7 +122,7 @@ const activityData = {
       1.8781411111111117,
       2.453848888888892,
       2.9334311111111138,
-      1.7123986111111122,
+      2.112593611111113,
       1.5558063888888898,
       1.5926858333333358,
       0.4174741666666667,
@@ -141,7 +141,7 @@ const activityData = {
       "Work > General"
     ],
     "category_data": [
-      17.023145000000014,
+      17.423340000000014,
       1.5814574999999993,
       1.4177286111111087,
       0.8165891666666668,
@@ -189,17 +189,17 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, May 22, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 19.276762499999997,
-    "active_hours": 6.562343333333331,
-    "active_percentage": 34.04276694975793,
-    "afk_hours": 12.714419166666666,
-    "afk_percentage": 65.95723305024207,
+    "total_hours": 19.950300833333333,
+    "active_hours": 6.963489999999998,
+    "active_percentage": 34.90418544649347,
+    "afk_hours": 12.986810833333333,
+    "afk_percentage": 65.09581455350653,
     "productive_hours": 0.4558405555555555,
-    "productive_percentage": 6.94630762825407,
+    "productive_percentage": 6.546150788692963,
     "non_productive_hours": 0.0647338888888889,
-    "non_productive_percentage": 0.9864447134314662,
-    "other_hours": 6.041768888888886,
-    "other_percentage": 92.06724765831447,
+    "non_productive_percentage": 0.9296184655810363,
+    "other_hours": 6.442915555555555,
+    "other_percentage": 92.524230745726,
     "labels": [
       "2025-05-22"
     ],
@@ -210,10 +210,10 @@ const activityData = {
       0.0647338888888889
     ],
     "other": [
-      6.041768888888886
+      6.442915555555555
     ],
     "afk": [
-      12.714419166666666
+      12.986810833333333
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -223,7 +223,7 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      6.302686388888888,
+      6.703833055555555,
       0.14016277777777778,
       0.02679944444444444,
       0.025735277777777777,
@@ -288,7 +288,7 @@ const activityData = {
       0.6648516666666667,
       0.7396749999999997,
       0.9453144444444443,
-      0.07379694444444444,
+      0.47494361111111116,
       0,
       0,
       0,
@@ -306,7 +306,7 @@ const activityData = {
       "Work > Communication > Social Media"
     ],
     "category_data": [
-      5.99254333333333,
+      6.3936899999999985,
       0.2308266666666666,
       0.1649936111111111,
       0.0647338888888889,
