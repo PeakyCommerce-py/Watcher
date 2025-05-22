@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 76.7532944444444,
-    "active_hours": 20.654080277777744,
-    "active_percentage": 26.909698700591395,
+    "total_hours": 77.23781916666664,
+    "active_hours": 21.138604999999973,
+    "active_percentage": 27.368205405160783,
     "afk_hours": 56.09921416666667,
-    "afk_percentage": 73.09030129940861,
+    "afk_percentage": 72.6317945948392,
     "productive_hours": 3.7730688888888877,
-    "productive_percentage": 18.26791044745008,
+    "productive_percentage": 17.8491858326928,
     "non_productive_hours": 0.21949555555555553,
-    "non_productive_percentage": 1.0627224868091387,
-    "other_hours": 16.6615158333333,
-    "other_percentage": 80.66936706574079,
+    "non_productive_percentage": 1.0383634849866197,
+    "other_hours": 17.14604055555553,
+    "other_percentage": 81.11245068232058,
     "labels": [
       "2025-05-22",
       "2025-05-21",
@@ -32,7 +32,7 @@ const activityData = {
       0.006864166666666666
     ],
     "other": [
-      4.863550555555543,
+      5.34807527777777,
       6.2388058333333065,
       2.6028869444444487,
       2.956272500000003
@@ -51,10 +51,10 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      17.75487722222223,
+      18.23573888888889,
       1.2982572222222206,
       0.5072194444444442,
-      0.44380277777777777,
+      0.4471847222222222,
       0.11947138888888892
     ],
     "top_apps_colors": [
@@ -120,8 +120,8 @@ const activityData = {
       1.233273888888891,
       1.7682733333333354,
       1.8781411111111117,
-      2.2496586111111143,
-      1.988116666666669,
+      2.453848888888892,
+      2.2684511111111134,
       1.6386016666666676,
       1.5558063888888898,
       1.5926858333333358,
@@ -141,10 +141,10 @@ const activityData = {
       "Work > General"
     ],
     "category_data": [
-      15.848869166666676,
+      16.329730833333354,
       1.536374166666666,
       1.4177286111111087,
-      0.8126466666666667,
+      0.8163097222222224,
       0.38178027777777795,
       0.21949555555555555,
       0.21113472222222224,
@@ -189,17 +189,17 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, May 22, 2025",
     "end_date": "Thursday, May 22, 2025",
-    "total_hours": 17.15691055555554,
-    "active_hours": 5.339041666666654,
-    "active_percentage": 31.118898996287133,
+    "total_hours": 17.64192999999999,
+    "active_hours": 5.824061111111105,
+    "active_percentage": 33.01260752713058,
     "afk_hours": 11.817868888888889,
-    "afk_percentage": 68.88110100371287,
+    "afk_percentage": 66.98739247286943,
     "productive_hours": 0.4107572222222221,
-    "productive_percentage": 7.693463506507374,
+    "productive_percentage": 7.052762915529548,
     "non_productive_hours": 0.0647338888888889,
-    "non_productive_percentage": 1.212462702680207,
-    "other_hours": 4.863550555555543,
-    "other_percentage": 91.09407379081242,
+    "non_productive_percentage": 1.1114905502174421,
+    "other_hours": 5.348569999999993,
+    "other_percentage": 91.835746534253,
     "labels": [
       "2025-05-22"
     ],
@@ -210,7 +210,7 @@ const activityData = {
       0.0647338888888889
     ],
     "other": [
-      4.863550555555543
+      5.348569999999993
     ],
     "afk": [
       11.817868888888889
@@ -218,23 +218,23 @@ const activityData = {
     "top_apps_labels": [
       "opera.exe",
       "Discord.exe",
+      "ApplicationFrameHost.exe",
       "pycharm64.exe",
-      "Telegram.exe",
-      "ApplicationFrameHost.exe"
+      "Telegram.exe"
     ],
     "top_apps_data": [
-      5.08332722222221,
+      5.564683611111104,
       0.14016277777777778,
+      0.02679944444444444,
       0.025735277777777777,
-      0.024830833333333333,
-      0.0234175
+      0.024830833333333333
     ],
     "top_apps_colors": [
       "#FFC107",
       "#4CAF50",
+      "#FFC107",
       "#4CAF50",
-      "#4CAF50",
-      "#FFC107"
+      "#4CAF50"
     ],
     "trend_labels": [
       "2025-05-22"
@@ -286,8 +286,8 @@ const activityData = {
       0.7141802777777779,
       0.6483805555555554,
       0.6648516666666667,
-      0.5354847222222222,
-      0,
+      0.7396749999999997,
+      0.28082916666666663,
       0,
       0,
       0,
@@ -306,11 +306,11 @@ const activityData = {
       "Work > Communication > Social Media"
     ],
     "category_data": [
-      4.818267499999989,
+      5.299623888888884,
       0.18574333333333334,
       0.1649936111111111,
       0.0647338888888889,
-      0.045283055555555556,
+      0.048946111111111114,
       0.025735277777777777,
       0.018578333333333336,
       0.00894138888888889,
