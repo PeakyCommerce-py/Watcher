@@ -1,10 +1,10 @@
  
-[Thu 05/22/2025  9:52:28.53] Starting update 
-[Thu 05/22/2025  9:52:28.54] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Thu 05/22/2025  9:52:28.54] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Thu 05/22/2025 10:22:28.49] Starting update 
+[Thu 05/22/2025 10:22:28.49] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Thu 05/22/2025 10:22:28.50] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Thu 05/22/2025  9:52:28.80] ActivityWatch is already running 
-[Thu 05/22/2025  9:52:28.80] Running export script... 
+[Thu 05/22/2025 10:22:28.65] ActivityWatch is already running 
+[Thu 05/22/2025 10:22:28.65] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 4613 events
+Found 4713 events
 
 Significant event:
 App: opera.exe
@@ -72,6 +72,12 @@ Duration: 0.11 hours
 
 Significant event:
 App: opera.exe
+Title: Customer_Bloomingville.xlsm - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
+
+Significant event:
+App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.09 hours
@@ -95,36 +101,42 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 68.0 hours
-- Active time: 15.8 hours (23.2%)
-- AFK time: 52.3 hours (76.8%)
-- Productive time: 3.6 hours (22.7% of active time)
+- Total tracking time: 68.5 hours
+- Active time: 16.2 hours (23.7%)
+- AFK time: 52.3 hours (76.3%)
+- Productive time: 3.6 hours (22.3% of active time)
 - Non-productive time: 0.2 hours (1.0% of active time)
-- Other time: 12.0 hours (76.3% of active time)
+- Other time: 12.5 hours (76.8% of active time)
 
 Querying today's data:
 Time period: Thursday, May 22, 2025 to Thursday, May 22, 2025
-Found 110 events
+Found 210 events
+
+Significant event:
+App: opera.exe
+Title: Customer_Bloomingville.xlsm - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.11 hours
 
 Data Collection Summary:
-- Total tracking time: 8.4 hours
-- Active time: 0.5 hours (5.4%)
-- AFK time: 8.0 hours (94.6%)
-- Productive time: 0.2 hours (48.4% of active time)
+- Total tracking time: 8.9 hours
+- Active time: 0.9 hours (10.4%)
+- AFK time: 8.0 hours (89.6%)
+- Productive time: 0.3 hours (27.2% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 0.2 hours (51.6% of active time)
+- Other time: 0.7 hours (72.8% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-22 09:52
-✓ Successfully updated index.html with time: 2025-05-22 09:52
+Using direct UTC+4 offset time: 2025-05-22 10:22
+✓ Successfully updated index.html with time: 2025-05-22 10:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Thu 05/22/2025  9:52:31.07] Checking file modifications... 
-[Thu 05/22/2025  9:52:31.08] data.js last modified: 05/22/2025 09:52 AM 
-[Thu 05/22/2025  9:52:31.08] index.html last modified: 05/22/2025 09:52 AM 
-[Thu 05/22/2025  9:52:31.10] Setting up Git credential helper... 
-[Thu 05/22/2025  9:52:31.15] Adding files to Git... 
+[Thu 05/22/2025 10:22:30.07] Checking file modifications... 
+[Thu 05/22/2025 10:22:30.07] data.js last modified: 05/22/2025 10:22 AM 
+[Thu 05/22/2025 10:22:30.07] index.html last modified: 05/22/2025 10:22 AM 
+[Thu 05/22/2025 10:22:30.09] Setting up Git credential helper... 
+[Thu 05/22/2025 10:22:30.13] Adding files to Git... 
