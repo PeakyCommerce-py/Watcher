@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Friday, May 23, 2025",
-    "total_hours": 98.57054722222219,
-    "active_hours": 31.334041944444397,
-    "active_percentage": 31.788442721945557,
-    "afk_hours": 67.23650527777778,
-    "afk_percentage": 68.21155727805444,
+    "total_hours": 99.52592888888886,
+    "active_hours": 31.554308888888844,
+    "active_percentage": 31.704611291913892,
+    "afk_hours": 67.97162,
+    "afk_percentage": 68.29538870808611,
     "productive_hours": 4.2372355555555545,
-    "productive_percentage": 13.522786377410931,
+    "productive_percentage": 13.428389670887716,
     "non_productive_hours": 0.41912916666666666,
-    "non_productive_percentage": 1.3376160260772845,
-    "other_hours": 26.677677222222176,
-    "other_percentage": 85.13959759651179,
+    "non_productive_percentage": 1.3282787087574393,
+    "other_hours": 26.897944166666623,
+    "other_percentage": 85.24333162035484,
     "labels": [
       "2025-05-22",
       "2025-05-23",
@@ -36,14 +36,14 @@ const activityData = {
     ],
     "other": [
       9.163175277777766,
-      5.716536666666653,
+      5.9368036111111,
       6.2388058333333065,
       2.6028869444444487,
       2.956272500000003
     ],
     "afk": [
       9.893609999999997,
-      6.517256944444443,
+      7.252371666666672,
       22.973458333333344,
       10.945635833333334,
       16.906544166666663
@@ -56,7 +56,7 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      27.712702777777846,
+      27.932969722222285,
       1.47735972222222,
       0.6883950000000001,
       0.5125755555555553,
@@ -130,8 +130,8 @@ const activityData = {
       3.7038975,
       3.600944722222226,
       2.4669150000000046,
-      3.1163925000000026,
-      1.5926858333333358,
+      3.1495069444444477,
+      1.779838333333335,
       1.0887958333333325,
       0.5129397222222224
     ],
@@ -148,7 +148,7 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      25.42320472222233,
+      25.643471666666766,
       1.711899444444444,
       1.596831111111109,
       1.254472499999999,
@@ -196,17 +196,17 @@ const activityData = {
   "daily": {
     "start_date": "Friday, May 23, 2025",
     "end_date": "Friday, May 23, 2025",
-    "total_hours": 12.852510555555542,
-    "active_hours": 6.335253611111098,
-    "active_percentage": 49.29195415733514,
-    "afk_hours": 6.517256944444443,
-    "afk_percentage": 50.70804584266485,
+    "total_hours": 13.807892222222216,
+    "active_hours": 6.555520555555544,
+    "active_percentage": 47.47662025493787,
+    "afk_hours": 7.252371666666672,
+    "afk_percentage": 52.523379745062115,
     "productive_hours": 0.4190833333333333,
-    "productive_percentage": 6.615099553367888,
+    "productive_percentage": 6.3928307413844765,
     "non_productive_hours": 0.1996336111111111,
-    "non_productive_percentage": 3.1511542136368984,
-    "other_hours": 5.716536666666653,
-    "other_percentage": 90.2337462329952,
+    "non_productive_percentage": 3.0452747332464623,
+    "other_hours": 5.9368036111111,
+    "other_percentage": 90.56189452536906,
     "labels": [
       "2025-05-23"
     ],
@@ -217,10 +217,10 @@ const activityData = {
       0.1996336111111111
     ],
     "other": [
-      5.716536666666653
+      5.9368036111111
     ],
     "afk": [
-      6.517256944444443
+      7.252371666666672
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -230,7 +230,7 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      5.747371111111096,
+      5.967638055555542,
       0.17910249999999991,
       0.11737944444444445,
       0.10987249999999998,
@@ -296,8 +296,8 @@ const activityData = {
       1.2500486111111118,
       0.6675136111111111,
       0.20178500000000002,
-      0.026960277777777777,
-      0,
+      0.060074722222222224,
+      0.18715249999999994,
       0,
       0
     ],
@@ -312,7 +312,7 @@ const activityData = {
       "Work > Programming > ActivityWatch"
     ],
     "category_data": [
-      5.403608333333319,
+      5.623875277777764,
       0.31292833333333336,
       0.1996336111111111,
       0.17910249999999991,
