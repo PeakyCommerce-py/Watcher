@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Friday, May 23, 2025",
-    "total_hours": 89.03879749999997,
-    "active_hours": 26.736624999999968,
-    "active_percentage": 30.028061643577313,
+    "total_hours": 89.58805583333331,
+    "active_hours": 27.285883333333302,
+    "active_percentage": 30.457054882511418,
     "afk_hours": 62.302172500000005,
-    "afk_percentage": 69.97193835642268,
+    "afk_percentage": 69.54294511748857,
     "productive_hours": 4.06075111111111,
-    "productive_percentage": 15.187971971447837,
+    "productive_percentage": 14.882241712696793,
     "non_productive_hours": 0.23908055555555552,
-    "non_productive_percentage": 0.8942061892836355,
-    "other_hours": 22.436793333333302,
-    "other_percentage": 83.91782183926853,
+    "non_productive_percentage": 0.8762060316496593,
+    "other_hours": 22.986051666666636,
+    "other_percentage": 84.24155225565354,
     "labels": [
       "2025-05-22",
       "2025-05-21",
@@ -37,7 +37,7 @@ const activityData = {
     "other": [
       9.163175277777766,
       6.2388058333333065,
-      1.4756527777777784,
+      2.0249111111111104,
       2.6028869444444487,
       2.956272500000003
     ],
@@ -56,7 +56,7 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      23.440445833333417,
+      23.970548333333415,
       1.4404399999999977,
       0.5769775000000003,
       0.5125755555555553,
@@ -124,7 +124,7 @@ const activityData = {
       1.491111944444445,
       2.380464166666666,
       2.887908611111116,
-      1.6197030555555556,
+      2.1689613888888877,
       1.7682733333333354,
       1.8781411111111117,
       2.453848888888892,
@@ -148,10 +148,10 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      21.420628055555692,
+      21.950730555555694,
       1.6328713888888886,
       1.5599113888888863,
-      1.0161652777777779,
+      1.0353211111111116,
       0.384863888888889,
       0.23908055555555557,
       0.21113472222222224,
@@ -196,17 +196,17 @@ const activityData = {
   "daily": {
     "start_date": "Friday, May 23, 2025",
     "end_date": "Friday, May 23, 2025",
-    "total_hours": 3.320760833333334,
-    "active_hours": 1.7378366666666674,
-    "active_percentage": 52.3324850504892,
+    "total_hours": 3.870019166666666,
+    "active_hours": 2.2870949999999994,
+    "active_percentage": 59.09776932629317,
     "afk_hours": 1.5829241666666667,
-    "afk_percentage": 47.66751494951082,
+    "afk_percentage": 40.90223067370683,
     "productive_hours": 0.24259888888888897,
-    "productive_percentage": 13.959821054657356,
+    "productive_percentage": 10.607293920405102,
     "non_productive_hours": 0.019585,
-    "non_productive_percentage": 1.1269758761371893,
-    "other_hours": 1.4756527777777784,
-    "other_percentage": 84.91320306920545,
+    "non_productive_percentage": 0.8563264752885213,
+    "other_hours": 2.0249111111111104,
+    "other_percentage": 88.53637960430638,
     "labels": [
       "2025-05-23"
     ],
@@ -217,7 +217,7 @@ const activityData = {
       0.019585
     ],
     "other": [
-      1.4756527777777784
+      2.0249111111111104
     ],
     "afk": [
       1.5829241666666667
@@ -227,14 +227,14 @@ const activityData = {
       "Discord.exe",
       "explorer.exe",
       "LockApp.exe",
-      "lghub.exe"
+      "Acrobat.exe"
     ],
     "top_apps_data": [
-      1.4751141666666665,
+      2.0052166666666658,
       0.14218277777777777,
       0.045918611111111104,
       0.04469083333333333,
-      0.01132361111111111
+      0.01227138888888889
     ],
     "top_apps_colors": [
       "#FFC107",
@@ -290,7 +290,7 @@ const activityData = {
       0,
       0.2783930555555555,
       1.073014444444444,
-      0.3864291666666668,
+      0.9356875000000003,
       0,
       0,
       0,
@@ -311,9 +311,9 @@ const activityData = {
       "Work > Communication > Social Media"
     ],
     "category_data": [
-      1.401031666666667,
+      1.9311341666666657,
       0.14218277777777777,
-      0.0746211111111111,
+      0.09377694444444444,
       0.05141388888888888,
       0.045918611111111104,
       0.019585,
