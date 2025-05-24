@@ -1,10 +1,10 @@
  
-[Sat 05/24/2025 19:52:28.44] Starting update 
-[Sat 05/24/2025 19:52:28.44] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sat 05/24/2025 19:52:28.45] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sat 05/24/2025 20:22:28.08] Starting update 
+[Sat 05/24/2025 20:22:28.08] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sat 05/24/2025 20:22:28.09] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sat 05/24/2025 19:52:28.60] ActivityWatch is already running 
-[Sat 05/24/2025 19:52:28.60] Running export script... 
+[Sat 05/24/2025 20:22:28.36] ActivityWatch is already running 
+[Sat 05/24/2025 20:22:28.36] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 8477 events
+Found 8593 events
 
 Significant event:
 App: opera.exe
@@ -170,6 +170,12 @@ Significant event:
 App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
+Duration: 0.16 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
 Duration: 0.16 hours
 
 Significant event:
@@ -347,6 +353,12 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
+Significant event:
 App: Discord.exe
 Title: #【⚔】general-defqon1-talks | Q-dance Official - Discord
 Categories: Work > Communication
@@ -377,16 +389,16 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 121.0 hours
-- Active time: 39.1 hours (32.3%)
-- AFK time: 81.9 hours (67.7%)
-- Productive time: 4.9 hours (12.5% of active time)
-- Non-productive time: 0.7 hours (1.8% of active time)
-- Other time: 33.5 hours (85.7% of active time)
+- Total tracking time: 121.5 hours
+- Active time: 39.6 hours (32.6%)
+- AFK time: 81.9 hours (67.4%)
+- Productive time: 4.9 hours (12.4% of active time)
+- Non-productive time: 0.7 hours (1.9% of active time)
+- Other time: 34.0 hours (85.7% of active time)
 
 Querying today's data:
 Time period: Saturday, May 24, 2025 to Saturday, May 24, 2025
-Found 1323 events
+Found 1439 events
 
 Significant event:
 App: opera.exe
@@ -399,6 +411,12 @@ App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.20 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.16 hours
 
 Significant event:
 App: opera.exe
@@ -425,30 +443,36 @@ Categories: General > Browsing
 Duration: 0.10 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
+Significant event:
 App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 16.8 hours
-- Active time: 4.7 hours (28.1%)
-- AFK time: 12.1 hours (71.9%)
-- Productive time: 0.5 hours (11.5% of active time)
-- Non-productive time: 0.3 hours (6.0% of active time)
-- Other time: 3.9 hours (82.4% of active time)
+- Total tracking time: 17.3 hours
+- Active time: 5.2 hours (30.3%)
+- AFK time: 12.1 hours (69.7%)
+- Productive time: 0.6 hours (10.5% of active time)
+- Non-productive time: 0.3 hours (6.2% of active time)
+- Other time: 4.4 hours (83.3% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-24 19:52
-✓ Successfully updated index.html with time: 2025-05-24 19:52
+Using direct UTC+4 offset time: 2025-05-24 20:22
+✓ Successfully updated index.html with time: 2025-05-24 20:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sat 05/24/2025 19:52:31.10] Checking file modifications... 
-[Sat 05/24/2025 19:52:31.11] data.js last modified: 05/24/2025 07:52 PM 
-[Sat 05/24/2025 19:52:31.11] index.html last modified: 05/24/2025 07:52 PM 
-[Sat 05/24/2025 19:52:31.13] Setting up Git credential helper... 
-[Sat 05/24/2025 19:52:31.20] Adding files to Git... 
+[Sat 05/24/2025 20:22:32.51] Checking file modifications... 
+[Sat 05/24/2025 20:22:32.53] data.js last modified: 05/24/2025 08:22 PM 
+[Sat 05/24/2025 20:22:32.53] index.html last modified: 05/24/2025 08:22 PM 
+[Sat 05/24/2025 20:22:32.57] Setting up Git credential helper... 
+[Sat 05/24/2025 20:22:32.69] Adding files to Git... 
