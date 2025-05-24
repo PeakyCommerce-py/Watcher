@@ -1,10 +1,10 @@
  
-[Sat 05/24/2025 21:22:28.44] Starting update 
-[Sat 05/24/2025 21:22:28.44] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sat 05/24/2025 21:22:28.45] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sat 05/24/2025 21:52:28.50] Starting update 
+[Sat 05/24/2025 21:52:28.50] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sat 05/24/2025 21:52:28.51] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sat 05/24/2025 21:22:28.63] ActivityWatch is already running 
-[Sat 05/24/2025 21:22:28.63] Running export script... 
+[Sat 05/24/2025 21:52:28.67] ActivityWatch is already running 
+[Sat 05/24/2025 21:52:28.67] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 8674 events
+Found 8827 events
 
 Significant event:
 App: opera.exe
@@ -234,6 +234,12 @@ Duration: 0.14 hours
 
 Significant event:
 App: opera.exe
+Title: Rapp om Dino, David & Stefa | Google AI Studio - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.13 hours
@@ -348,6 +354,12 @@ Duration: 0.09 hours
 
 Significant event:
 App: opera.exe
+Title: Copy of Untitled spreadsheet - 13 May, 17:45 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
+Significant event:
+App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.09 hours
@@ -395,16 +407,16 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 122.9 hours
-- Active time: 40.3 hours (32.8%)
-- AFK time: 82.7 hours (67.2%)
-- Productive time: 4.9 hours (12.2% of active time)
-- Non-productive time: 0.8 hours (1.9% of active time)
-- Other time: 34.6 hours (85.9% of active time)
+- Total tracking time: 123.5 hours
+- Active time: 40.8 hours (33.0%)
+- AFK time: 82.7 hours (67.0%)
+- Productive time: 5.0 hours (12.2% of active time)
+- Non-productive time: 0.8 hours (1.8% of active time)
+- Other time: 35.1 hours (86.0% of active time)
 
 Querying today's data:
 Time period: Saturday, May 24, 2025 to Saturday, May 24, 2025
-Found 1520 events
+Found 1673 events
 
 Significant event:
 App: opera.exe
@@ -432,6 +444,12 @@ Duration: 0.16 hours
 
 Significant event:
 App: opera.exe
+Title: Rapp om Dino, David & Stefa | Google AI Studio - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.12 hours
@@ -455,6 +473,12 @@ Categories: General > Browsing
 Duration: 0.10 hours
 
 Significant event:
+App: opera.exe
+Title: Copy of Untitled spreadsheet - 13 May, 17:45 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
+Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
@@ -467,24 +491,24 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 18.7 hours
-- Active time: 5.9 hours (31.3%)
-- AFK time: 12.9 hours (68.7%)
+- Total tracking time: 19.3 hours
+- Active time: 6.4 hours (33.2%)
+- AFK time: 12.9 hours (66.8%)
 - Productive time: 0.6 hours (9.6% of active time)
-- Non-productive time: 0.3 hours (5.7% of active time)
-- Other time: 5.0 hours (84.8% of active time)
+- Non-productive time: 0.3 hours (5.2% of active time)
+- Other time: 5.5 hours (85.2% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-24 21:22
-✓ Successfully updated index.html with time: 2025-05-24 21:22
+Using direct UTC+4 offset time: 2025-05-24 21:52
+✓ Successfully updated index.html with time: 2025-05-24 21:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sat 05/24/2025 21:22:30.80] Checking file modifications... 
-[Sat 05/24/2025 21:22:30.81] data.js last modified: 05/24/2025 09:22 PM 
-[Sat 05/24/2025 21:22:30.81] index.html last modified: 05/24/2025 09:22 PM 
-[Sat 05/24/2025 21:22:30.82] Setting up Git credential helper... 
-[Sat 05/24/2025 21:22:30.87] Adding files to Git... 
+[Sat 05/24/2025 21:52:33.04] Checking file modifications... 
+[Sat 05/24/2025 21:52:33.05] data.js last modified: 05/24/2025 09:52 PM 
+[Sat 05/24/2025 21:52:33.05] index.html last modified: 05/24/2025 09:52 PM 
+[Sat 05/24/2025 21:52:33.10] Setting up Git credential helper... 
+[Sat 05/24/2025 21:52:33.16] Adding files to Git... 
