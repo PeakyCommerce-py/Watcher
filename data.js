@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 19, 2025",
     "end_date": "Saturday, May 24, 2025",
-    "total_hours": 108.86423749999997,
-    "active_hours": 35.961066388888845,
-    "active_percentage": 33.032947471743284,
-    "afk_hours": 72.90317111111113,
-    "afk_percentage": 66.96705252825672,
-    "productive_hours": 4.6869830555555545,
-    "productive_percentage": 13.03349295838381,
+    "total_hours": 109.95479277777775,
+    "active_hours": 36.3387319444444,
+    "active_percentage": 33.04879307797539,
+    "afk_hours": 73.61606083333335,
+    "afk_percentage": 66.95120692202461,
+    "productive_hours": 4.76120611111111,
+    "productive_percentage": 13.102290191056106,
     "non_productive_hours": 0.4214041666666667,
-    "non_productive_percentage": 1.1718344559350193,
-    "other_hours": 30.85267916666662,
-    "other_percentage": 85.79467258568117,
+    "non_productive_percentage": 1.1596556734861314,
+    "other_hours": 31.156121666666618,
+    "other_percentage": 85.73805413545776,
     "labels": [
       "2025-05-22",
       "2025-05-24",
@@ -23,7 +23,7 @@ const activityData = {
     ],
     "productive": [
       0.4558405555555555,
-      0.3256997222222222,
+      0.39992277777777785,
       0.5431311111111111,
       1.7082183333333318,
       0.5717325000000002,
@@ -39,7 +39,7 @@ const activityData = {
     ],
     "other": [
       9.163175277777766,
-      1.222934166666667,
+      1.5263766666666676,
       8.66860444444443,
       6.2388058333333065,
       2.6028869444444487,
@@ -47,7 +47,7 @@ const activityData = {
     ],
     "afk": [
       9.893609999999997,
-      3.101695,
+      3.8145847222222216,
       9.082227777777783,
       22.973458333333344,
       10.945635833333334,
@@ -61,9 +61,9 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      31.853118888888954,
+      32.221634722222284,
       1.8078724999999984,
-      0.6960091666666668,
+      0.7039580555555556,
       0.5153952777777775,
       0.20923416666666655
     ],
@@ -84,7 +84,7 @@ const activityData = {
     ],
     "trend_data": [
       0.4558405555555555,
-      0.3256997222222222,
+      0.39992277777777785,
       0.5431311111111111,
       1.7082183333333318,
       0.5717325000000002,
@@ -129,8 +129,8 @@ const activityData = {
       0.17487749999999996,
       0.5274444444444447,
       2.9397961111111117,
-      2.385259166666666,
-      2.887908611111116,
+      2.478925277777776,
+      3.17190805555556,
       2.292450833333334,
       2.593965,
       2.830811111111108,
@@ -147,20 +147,20 @@ const activityData = {
       "Work > Communication",
       "Work > AI Chatting",
       "Uncategorized",
-      "Media > Video",
       "Work > Communication > Social Media",
+      "Media > Video",
       "Work > Programming > ActivityWatch",
       "Work > General",
       "Work > Programming > Coding",
       "Work > Communication > Email"
     ],
     "category_data": [
-      29.49946555555564,
+      29.793758333333425,
       1.9273438888888867,
       1.7549408333333334,
-      1.3532136111111113,
+      1.3623633333333336,
+      0.4711075000000001,
       0.4214041666666671,
-      0.3968844444444446,
       0.23137638888888887,
       0.20923416666666655,
       0.09959666666666664,
@@ -171,8 +171,8 @@ const activityData = {
       "#4CAF50",
       "#4CAF50",
       "#FFC107",
-      "#FF5722",
       "#4CAF50",
+      "#FF5722",
       "#4CAF50",
       "#4CAF50",
       "#4CAF50",
@@ -203,31 +203,31 @@ const activityData = {
   "daily": {
     "start_date": "Saturday, May 24, 2025",
     "end_date": "Saturday, May 24, 2025",
-    "total_hours": 4.65032888888889,
-    "active_hours": 1.5486338888888895,
-    "active_percentage": 33.301599217833115,
-    "afk_hours": 3.101695,
-    "afk_percentage": 66.69840078216689,
-    "productive_hours": 0.3256997222222222,
-    "productive_percentage": 21.031421600615012,
+    "total_hours": 5.740884166666667,
+    "active_hours": 1.9262994444444455,
+    "active_percentage": 33.5540552382006,
+    "afk_hours": 3.8145847222222216,
+    "afk_percentage": 66.4459447617994,
+    "productive_hours": 0.39992277777777785,
+    "productive_percentage": 20.76119467983949,
     "non_productive_hours": 0.0,
     "non_productive_percentage": 0.0,
-    "other_hours": 1.222934166666667,
-    "other_percentage": 78.96857839938498,
+    "other_hours": 1.5263766666666676,
+    "other_percentage": 79.23880532016052,
     "labels": [
       "2025-05-24"
     ],
     "productive": [
-      0.3256997222222222
+      0.39992277777777785
     ],
     "non_productive": [
       0.0
     ],
     "other": [
-      1.222934166666667
+      1.5263766666666676
     ],
     "afk": [
-      3.101695
+      3.8145847222222216
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -237,7 +237,7 @@ const activityData = {
       "BakkesMod.exe"
     ],
     "top_apps_data": [
-      1.1589311111111118,
+      1.5274469444444452,
       0.2942369444444444,
       0.05281027777777778,
       0.02666777777777778,
@@ -254,7 +254,7 @@ const activityData = {
       "2025-05-24"
     ],
     "trend_data": [
-      0.3256997222222222
+      0.39992277777777785
     ],
     "hour_labels": [
       "0:00",
@@ -295,8 +295,8 @@ const activityData = {
       0.05667500000000001,
       0.03847972222222223,
       1.448684166666667,
-      0.004795,
-      0,
+      0.09846111111111111,
+      0.28399944444444447,
       0,
       0,
       0,
@@ -311,22 +311,22 @@ const activityData = {
     "categories": [
       "General > Browsing",
       "Work > Communication",
+      "Work > Communication > Social Media",
       "Uncategorized",
-      "Work > General",
-      "Work > Communication > Social Media"
+      "Work > General"
     ],
     "category_data": [
-      1.1541361111111121,
+      1.4484288888888897,
       0.2942369444444444,
-      0.06879805555555557,
-      0.02666777777777778,
-      0.004795
+      0.07901805555555555,
+      0.07794777777777775,
+      0.02666777777777778
     ],
     "category_colors": [
       "#FFC107",
       "#4CAF50",
-      "#FFC107",
       "#4CAF50",
+      "#FFC107",
       "#4CAF50"
     ],
     "web_labels": [],

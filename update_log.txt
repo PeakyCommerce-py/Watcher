@@ -1,10 +1,10 @@
  
-[Sat 05/24/2025 11:52:28.41] Starting update 
-[Sat 05/24/2025 11:52:28.41] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sat 05/24/2025 11:52:28.41] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sat 05/24/2025 12:22:28.40] Starting update 
+[Sat 05/24/2025 12:22:28.40] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sat 05/24/2025 12:22:28.41] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sat 05/24/2025 11:52:28.52] ActivityWatch is already running 
-[Sat 05/24/2025 11:52:28.52] Running export script... 
+[Sat 05/24/2025 12:22:28.52] ActivityWatch is already running 
+[Sat 05/24/2025 12:22:28.52] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 7320 events
+Found 7334 events
 
 Significant event:
 App: opera.exe
@@ -294,6 +294,12 @@ Duration: 0.10 hours
 
 Significant event:
 App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.10 hours
+
+Significant event:
+App: opera.exe
 Title: Copy of Untitled spreadsheet - 13 May, 17:45 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.10 hours
@@ -340,17 +346,23 @@ Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.08 hours
 
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.08 hours
+
 Data Collection Summary:
-- Total tracking time: 108.9 hours
-- Active time: 36.0 hours (33.0%)
-- AFK time: 72.9 hours (67.0%)
-- Productive time: 4.7 hours (13.0% of active time)
+- Total tracking time: 110.0 hours
+- Active time: 36.3 hours (33.0%)
+- AFK time: 73.6 hours (67.0%)
+- Productive time: 4.8 hours (13.1% of active time)
 - Non-productive time: 0.4 hours (1.2% of active time)
-- Other time: 30.9 hours (85.8% of active time)
+- Other time: 31.2 hours (85.7% of active time)
 
 Querying today's data:
 Time period: Saturday, May 24, 2025 to Saturday, May 24, 2025
-Found 166 events
+Found 180 events
 
 Significant event:
 App: opera.exe
@@ -358,25 +370,37 @@ Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.90 hours
 
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.10 hours
+
+Significant event:
+App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.08 hours
+
 Data Collection Summary:
-- Total tracking time: 4.7 hours
-- Active time: 1.5 hours (33.3%)
-- AFK time: 3.1 hours (66.7%)
-- Productive time: 0.3 hours (21.0% of active time)
+- Total tracking time: 5.7 hours
+- Active time: 1.9 hours (33.6%)
+- AFK time: 3.8 hours (66.4%)
+- Productive time: 0.4 hours (20.8% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 1.2 hours (79.0% of active time)
+- Other time: 1.5 hours (79.2% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-24 11:52
-✓ Successfully updated index.html with time: 2025-05-24 11:52
+Using direct UTC+4 offset time: 2025-05-24 12:22
+✓ Successfully updated index.html with time: 2025-05-24 12:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sat 05/24/2025 11:52:30.09] Checking file modifications... 
-[Sat 05/24/2025 11:52:30.10] data.js last modified: 05/24/2025 11:52 AM 
-[Sat 05/24/2025 11:52:30.10] index.html last modified: 05/24/2025 11:52 AM 
-[Sat 05/24/2025 11:52:30.12] Setting up Git credential helper... 
-[Sat 05/24/2025 11:52:30.16] Adding files to Git... 
+[Sat 05/24/2025 12:22:30.10] Checking file modifications... 
+[Sat 05/24/2025 12:22:30.11] data.js last modified: 05/24/2025 12:22 PM 
+[Sat 05/24/2025 12:22:30.11] index.html last modified: 05/24/2025 12:22 PM 
+[Sat 05/24/2025 12:22:30.12] Setting up Git credential helper... 
+[Sat 05/24/2025 12:22:30.16] Adding files to Git... 
