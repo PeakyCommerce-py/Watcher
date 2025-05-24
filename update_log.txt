@@ -1,10 +1,10 @@
  
-[Sat 05/24/2025 20:22:28.08] Starting update 
-[Sat 05/24/2025 20:22:28.08] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sat 05/24/2025 20:22:28.09] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sat 05/24/2025 20:52:28.45] Starting update 
+[Sat 05/24/2025 20:52:28.45] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sat 05/24/2025 20:52:28.46] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sat 05/24/2025 20:22:28.36] ActivityWatch is already running 
-[Sat 05/24/2025 20:22:28.36] Running export script... 
+[Sat 05/24/2025 20:52:28.62] ActivityWatch is already running 
+[Sat 05/24/2025 20:52:28.62] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 8593 events
+Found 8624 events
 
 Significant event:
 App: opera.exe
@@ -63,6 +63,12 @@ App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.52 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.36 hours
 
 Significant event:
 App: opera.exe
@@ -389,22 +395,28 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 121.5 hours
-- Active time: 39.6 hours (32.6%)
-- AFK time: 81.9 hours (67.4%)
-- Productive time: 4.9 hours (12.4% of active time)
-- Non-productive time: 0.7 hours (1.9% of active time)
-- Other time: 34.0 hours (85.7% of active time)
+- Total tracking time: 122.1 hours
+- Active time: 40.1 hours (32.8%)
+- AFK time: 82.0 hours (67.2%)
+- Productive time: 4.9 hours (12.3% of active time)
+- Non-productive time: 0.8 hours (1.9% of active time)
+- Other time: 34.4 hours (85.9% of active time)
 
 Querying today's data:
 Time period: Saturday, May 24, 2025 to Saturday, May 24, 2025
-Found 1439 events
+Found 1470 events
 
 Significant event:
 App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.90 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.36 hours
 
 Significant event:
 App: opera.exe
@@ -455,24 +467,24 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 17.3 hours
-- Active time: 5.2 hours (30.3%)
-- AFK time: 12.1 hours (69.7%)
-- Productive time: 0.6 hours (10.5% of active time)
-- Non-productive time: 0.3 hours (6.2% of active time)
-- Other time: 4.4 hours (83.3% of active time)
+- Total tracking time: 17.9 hours
+- Active time: 5.7 hours (31.8%)
+- AFK time: 12.2 hours (68.2%)
+- Productive time: 0.6 hours (9.8% of active time)
+- Non-productive time: 0.3 hours (5.8% of active time)
+- Other time: 4.8 hours (84.3% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-24 20:22
-✓ Successfully updated index.html with time: 2025-05-24 20:22
+Using direct UTC+4 offset time: 2025-05-24 20:52
+✓ Successfully updated index.html with time: 2025-05-24 20:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sat 05/24/2025 20:22:32.51] Checking file modifications... 
-[Sat 05/24/2025 20:22:32.53] data.js last modified: 05/24/2025 08:22 PM 
-[Sat 05/24/2025 20:22:32.53] index.html last modified: 05/24/2025 08:22 PM 
-[Sat 05/24/2025 20:22:32.57] Setting up Git credential helper... 
-[Sat 05/24/2025 20:22:32.69] Adding files to Git... 
+[Sat 05/24/2025 20:52:31.19] Checking file modifications... 
+[Sat 05/24/2025 20:52:31.20] data.js last modified: 05/24/2025 08:52 PM 
+[Sat 05/24/2025 20:52:31.20] index.html last modified: 05/24/2025 08:52 PM 
+[Sat 05/24/2025 20:52:31.21] Setting up Git credential helper... 
+[Sat 05/24/2025 20:52:31.28] Adding files to Git... 
