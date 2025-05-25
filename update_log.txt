@@ -1,10 +1,10 @@
  
-[Sun 05/25/2025 10:27:07.49] Starting update 
-[Sun 05/25/2025 10:27:07.49] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sun 05/25/2025 10:27:07.50] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sun 05/25/2025 10:52:28.45] Starting update 
+[Sun 05/25/2025 10:52:28.45] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sun 05/25/2025 10:52:28.46] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sun 05/25/2025 10:27:07.70] Starting ActivityWatch... 
-[Sun 05/25/2025 10:27:18.40] Running export script... 
+[Sun 05/25/2025 10:52:28.57] ActivityWatch is already running 
+[Sun 05/25/2025 10:52:28.57] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -38,7 +38,7 @@ Significant web event:
 Domain: 127
 Title: ActivityWatch
 Duration: 0.08 hours
-Found 9048 events
+Found 9054 events
 
 Significant event:
 App: opera.exe
@@ -431,36 +431,36 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 127.3 hours
-- Active time: 42.4 hours (33.3%)
-- AFK time: 84.9 hours (66.7%)
+- Total tracking time: 127.9 hours
+- Active time: 42.4 hours (33.1%)
+- AFK time: 85.6 hours (66.9%)
 - Productive time: 5.1 hours (12.0% of active time)
 - Non-productive time: 0.8 hours (1.8% of active time)
 - Other time: 36.5 hours (86.2% of active time)
 
 Querying today's data:
 Time period: Sunday, May 25, 2025 to Sunday, May 25, 2025
-Found 0 events
+Found 6 events
 
 Data Collection Summary:
-- Total tracking time: 0.0 hours
-- Active time: 0.0 hours (0.0%)
-- AFK time: 0.0 hours (0.0%)
+- Total tracking time: 0.7 hours
+- Active time: 0.0 hours (2.2%)
+- AFK time: 0.7 hours (97.8%)
 - Productive time: 0.0 hours (0.0% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 0.0 hours (0.0% of active time)
+- Other time: 0.0 hours (100.0% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-25 10:27
-✓ Successfully updated index.html with time: 2025-05-25 10:27
+Using direct UTC+4 offset time: 2025-05-25 10:52
+✓ Successfully updated index.html with time: 2025-05-25 10:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sun 05/25/2025 10:27:27.24] Checking file modifications... 
-[Sun 05/25/2025 10:27:27.74] data.js last modified: 05/25/2025 10:27 AM 
-[Sun 05/25/2025 10:27:27.74] index.html last modified: 05/25/2025 10:27 AM 
-[Sun 05/25/2025 10:27:28.26] Setting up Git credential helper... 
-[Sun 05/25/2025 10:27:54.08] Adding files to Git... 
+[Sun 05/25/2025 10:52:30.38] Checking file modifications... 
+[Sun 05/25/2025 10:52:30.39] data.js last modified: 05/25/2025 10:52 AM 
+[Sun 05/25/2025 10:52:30.39] index.html last modified: 05/25/2025 10:52 AM 
+[Sun 05/25/2025 10:52:30.41] Setting up Git credential helper... 
+[Sun 05/25/2025 10:52:30.44] Adding files to Git... 
