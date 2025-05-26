@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 26.189741111111125,
-    "active_hours": 8.949603611111117,
-    "active_percentage": 34.17217288686448,
-    "afk_hours": 17.24013750000001,
-    "afk_percentage": 65.82782711313551,
+    "total_hours": 26.798373611111124,
+    "active_hours": 9.39572805555556,
+    "active_percentage": 35.06081448039783,
+    "afk_hours": 17.402645555555566,
+    "afk_percentage": 64.93918551960218,
     "productive_hours": 1.1924841666666677,
-    "productive_percentage": 13.324435567025272,
+    "productive_percentage": 12.691769702312413,
     "non_productive_hours": 0.07809555555555556,
-    "non_productive_percentage": 0.872614687186797,
-    "other_hours": 7.679023888888893,
-    "other_percentage": 85.80294974578794,
+    "non_productive_percentage": 0.8311815230686543,
+    "other_hours": 8.125148333333337,
+    "other_percentage": 86.47704877461895,
     "labels": [
       "2025-05-26",
       "2025-05-27"
@@ -27,22 +27,22 @@ const activityData = {
     ],
     "other": [
       7.42535166666667,
-      0.25367222222222224
+      0.6997966666666664
     ],
     "afk": [
       17.24013750000001,
-      0.0
+      0.16250805555555556
     ],
     "top_apps_labels": [
-      "opera.exe",
       "cs2.exe",
+      "opera.exe",
       "Discord.exe",
       "Photoshop.exe",
       "chrome.exe"
     ],
     "top_apps_data": [
-      3.7532922222222163,
-      3.6698552777777764,
+      4.10546111111111,
+      3.763810833333328,
       0.3522155555555554,
       0.22560444444444452,
       0.21548305555555547
@@ -91,7 +91,7 @@ const activityData = {
     "hour_data": [
       1.0863447222222227,
       0.8252577777777775,
-      0.2571436111111111,
+      0.7032680555555553,
       0,
       0,
       0,
@@ -127,8 +127,8 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      4.465982777777778,
-      3.213041111111107,
+      4.9015886111111024,
+      3.223559722222219,
       0.4405758333333335,
       0.3522155555555554,
       0.20504972222222226,
@@ -157,17 +157,17 @@ const activityData = {
   "daily": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 26.189741111111125,
-    "active_hours": 8.949603611111117,
-    "active_percentage": 34.17217288686448,
-    "afk_hours": 17.24013750000001,
-    "afk_percentage": 65.82782711313551,
+    "total_hours": 26.798373611111124,
+    "active_hours": 9.39572805555556,
+    "active_percentage": 35.06081448039783,
+    "afk_hours": 17.402645555555566,
+    "afk_percentage": 64.93918551960218,
     "productive_hours": 1.1924841666666677,
-    "productive_percentage": 13.324435567025272,
+    "productive_percentage": 12.691769702312413,
     "non_productive_hours": 0.07809555555555556,
-    "non_productive_percentage": 0.872614687186797,
-    "other_hours": 7.679023888888893,
-    "other_percentage": 85.80294974578794,
+    "non_productive_percentage": 0.8311815230686543,
+    "other_hours": 8.125148333333337,
+    "other_percentage": 86.47704877461895,
     "labels": [
       "2025-05-26",
       "2025-05-27"
@@ -182,22 +182,22 @@ const activityData = {
     ],
     "other": [
       7.42535166666667,
-      0.25367222222222224
+      0.6997966666666664
     ],
     "afk": [
       17.24013750000001,
-      0.0
+      0.16250805555555556
     ],
     "top_apps_labels": [
-      "opera.exe",
       "cs2.exe",
+      "opera.exe",
       "Discord.exe",
       "Photoshop.exe",
       "chrome.exe"
     ],
     "top_apps_data": [
-      3.7532922222222163,
-      3.6698552777777764,
+      4.10546111111111,
+      3.763810833333328,
       0.3522155555555554,
       0.22560444444444452,
       0.21548305555555547
@@ -246,7 +246,7 @@ const activityData = {
     "hour_data": [
       1.0863447222222227,
       0.8252577777777775,
-      0.2571436111111111,
+      0.7032680555555553,
       0,
       0,
       0,
@@ -282,8 +282,8 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      4.465982777777778,
-      3.213041111111107,
+      4.9015886111111024,
+      3.223559722222219,
       0.4405758333333335,
       0.3522155555555554,
       0.20504972222222226,
