@@ -2,58 +2,58 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 21.936272222222232,
-    "active_hours": 4.983384722222219,
-    "active_percentage": 22.717555069242216,
+    "total_hours": 22.43613027777778,
+    "active_hours": 5.4832427777777735,
+    "active_percentage": 24.43934274712577,
     "afk_hours": 16.95288750000001,
-    "afk_percentage": 77.28244493075778,
-    "productive_hours": 1.1184816666666664,
-    "productive_percentage": 22.444216712369478,
+    "afk_percentage": 75.56065725287424,
+    "productive_hours": 1.119047222222222,
+    "productive_percentage": 20.408493068325253,
     "non_productive_hours": 0.06691138888888888,
-    "non_productive_percentage": 1.3426896099454946,
-    "other_hours": 3.7979916666666633,
-    "other_percentage": 76.21309367768502,
+    "non_productive_percentage": 1.2202886430647242,
+    "other_hours": 4.297284166666663,
+    "other_percentage": 78.37121828861004,
     "labels": [
       "2025-05-26"
     ],
     "productive": [
-      1.1184816666666664
+      1.119047222222222
     ],
     "non_productive": [
       0.06691138888888888
     ],
     "other": [
-      3.7979916666666633
+      4.297284166666663
     ],
     "afk": [
       16.95288750000001
     ],
     "top_apps_labels": [
       "opera.exe",
+      "cs2.exe",
       "Discord.exe",
       "Photoshop.exe",
-      "chrome.exe",
-      "pycharm64.exe"
+      "chrome.exe"
     ],
     "top_apps_data": [
-      3.4493897222222163,
+      3.4496816666666605,
+      0.6194483333333334,
       0.2939333333333334,
       0.22560444444444452,
-      0.21548305555555547,
-      0.2035927777777778
+      0.21548305555555547
     ],
     "top_apps_colors": [
       "#FFC107",
+      "#FFC107",
       "#4CAF50",
       "#FFC107",
-      "#FFC107",
-      "#4CAF50"
+      "#FFC107"
     ],
     "trend_labels": [
       "2025-05-26"
     ],
     "trend_data": [
-      1.1184816666666664
+      1.119047222222222
     ],
     "hour_labels": [
       "0:00",
@@ -104,7 +104,7 @@ const activityData = {
       0,
       0,
       0.6365002777777776,
-      0.25666277777777796,
+      0.7565208333333333,
       0
     ],
     "categories": [
@@ -120,11 +120,11 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      2.9091386111111057,
-      0.8888530555555558,
+      2.9094305555555504,
+      1.3878536111111126,
       0.4405758333333335,
       0.2939333333333334,
-      0.2035927777777778,
+      0.20415833333333339,
       0.1424255555555554,
       0.0617211111111111,
       0.034409444444444444,
@@ -150,58 +150,58 @@ const activityData = {
   "daily": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 21.936272222222232,
-    "active_hours": 4.983384722222219,
-    "active_percentage": 22.717555069242216,
+    "total_hours": 22.43613027777778,
+    "active_hours": 5.4832427777777735,
+    "active_percentage": 24.43934274712577,
     "afk_hours": 16.95288750000001,
-    "afk_percentage": 77.28244493075778,
-    "productive_hours": 1.1184816666666664,
-    "productive_percentage": 22.444216712369478,
+    "afk_percentage": 75.56065725287424,
+    "productive_hours": 1.119047222222222,
+    "productive_percentage": 20.408493068325253,
     "non_productive_hours": 0.06691138888888888,
-    "non_productive_percentage": 1.3426896099454946,
-    "other_hours": 3.7979916666666633,
-    "other_percentage": 76.21309367768502,
+    "non_productive_percentage": 1.2202886430647242,
+    "other_hours": 4.297284166666663,
+    "other_percentage": 78.37121828861004,
     "labels": [
       "2025-05-26"
     ],
     "productive": [
-      1.1184816666666664
+      1.119047222222222
     ],
     "non_productive": [
       0.06691138888888888
     ],
     "other": [
-      3.7979916666666633
+      4.297284166666663
     ],
     "afk": [
       16.95288750000001
     ],
     "top_apps_labels": [
       "opera.exe",
+      "cs2.exe",
       "Discord.exe",
       "Photoshop.exe",
-      "chrome.exe",
-      "pycharm64.exe"
+      "chrome.exe"
     ],
     "top_apps_data": [
-      3.4493897222222163,
+      3.4496816666666605,
+      0.6194483333333334,
       0.2939333333333334,
       0.22560444444444452,
-      0.21548305555555547,
-      0.2035927777777778
+      0.21548305555555547
     ],
     "top_apps_colors": [
       "#FFC107",
+      "#FFC107",
       "#4CAF50",
       "#FFC107",
-      "#FFC107",
-      "#4CAF50"
+      "#FFC107"
     ],
     "trend_labels": [
       "2025-05-26"
     ],
     "trend_data": [
-      1.1184816666666664
+      1.119047222222222
     ],
     "hour_labels": [
       "0:00",
@@ -252,7 +252,7 @@ const activityData = {
       0,
       0,
       0.6365002777777776,
-      0.25666277777777796,
+      0.7565208333333333,
       0
     ],
     "categories": [
@@ -268,11 +268,11 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      2.9091386111111057,
-      0.8888530555555558,
+      2.9094305555555504,
+      1.3878536111111126,
       0.4405758333333335,
       0.2939333333333334,
-      0.2035927777777778,
+      0.20415833333333339,
       0.1424255555555554,
       0.0617211111111111,
       0.034409444444444444,
