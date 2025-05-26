@@ -2,58 +2,58 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 10.754408055555558,
-    "active_hours": 2.714003888888894,
-    "active_percentage": 25.236199657561652,
-    "afk_hours": 8.040404166666663,
-    "afk_percentage": 74.76380034243836,
-    "productive_hours": 0.8734944444444445,
-    "productive_percentage": 32.1847160212453,
+    "total_hours": 11.306643611111115,
+    "active_hours": 3.239803055555561,
+    "active_percentage": 28.653976962462885,
+    "afk_hours": 8.066840555555554,
+    "afk_percentage": 71.3460230375371,
+    "productive_hours": 0.9928925,
+    "productive_percentage": 30.646693116033834,
     "non_productive_hours": 0.06345833333333332,
-    "non_productive_percentage": 2.338181370820106,
-    "other_hours": 1.7770511111111167,
-    "other_percentage": 65.4771026079346,
+    "non_productive_percentage": 1.9587095957736076,
+    "other_hours": 2.1834522222222277,
+    "other_percentage": 67.39459728819256,
     "labels": [
       "2025-05-26"
     ],
     "productive": [
-      0.8734944444444445
+      0.9928925
     ],
     "non_productive": [
       0.06345833333333332
     ],
     "other": [
-      1.7770511111111167
+      2.1834522222222277
     ],
     "afk": [
-      8.040404166666663
+      8.066840555555554
     ],
     "top_apps_labels": [
       "opera.exe",
       "Discord.exe",
       "Photoshop.exe",
-      "Creative Cloud.exe",
-      "ApplicationFrameHost.exe"
+      "pycharm64.exe",
+      "Creative Cloud.exe"
     ],
     "top_apps_data": [
-      1.6451791666666689,
+      2.030701666666668,
       0.26442611111111103,
       0.22560444444444452,
-      0.13315194444444442,
-      0.10475444444444446
+      0.18376222222222227,
+      0.13315194444444442
     ],
     "top_apps_colors": [
       "#FFC107",
       "#4CAF50",
       "#FFC107",
-      "#FFC107",
+      "#4CAF50",
       "#FFC107"
     ],
     "trend_labels": [
       "2025-05-26"
     ],
     "trend_data": [
-      0.8734944444444445
+      0.9928925
     ],
     "hour_labels": [
       "0:00",
@@ -97,7 +97,7 @@ const activityData = {
       0.8563177777777774,
       0.8277558333333339,
       0.5695452777777779,
-      0.2334816666666666,
+      0.7592808333333334,
       0,
       0,
       0,
@@ -113,20 +113,20 @@ const activityData = {
       "Work > AI Chatting",
       "Work > Communication",
       "Work > Programming > Coding",
-      "Media > Video",
       "Work > General",
+      "Media > Video",
       "Work > Communication > Social Media",
       "Work > Communication > Email",
       "Media > Games"
     ],
     "category_data": [
-      1.1344397222222231,
-      0.6426113888888879,
-      0.4136386111111113,
+      1.5196791666666687,
+      0.6637730555555545,
+      0.41392166666666685,
       0.26442611111111103,
-      0.09865666666666664,
+      0.18376222222222227,
+      0.09540277777777771,
       0.0617211111111111,
-      0.06139333333333333,
       0.031834999999999995,
       0.003544722222222222,
       0.001737222222222222
@@ -137,8 +137,8 @@ const activityData = {
       "#4CAF50",
       "#4CAF50",
       "#4CAF50",
-      "#FF5722",
       "#4CAF50",
+      "#FF5722",
       "#4CAF50",
       "#4CAF50",
       "#FF5722"
@@ -150,58 +150,58 @@ const activityData = {
   "daily": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 10.754408055555558,
-    "active_hours": 2.714003888888894,
-    "active_percentage": 25.236199657561652,
-    "afk_hours": 8.040404166666663,
-    "afk_percentage": 74.76380034243836,
-    "productive_hours": 0.8734944444444445,
-    "productive_percentage": 32.1847160212453,
+    "total_hours": 11.306643611111115,
+    "active_hours": 3.239803055555561,
+    "active_percentage": 28.653976962462885,
+    "afk_hours": 8.066840555555554,
+    "afk_percentage": 71.3460230375371,
+    "productive_hours": 0.9928925,
+    "productive_percentage": 30.646693116033834,
     "non_productive_hours": 0.06345833333333332,
-    "non_productive_percentage": 2.338181370820106,
-    "other_hours": 1.7770511111111167,
-    "other_percentage": 65.4771026079346,
+    "non_productive_percentage": 1.9587095957736076,
+    "other_hours": 2.1834522222222277,
+    "other_percentage": 67.39459728819256,
     "labels": [
       "2025-05-26"
     ],
     "productive": [
-      0.8734944444444445
+      0.9928925
     ],
     "non_productive": [
       0.06345833333333332
     ],
     "other": [
-      1.7770511111111167
+      2.1834522222222277
     ],
     "afk": [
-      8.040404166666663
+      8.066840555555554
     ],
     "top_apps_labels": [
       "opera.exe",
       "Discord.exe",
       "Photoshop.exe",
-      "Creative Cloud.exe",
-      "ApplicationFrameHost.exe"
+      "pycharm64.exe",
+      "Creative Cloud.exe"
     ],
     "top_apps_data": [
-      1.6451791666666689,
+      2.030701666666668,
       0.26442611111111103,
       0.22560444444444452,
-      0.13315194444444442,
-      0.10475444444444446
+      0.18376222222222227,
+      0.13315194444444442
     ],
     "top_apps_colors": [
       "#FFC107",
       "#4CAF50",
       "#FFC107",
-      "#FFC107",
+      "#4CAF50",
       "#FFC107"
     ],
     "trend_labels": [
       "2025-05-26"
     ],
     "trend_data": [
-      0.8734944444444445
+      0.9928925
     ],
     "hour_labels": [
       "0:00",
@@ -245,7 +245,7 @@ const activityData = {
       0.8563177777777774,
       0.8277558333333339,
       0.5695452777777779,
-      0.2334816666666666,
+      0.7592808333333334,
       0,
       0,
       0,
@@ -261,20 +261,20 @@ const activityData = {
       "Work > AI Chatting",
       "Work > Communication",
       "Work > Programming > Coding",
-      "Media > Video",
       "Work > General",
+      "Media > Video",
       "Work > Communication > Social Media",
       "Work > Communication > Email",
       "Media > Games"
     ],
     "category_data": [
-      1.1344397222222231,
-      0.6426113888888879,
-      0.4136386111111113,
+      1.5196791666666687,
+      0.6637730555555545,
+      0.41392166666666685,
       0.26442611111111103,
-      0.09865666666666664,
+      0.18376222222222227,
+      0.09540277777777771,
       0.0617211111111111,
-      0.06139333333333333,
       0.031834999999999995,
       0.003544722222222222,
       0.001737222222222222
@@ -285,8 +285,8 @@ const activityData = {
       "#4CAF50",
       "#4CAF50",
       "#4CAF50",
-      "#FF5722",
       "#4CAF50",
+      "#FF5722",
       "#4CAF50",
       "#4CAF50",
       "#FF5722"
