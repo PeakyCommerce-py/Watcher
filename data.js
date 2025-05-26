@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 14.164668055555554,
-    "active_hours": 3.9189338888888847,
-    "active_percentage": 27.6669659572561,
-    "afk_hours": 10.245734166666667,
-    "afk_percentage": 72.33303404274389,
+    "total_hours": 16.267179722222224,
+    "active_hours": 3.9509536111111063,
+    "active_percentage": 24.287883201498037,
+    "afk_hours": 12.316226111111117,
+    "afk_percentage": 75.71211679850197,
     "productive_hours": 1.047703611111111,
-    "productive_percentage": 26.734403815323386,
+    "productive_percentage": 26.517740126451923,
     "non_productive_hours": 0.06345833333333332,
-    "non_productive_percentage": 1.6192754236873677,
-    "other_hours": 2.8077719444444407,
-    "other_percentage": 71.64632076098925,
+    "non_productive_percentage": 1.6061523262351658,
+    "other_hours": 2.8397916666666623,
+    "other_percentage": 71.87610754731291,
     "labels": [
       "2025-05-26"
     ],
@@ -23,10 +23,10 @@ const activityData = {
       0.06345833333333332
     ],
     "other": [
-      2.8077719444444407
+      2.8397916666666623
     ],
     "afk": [
-      10.245734166666667
+      12.316226111111117
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -36,7 +36,7 @@ const activityData = {
       "chrome.exe"
     ],
     "top_apps_data": [
-      2.6346408333333287,
+      2.6666605555555507,
       0.2737677777777777,
       0.22560444444444452,
       0.19556277777777784,
@@ -99,7 +99,7 @@ const activityData = {
       0.5695452777777779,
       0.921420833333333,
       0.41830055555555545,
-      0.09869027777777781,
+      0.13071000000000005,
       0,
       0,
       0,
@@ -120,7 +120,7 @@ const activityData = {
       "Media > Games"
     ],
     "category_data": [
-      2.1210438888888907,
+      2.1530636111111128,
       0.6867280555555547,
       0.41392166666666685,
       0.2737677777777777,
@@ -150,17 +150,17 @@ const activityData = {
   "daily": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Monday, May 26, 2025",
-    "total_hours": 14.164668055555554,
-    "active_hours": 3.9189338888888847,
-    "active_percentage": 27.6669659572561,
-    "afk_hours": 10.245734166666667,
-    "afk_percentage": 72.33303404274389,
+    "total_hours": 16.267179722222224,
+    "active_hours": 3.9509536111111063,
+    "active_percentage": 24.287883201498037,
+    "afk_hours": 12.316226111111117,
+    "afk_percentage": 75.71211679850197,
     "productive_hours": 1.047703611111111,
-    "productive_percentage": 26.734403815323386,
+    "productive_percentage": 26.517740126451923,
     "non_productive_hours": 0.06345833333333332,
-    "non_productive_percentage": 1.6192754236873677,
-    "other_hours": 2.8077719444444407,
-    "other_percentage": 71.64632076098925,
+    "non_productive_percentage": 1.6061523262351658,
+    "other_hours": 2.8397916666666623,
+    "other_percentage": 71.87610754731291,
     "labels": [
       "2025-05-26"
     ],
@@ -171,10 +171,10 @@ const activityData = {
       0.06345833333333332
     ],
     "other": [
-      2.8077719444444407
+      2.8397916666666623
     ],
     "afk": [
-      10.245734166666667
+      12.316226111111117
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -184,7 +184,7 @@ const activityData = {
       "chrome.exe"
     ],
     "top_apps_data": [
-      2.6346408333333287,
+      2.6666605555555507,
       0.2737677777777777,
       0.22560444444444452,
       0.19556277777777784,
@@ -247,7 +247,7 @@ const activityData = {
       0.5695452777777779,
       0.921420833333333,
       0.41830055555555545,
-      0.09869027777777781,
+      0.13071000000000005,
       0,
       0,
       0,
@@ -268,7 +268,7 @@ const activityData = {
       "Media > Games"
     ],
     "category_data": [
-      2.1210438888888907,
+      2.1530636111111128,
       0.6867280555555547,
       0.41392166666666685,
       0.2737677777777777,
