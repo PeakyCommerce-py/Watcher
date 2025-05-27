@@ -1,10 +1,10 @@
  
-[Wed 05/28/2025  0:22:28.44] Starting update 
-[Wed 05/28/2025  0:22:28.45] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Wed 05/28/2025  0:22:28.45] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Wed 05/28/2025  0:52:28.53] Starting update 
+[Wed 05/28/2025  0:52:28.53] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Wed 05/28/2025  0:52:28.54] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Wed 05/28/2025  0:22:28.59] ActivityWatch is already running 
-[Wed 05/28/2025  0:22:28.60] Running export script... 
+[Wed 05/28/2025  0:52:28.69] ActivityWatch is already running 
+[Wed 05/28/2025  0:52:28.69] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Tuesday, May 27, 2025
-Found 6198 events
+Found 6375 events
 
 Significant event:
 App: cs2.exe
@@ -147,6 +147,12 @@ Duration: 0.14 hours
 
 Significant event:
 App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
 Title: Facebook - Opera
 Categories: Work > Communication > Social Media
 Duration: 0.12 hours
@@ -182,16 +188,16 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 50.7 hours
-- Active time: 20.2 hours (39.7%)
-- AFK time: 30.6 hours (60.3%)
-- Productive time: 2.9 hours (14.5% of active time)
+- Total tracking time: 51.3 hours
+- Active time: 20.7 hours (40.4%)
+- AFK time: 30.6 hours (59.6%)
+- Productive time: 2.9 hours (14.1% of active time)
 - Non-productive time: 0.3 hours (1.4% of active time)
-- Other time: 17.0 hours (84.1% of active time)
+- Other time: 17.5 hours (84.5% of active time)
 
 Querying today's data:
 Time period: Tuesday, May 27, 2025 to Tuesday, May 27, 2025
-Found 3147 events
+Found 3324 events
 
 Significant event:
 App: cs2.exe
@@ -249,6 +255,12 @@ Duration: 0.20 hours
 
 Significant event:
 App: opera.exe
+Title: 🫰THE PIM🫰 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.14 hours
+
+Significant event:
+App: opera.exe
 Title: Facebook - Opera
 Categories: Work > Communication > Social Media
 Duration: 0.12 hours
@@ -272,24 +284,24 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 23.8 hours
-- Active time: 10.6 hours (44.7%)
-- AFK time: 13.2 hours (55.3%)
-- Productive time: 1.7 hours (16.2% of active time)
-- Non-productive time: 0.2 hours (1.9% of active time)
-- Other time: 8.7 hours (81.9% of active time)
+- Total tracking time: 24.4 hours
+- Active time: 11.2 hours (45.9%)
+- AFK time: 13.2 hours (54.1%)
+- Productive time: 1.7 hours (15.4% of active time)
+- Non-productive time: 0.2 hours (1.8% of active time)
+- Other time: 9.2 hours (82.7% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-28 00:22
-✓ Successfully updated index.html with time: 2025-05-28 00:22
+Using direct UTC+4 offset time: 2025-05-28 00:52
+✓ Successfully updated index.html with time: 2025-05-28 00:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Wed 05/28/2025  0:22:32.28] Checking file modifications... 
-[Wed 05/28/2025  0:22:32.29] data.js last modified: 05/28/2025 12:22 AM 
-[Wed 05/28/2025  0:22:32.29] index.html last modified: 05/28/2025 12:22 AM 
-[Wed 05/28/2025  0:22:32.30] Setting up Git credential helper... 
-[Wed 05/28/2025  0:22:32.34] Adding files to Git... 
+[Wed 05/28/2025  0:52:30.92] Checking file modifications... 
+[Wed 05/28/2025  0:52:30.92] data.js last modified: 05/28/2025 12:52 AM 
+[Wed 05/28/2025  0:52:30.92] index.html last modified: 05/28/2025 12:52 AM 
+[Wed 05/28/2025  0:52:30.94] Setting up Git credential helper... 
+[Wed 05/28/2025  0:52:31.01] Adding files to Git... 
