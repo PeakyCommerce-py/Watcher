@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 31.71353805555557,
-    "active_hours": 12.58790777777778,
-    "active_percentage": 39.692536845704076,
-    "afk_hours": 19.12563027777779,
-    "afk_percentage": 60.30746315429592,
+    "total_hours": 32.77322750000001,
+    "active_hours": 12.76693138888889,
+    "active_percentage": 38.9553680329131,
+    "afk_hours": 20.006296111111123,
+    "afk_percentage": 61.04463196708689,
     "productive_hours": 1.6924719444444452,
-    "productive_percentage": 13.445220399789322,
+    "productive_percentage": 13.2566855173782,
     "non_productive_hours": 0.11112833333333334,
-    "non_productive_percentage": 0.8828181401957451,
-    "other_hours": 10.7843075,
-    "other_percentage": 85.67196146001493,
+    "non_productive_percentage": 0.8704388701426621,
+    "other_hours": 10.963331111111113,
+    "other_percentage": 85.87287561247913,
     "labels": [
       "2025-05-27",
       "2025-05-26"
@@ -26,11 +26,11 @@ const activityData = {
       0.07809555555555556
     ],
     "other": [
-      3.3589558333333307,
+      3.537979444444442,
       7.42535166666667
     ],
     "afk": [
-      1.885492777777778,
+      2.7661586111111114,
       17.24013750000001
     ],
     "top_apps_labels": [
@@ -41,7 +41,7 @@ const activityData = {
       "pycharm64.exe"
     ],
     "top_apps_data": [
-      5.295951666666664,
+      5.47497527777778,
       5.210607222222222,
       0.4679922222222224,
       0.38520277777777767,
@@ -103,7 +103,7 @@ const activityData = {
       0.19919833333333334,
       1.4086269444444477,
       1.953241666666668,
-      0.9163411111111108,
+      1.095364722222222,
       0.921420833333333,
       0.41830055555555545,
       0.13071000000000005,
@@ -128,7 +128,7 @@ const activityData = {
     ],
     "category_data": [
       6.285824722222213,
-      4.498482777777773,
+      4.6775063888888635,
       0.6079452777777773,
       0.38576638888888876,
       0.3764905555555554,
@@ -157,17 +157,17 @@ const activityData = {
   "daily": {
     "start_date": "Tuesday, May 27, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 4.788165277777779,
-    "active_hours": 3.065180555555556,
-    "active_percentage": 64.01576340276473,
-    "afk_hours": 1.7229847222222225,
-    "afk_percentage": 35.98423659723525,
+    "total_hours": 5.847854722222222,
+    "active_hours": 3.2442041666666666,
+    "active_percentage": 55.47682561843548,
+    "afk_hours": 2.6036505555555554,
+    "afk_percentage": 44.523174381564516,
     "productive_hours": 0.4999877777777775,
-    "productive_percentage": 16.311854023462445,
+    "productive_percentage": 15.411723556581878,
     "non_productive_hours": 0.033032777777777786,
-    "non_productive_percentage": 1.0776780414421845,
-    "other_hours": 2.5321600000000006,
-    "other_percentage": 82.61046793509537,
+    "non_productive_percentage": 1.0182089683867857,
+    "other_hours": 2.711183611111111,
+    "other_percentage": 83.57006747503132,
     "labels": [
       "2025-05-27"
     ],
@@ -178,10 +178,10 @@ const activityData = {
       0.033032777777777786
     ],
     "other": [
-      2.5321600000000006
+      2.711183611111111
     ],
     "afk": [
-      1.7229847222222225
+      2.6036505555555554
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -191,7 +191,7 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      1.5321408333333342,
+      1.711164444444446,
       0.9781469444444445,
       0.25250916666666656,
       0.1714408333333334,
@@ -251,7 +251,7 @@ const activityData = {
       0,
       0.5523091666666666,
       1.125485833333333,
-      0.3467958333333336,
+      0.5258194444444446,
       0,
       0,
       0,
@@ -273,7 +273,7 @@ const activityData = {
       "Media > Video"
     ],
     "category_data": [
-      1.2749230555555557,
+      1.4539466666666676,
       1.2572369444444451,
       0.1714408333333334,
       0.1673694444444444,
