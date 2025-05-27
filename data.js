@@ -2,23 +2,23 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 49.4193127777778,
-    "active_hours": 19.441415277777782,
-    "active_percentage": 39.33971191626917,
-    "afk_hours": 29.97789750000001,
-    "afk_percentage": 60.660288083730826,
-    "productive_hours": 2.7007786111111134,
-    "productive_percentage": 13.891882728302182,
+    "total_hours": 49.784549444444465,
+    "active_hours": 19.444807500000003,
+    "active_percentage": 39.05791599399496,
+    "afk_hours": 30.33974194444446,
+    "afk_percentage": 60.94208400600504,
+    "productive_hours": 2.7012050000000025,
+    "productive_percentage": 13.891652051582417,
     "non_productive_hours": 0.28309638888888894,
-    "non_productive_percentage": 1.4561511332586883,
-    "other_hours": 16.457540277777778,
-    "other_percentage": 84.65196613843912,
+    "non_productive_percentage": 1.4558971020355376,
+    "other_hours": 16.460506111111112,
+    "other_percentage": 84.65245084638204,
     "labels": [
       "2025-05-27",
       "2025-05-26"
     ],
     "productive": [
-      1.5117658333333348,
+      1.5121922222222237,
       1.1890127777777788
     ],
     "non_productive": [
@@ -26,11 +26,11 @@ const activityData = {
       0.07809555555555556
     ],
     "other": [
-      9.03218861111111,
+      9.035154444444442,
       7.42535166666667
     ],
     "afk": [
-      12.737760000000003,
+      13.099604444444447,
       17.24013750000001
     ],
     "top_apps_labels": [
@@ -59,7 +59,7 @@ const activityData = {
       "2025-05-26"
     ],
     "trend_data": [
-      1.5117658333333348,
+      1.5121922222222237,
       1.1890127777777788
     ],
     "hour_labels": [
@@ -89,7 +89,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      1.0863447222222227,
+      1.0897369444444447,
       0.8252577777777775,
       1.1027274999999996,
       0.7654633333333334,
@@ -127,10 +127,10 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      9.163620833333335,
+      9.166586666666669,
       7.29391944444445,
       0.9740011111111108,
-      0.7062008333333331,
+      0.7066272222222219,
       0.40586527777777753,
       0.3242791666666667,
       0.25705194444444474,
@@ -157,31 +157,31 @@ const activityData = {
   "daily": {
     "start_date": "Tuesday, May 27, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 22.493940000000002,
-    "active_hours": 9.918688055555553,
-    "active_percentage": 44.09493426031879,
-    "afk_hours": 12.575251944444448,
-    "afk_percentage": 55.905065739681206,
-    "productive_hours": 1.508294444444446,
-    "productive_percentage": 15.206592202480204,
+    "total_hours": 22.859176666666663,
+    "active_hours": 9.922080277777773,
+    "active_percentage": 43.40523905327784,
+    "afk_hours": 12.937096388888893,
+    "afk_percentage": 56.59476094672217,
+    "productive_hours": 1.5087208333333346,
+    "productive_percentage": 15.205690652517474,
     "non_productive_hours": 0.20500083333333338,
-    "non_productive_percentage": 2.066813999846587,
-    "other_hours": 8.205392777777774,
-    "other_percentage": 82.72659379767322,
+    "non_productive_percentage": 2.066107384682912,
+    "other_hours": 8.208358611111107,
+    "other_percentage": 82.72820196279963,
     "labels": [
       "2025-05-27"
     ],
     "productive": [
-      1.508294444444446
+      1.5087208333333346
     ],
     "non_productive": [
       0.20500083333333338
     ],
     "other": [
-      8.205392777777774
+      8.208358611111107
     ],
     "afk": [
-      12.575251944444448
+      12.937096388888893
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -208,7 +208,7 @@ const activityData = {
       "2025-05-27"
     ],
     "trend_data": [
-      1.508294444444446
+      1.5087208333333346
     ],
     "hour_labels": [
       "0:00",
@@ -237,7 +237,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      0,
+      0.0033922222222222227,
       0,
       0,
       1.0379236111111112,
@@ -275,10 +275,10 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      4.13503305555556,
+      4.137998888888893,
       4.070359722222221,
       0.5334252777777779,
-      0.3539852777777777,
+      0.3544116666666666,
       0.28986972222222207,
       0.20081555555555564,
       0.13061305555555555,
