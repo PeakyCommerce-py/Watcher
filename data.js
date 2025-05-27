@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 47.25534611111113,
-    "active_hours": 18.700026666666673,
-    "active_percentage": 39.57229859812569,
+    "total_hours": 47.75443138888891,
+    "active_hours": 19.19911194444445,
+    "active_percentage": 40.203833206799594,
     "afk_hours": 28.55531944444446,
-    "afk_percentage": 60.42770140187431,
+    "afk_percentage": 59.7961667932004,
     "productive_hours": 2.6865630555555584,
-    "productive_percentage": 14.366626868743632,
+    "productive_percentage": 13.993163138636502,
     "non_productive_hours": 0.2700580555555556,
-    "non_productive_percentage": 1.4441586654897225,
-    "other_hours": 15.743405555555558,
-    "other_percentage": 84.18921446576665,
+    "non_productive_percentage": 1.4066174328115264,
+    "other_hours": 16.242490833333335,
+    "other_percentage": 84.60021942855197,
     "labels": [
       "2025-05-27",
       "2025-05-26"
@@ -26,7 +26,7 @@ const activityData = {
       0.07809555555555556
     ],
     "other": [
-      8.318053888888887,
+      8.817139166666665,
       7.42535166666667
     ],
     "afk": [
@@ -41,8 +41,8 @@ const activityData = {
       "pycharm64.exe"
     ],
     "top_apps_data": [
-      8.636616666666686,
-      7.171831111111111,
+      8.669991111111132,
+      7.637541944444444,
       0.682283611111111,
       0.6821169444444445,
       0.40586527777777753
@@ -111,8 +111,8 @@ const activityData = {
       0.3029033333333334,
       0.7979205555555556,
       1.6415408333333321,
-      1.7838891666666667,
-      0.8676544444444445
+      1.9342480555555555,
+      1.2163808333333335
     ],
     "categories": [
       "Uncategorized",
@@ -127,8 +127,8 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      8.504294166666655,
-      7.239111388888895,
+      8.97000499999999,
+      7.27248583333334,
       0.9740011111111108,
       0.694253055555555,
       0.40586527777777753,
@@ -157,17 +157,17 @@ const activityData = {
   "daily": {
     "start_date": "Tuesday, May 27, 2025",
     "end_date": "Tuesday, May 27, 2025",
-    "total_hours": 20.33048138888889,
-    "active_hours": 9.1778075,
-    "active_percentage": 45.14308994678256,
+    "total_hours": 20.83083388888889,
+    "active_hours": 9.678159999999998,
+    "active_percentage": 46.46074205009288,
     "afk_hours": 11.152673888888891,
-    "afk_percentage": 54.85691005321745,
+    "afk_percentage": 53.53925794990712,
     "productive_hours": 1.4940788888888905,
-    "productive_percentage": 16.279257207006033,
+    "productive_percentage": 15.437633691620004,
     "non_productive_hours": 0.1919625000000001,
-    "non_productive_percentage": 2.0915943159627184,
-    "other_hours": 7.491766111111112,
-    "other_percentage": 81.62914847703125,
+    "non_productive_percentage": 1.98346069914116,
+    "other_hours": 7.992118611111109,
+    "other_percentage": 82.57890560923884,
     "labels": [
       "2025-05-27"
     ],
@@ -178,7 +178,7 @@ const activityData = {
       0.1919625000000001
     ],
     "other": [
-      7.491766111111112
+      7.992118611111109
     ],
     "afk": [
       11.152673888888891
@@ -191,8 +191,8 @@ const activityData = {
       "pycharm64.exe"
     ],
     "top_apps_data": [
-      4.872805833333331,
-      2.9398788888888907,
+      4.906180277777778,
+      3.4068569444444465,
       0.4666338888888889,
       0.3300680555555553,
       0.20081555555555564
@@ -259,8 +259,8 @@ const activityData = {
       0.3029033333333334,
       0.7979205555555556,
       1.0050405555555557,
-      0.597916111111111,
-      0
+      0.7477669444444442,
+      0.35050166666666666
     ],
     "categories": [
       "General > Browsing",
@@ -275,8 +275,8 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      4.015551666666666,
-      3.4762144444444485,
+      4.04892611111111,
+      3.9431925000000043,
       0.5334252777777779,
       0.34203749999999983,
       0.28986972222222207,
