@@ -1,10 +1,10 @@
  
-[Tue 05/27/2025 12:52:28.52] Starting update 
-[Tue 05/27/2025 12:52:28.52] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 05/27/2025 12:52:28.53] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 05/27/2025 13:22:28.41] Starting update 
+[Tue 05/27/2025 13:22:28.41] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 05/27/2025 13:22:28.42] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 05/27/2025 12:52:28.68] ActivityWatch is already running 
-[Tue 05/27/2025 12:52:28.69] Running export script... 
+[Tue 05/27/2025 13:22:28.56] ActivityWatch is already running 
+[Tue 05/27/2025 13:22:28.56] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Tuesday, May 27, 2025
-Found 3809 events
+Found 3969 events
 
 Significant event:
 App: cs2.exe
@@ -121,17 +121,23 @@ Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.09 hours
 
+Significant event:
+App: opera.exe
+Title: 9 - Google Kalkylark - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
 Data Collection Summary:
-- Total tracking time: 31.2 hours
-- Active time: 12.1 hours (38.7%)
-- AFK time: 19.1 hours (61.3%)
-- Productive time: 1.6 hours (13.4% of active time)
+- Total tracking time: 31.7 hours
+- Active time: 12.6 hours (39.7%)
+- AFK time: 19.1 hours (60.3%)
+- Productive time: 1.7 hours (13.4% of active time)
 - Non-productive time: 0.1 hours (0.9% of active time)
-- Other time: 10.4 hours (85.7% of active time)
+- Other time: 10.8 hours (85.7% of active time)
 
 Querying today's data:
 Time period: Tuesday, May 27, 2025 to Tuesday, May 27, 2025
-Found 758 events
+Found 918 events
 
 Significant event:
 App: cs2.exe
@@ -151,25 +157,31 @@ Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.20 hours
 
+Significant event:
+App: opera.exe
+Title: 9 - Google Kalkylark - Opera
+Categories: General > Browsing
+Duration: 0.09 hours
+
 Data Collection Summary:
-- Total tracking time: 4.3 hours
-- Active time: 2.6 hours (59.9%)
-- AFK time: 1.7 hours (40.1%)
-- Productive time: 0.4 hours (16.6% of active time)
-- Non-productive time: 0.0 hours (1.3% of active time)
-- Other time: 2.1 hours (82.2% of active time)
+- Total tracking time: 4.8 hours
+- Active time: 3.1 hours (64.0%)
+- AFK time: 1.7 hours (36.0%)
+- Productive time: 0.5 hours (16.3% of active time)
+- Non-productive time: 0.0 hours (1.1% of active time)
+- Other time: 2.5 hours (82.6% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-27 12:52
-✓ Successfully updated index.html with time: 2025-05-27 12:52
+Using direct UTC+4 offset time: 2025-05-27 13:22
+✓ Successfully updated index.html with time: 2025-05-27 13:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 05/27/2025 12:52:29.82] Checking file modifications... 
-[Tue 05/27/2025 12:52:29.83] data.js last modified: 05/27/2025 12:52 PM 
-[Tue 05/27/2025 12:52:29.83] index.html last modified: 05/27/2025 12:52 PM 
-[Tue 05/27/2025 12:52:29.85] Setting up Git credential helper... 
-[Tue 05/27/2025 12:52:29.89] Adding files to Git... 
+[Tue 05/27/2025 13:22:29.76] Checking file modifications... 
+[Tue 05/27/2025 13:22:29.77] data.js last modified: 05/27/2025 01:22 PM 
+[Tue 05/27/2025 13:22:29.77] index.html last modified: 05/27/2025 01:22 PM 
+[Tue 05/27/2025 13:22:29.79] Setting up Git credential helper... 
+[Tue 05/27/2025 13:22:29.83] Adding files to Git... 
