@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Wednesday, May 28, 2025",
-    "total_hours": 68.39611777777777,
-    "active_hours": 28.792837222222204,
-    "active_percentage": 42.09718059696239,
+    "total_hours": 68.89358638888888,
+    "active_hours": 29.290305833333317,
+    "active_percentage": 42.515286790262444,
     "afk_hours": 39.603280555555564,
-    "afk_percentage": 57.90281940303761,
-    "productive_hours": 4.020433333333339,
-    "productive_percentage": 13.963310743931773,
+    "afk_percentage": 57.484713209737556,
+    "productive_hours": 4.022413611111117,
+    "productive_percentage": 13.732917757838772,
     "non_productive_hours": 0.41451666666666664,
-    "non_productive_percentage": 1.4396520338285532,
-    "other_hours": 24.3578872222222,
-    "other_percentage": 84.59703722223968,
+    "non_productive_percentage": 1.4152008825900797,
+    "other_hours": 24.85337555555553,
+    "other_percentage": 84.85188135957115,
     "labels": [
       "2025-05-27",
       "2025-05-26",
@@ -21,7 +21,7 @@ const activityData = {
     "productive": [
       1.729598611111114,
       1.1890127777777788,
-      1.1018219444444464
+      1.1038022222222241
     ],
     "non_productive": [
       0.20500083333333338,
@@ -31,7 +31,7 @@ const activityData = {
     "other": [
       10.35632444444442,
       7.42535166666667,
-      6.576211111111106
+      7.071699444444439
     ],
     "afk": [
       13.336773055555556,
@@ -46,9 +46,9 @@ const activityData = {
       "ApplicationFrameHost.exe"
     ],
     "top_apps_data": [
-      15.115768055555519,
-      8.706935277777777,
-      1.112656944444444,
+      15.140924444444408,
+      9.177267222222223,
+      1.1146372222222218,
       0.9200947222222223,
       0.627071111111111
     ],
@@ -67,7 +67,7 @@ const activityData = {
     "trend_data": [
       1.729598611111114,
       1.1890127777777788,
-      1.1018219444444464
+      1.1038022222222241
     ],
     "hour_labels": [
       "0:00",
@@ -96,7 +96,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      1.5066505555555565,
+      2.0041191666666673,
       1.9540952777777771,
       1.1084027777777776,
       0.7654633333333334,
@@ -134,9 +134,9 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      13.50869722222219,
-      10.849190000000013,
-      1.4900683333333373,
+      13.53385361111108,
+      11.319521944444459,
+      1.492048611111115,
       1.2250991666666669,
       0.4724122222222216,
       0.43284388888888886,
@@ -164,28 +164,28 @@ const activityData = {
   "daily": {
     "start_date": "Wednesday, May 28, 2025",
     "end_date": "Wednesday, May 28, 2025",
-    "total_hours": 16.83014805555555,
-    "active_hours": 7.803778055555553,
-    "active_percentage": 46.36785148767341,
+    "total_hours": 17.32761666666666,
+    "active_hours": 8.301246666666664,
+    "active_percentage": 47.90760798994283,
     "afk_hours": 9.02637,
-    "afk_percentage": 53.63214851232658,
-    "productive_hours": 1.0973977777777795,
-    "productive_percentage": 14.0623909337931,
+    "afk_percentage": 52.092392010057175,
+    "productive_hours": 1.0993780555555572,
+    "productive_percentage": 13.243529552857014,
     "non_productive_hours": 0.13142027777777773,
-    "non_productive_percentage": 1.6840596547235083,
-    "other_hours": 6.5749599999999955,
-    "other_percentage": 84.25354941148339,
+    "non_productive_percentage": 1.5831390519389192,
+    "other_hours": 7.070448333333329,
+    "other_percentage": 85.17333139520406,
     "labels": [
       "2025-05-28"
     ],
     "productive": [
-      1.0973977777777795
+      1.0993780555555572
     ],
     "non_productive": [
       0.13142027777777773
     ],
     "other": [
-      6.5749599999999955
+      7.070448333333329
     ],
     "afk": [
       9.02637
@@ -198,9 +198,9 @@ const activityData = {
       "Telegram.exe"
     ],
     "top_apps_data": [
-      5.3988949999999845,
-      0.8766394444444444,
-      0.3831202777777775,
+      5.424051388888873,
+      1.3469713888888888,
+      0.3851005555555553,
       0.271665,
       0.2424258333333333
     ],
@@ -215,7 +215,7 @@ const activityData = {
       "2025-05-28"
     ],
     "trend_data": [
-      1.0973977777777795
+      1.0993780555555572
     ],
     "hour_labels": [
       "0:00",
@@ -244,7 +244,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      0.007174722222222222,
+      0.5046433333333333,
       0,
       0,
       0,
@@ -281,9 +281,9 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      5.2046830555555434,
-      1.3702769444444438,
-      0.6255461111111115,
+      5.229839444444433,
+      1.840608888888888,
+      0.6275263888888892,
       0.2361483333333334,
       0.13142027777777773,
       0.10816083333333334,
