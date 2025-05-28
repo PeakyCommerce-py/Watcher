@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Wednesday, May 28, 2025",
-    "total_hours": 66.64461805555554,
-    "active_hours": 27.77456166666664,
-    "active_percentage": 41.675625845006,
-    "afk_hours": 38.8700563888889,
-    "afk_percentage": 58.324374154994,
-    "productive_hours": 3.9612655555555616,
-    "productive_percentage": 14.262207278358725,
+    "total_hours": 67.40982833333331,
+    "active_hours": 27.806547777777755,
+    "active_percentage": 41.2499904914129,
+    "afk_hours": 39.603280555555564,
+    "afk_percentage": 58.7500095085871,
+    "productive_hours": 3.966912500000006,
+    "productive_percentage": 14.26610930527038,
     "non_productive_hours": 0.4094525,
-    "non_productive_percentage": 1.4741996828392807,
-    "other_hours": 23.40384361111108,
-    "other_percentage": 84.263593038802,
+    "non_productive_percentage": 1.472503898262493,
+    "other_hours": 23.43018277777775,
+    "other_percentage": 84.26138679646714,
     "labels": [
       "2025-05-27",
       "2025-05-26",
@@ -21,7 +21,7 @@ const activityData = {
     "productive": [
       1.729598611111114,
       1.1890127777777788,
-      1.0426541666666687
+      1.0483011111111131
     ],
     "non_productive": [
       0.20500083333333338,
@@ -31,12 +31,12 @@ const activityData = {
     "other": [
       10.35632444444442,
       7.42535166666667,
-      5.62216749999999
+      5.648506666666656
     ],
     "afk": [
       13.336773055555556,
       17.24013750000001,
-      8.293145833333334
+      9.02637
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -46,10 +46,10 @@ const activityData = {
       "ApplicationFrameHost.exe"
     ],
     "top_apps_data": [
-      15.072814999999967,
+      15.072978611111079,
       7.830295833333334,
-      1.0571516666666663,
-      0.8936391666666669,
+      1.0627986111111107,
+      0.9198147222222224,
       0.627071111111111
     ],
     "top_apps_colors": [
@@ -67,7 +67,7 @@ const activityData = {
     "trend_data": [
       1.729598611111114,
       1.1890127777777788,
-      1.0426541666666687
+      1.0483011111111131
     ],
     "hour_labels": [
       "0:00",
@@ -118,8 +118,8 @@ const activityData = {
       1.1326811111111115,
       0.9133694444444442,
       2.1006213888888867,
-      2.3531683333333344,
-      1.4586841666666672
+      2.3533319444444456,
+      1.4905066666666673
     ],
     "categories": [
       "General > Browsing",
@@ -134,9 +134,9 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      13.46574388888886,
-      9.93809972222224,
-      1.4345630555555602,
+      13.46590749999997,
+      9.964275277777794,
+      1.4402100000000047,
       1.2250991666666669,
       0.47213138888888834,
       0.43284388888888886,
@@ -164,31 +164,31 @@ const activityData = {
   "daily": {
     "start_date": "Wednesday, May 28, 2025",
     "end_date": "Wednesday, May 28, 2025",
-    "total_hours": 15.078648333333327,
-    "active_hours": 6.785502499999993,
-    "active_percentage": 45.00073448227949,
-    "afk_hours": 8.293145833333334,
-    "afk_percentage": 54.999265517720495,
-    "productive_hours": 1.038230000000002,
-    "productive_percentage": 15.300709122132123,
+    "total_hours": 15.843858611111104,
+    "active_hours": 6.817488611111104,
+    "active_percentage": 43.02921894499919,
+    "afk_hours": 9.02637,
+    "afk_percentage": 56.970781055000806,
+    "productive_hours": 1.0438769444444465,
+    "productive_percentage": 15.311751936675652,
     "non_productive_hours": 0.12635611111111109,
-    "non_productive_percentage": 1.8621481771042194,
-    "other_hours": 5.62091638888888,
-    "other_percentage": 82.83714270076366,
+    "non_productive_percentage": 1.8534113999864499,
+    "other_hours": 5.647255555555546,
+    "other_percentage": 82.8348366633379,
     "labels": [
       "2025-05-28"
     ],
     "productive": [
-      1.038230000000002
+      1.0438769444444465
     ],
     "non_productive": [
       0.12635611111111109
     ],
     "other": [
-      5.62091638888888
+      5.647255555555546
     ],
     "afk": [
-      8.293145833333334
+      9.02637
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -198,8 +198,8 @@ const activityData = {
       "msedge.exe"
     ],
     "top_apps_data": [
-      5.355941944444429,
-      0.32761499999999977,
+      5.356105555555541,
+      0.3332619444444441,
       0.271665,
       0.2424258333333333,
       0.1892388888888888
@@ -215,7 +215,7 @@ const activityData = {
       "2025-05-28"
     ],
     "trend_data": [
-      1.038230000000002
+      1.0438769444444465
     ],
     "hour_labels": [
       "0:00",
@@ -266,8 +266,8 @@ const activityData = {
       0.8297777777777777,
       0.1154488888888889,
       0.45908055555555555,
-      0.4189202777777776,
-      0
+      0.41908388888888876,
+      0.0318225
     ],
     "categories": [
       "General > Browsing",
@@ -281,9 +281,9 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      5.161729722222211,
-      0.5700408333333328,
-      0.4591866666666666,
+      5.161893333333322,
+      0.5756877777777778,
+      0.48536222222222214,
       0.2361483333333334,
       0.12635611111111109,
       0.10816083333333334,
