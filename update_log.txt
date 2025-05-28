@@ -1,10 +1,10 @@
  
-[Wed 05/28/2025 13:22:28.41] Starting update 
-[Wed 05/28/2025 13:22:28.41] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Wed 05/28/2025 13:22:28.43] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Wed 05/28/2025 13:52:28.45] Starting update 
+[Wed 05/28/2025 13:52:28.45] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Wed 05/28/2025 13:52:28.46] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Wed 05/28/2025 13:22:28.57] ActivityWatch is already running 
-[Wed 05/28/2025 13:22:28.57] Running export script... 
+[Wed 05/28/2025 13:52:28.63] ActivityWatch is already running 
+[Wed 05/28/2025 13:52:28.63] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Wednesday, May 28, 2025
-Found 6655 events
+Found 6799 events
 
 Significant event:
 App: cs2.exe
@@ -171,6 +171,12 @@ Duration: 0.14 hours
 
 Significant event:
 App: opera.exe
+Title: Produkt Import Nyehandel #1 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.13 hours
+
+Significant event:
+App: opera.exe
 Title: Facebook - Opera
 Categories: Work > Communication > Social Media
 Duration: 0.12 hours
@@ -218,16 +224,16 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 56.1 hours
-- Active time: 22.7 hours (40.4%)
-- AFK time: 33.4 hours (59.6%)
-- Productive time: 3.1 hours (13.6% of active time)
+- Total tracking time: 56.7 hours
+- Active time: 23.1 hours (40.7%)
+- AFK time: 33.6 hours (59.3%)
+- Productive time: 3.1 hours (13.5% of active time)
 - Non-productive time: 0.3 hours (1.2% of active time)
-- Other time: 19.3 hours (85.1% of active time)
+- Other time: 19.7 hours (85.3% of active time)
 
 Querying today's data:
 Time period: Wednesday, May 28, 2025 to Wednesday, May 28, 2025
-Found 246 events
+Found 394 events
 
 Significant event:
 App: opera.exe
@@ -243,6 +249,12 @@ Duration: 0.15 hours
 
 Significant event:
 App: opera.exe
+Title: Produkt Import Nyehandel #1 - Google Sheets - Opera
+Categories: General > Browsing
+Duration: 0.13 hours
+
+Significant event:
+App: opera.exe
 Title: 🫰THE PIM🫰 - Google Sheets - Opera
 Categories: General > Browsing
 Duration: 0.11 hours
@@ -254,24 +266,24 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 4.6 hours
-- Active time: 1.7 hours (37.1%)
-- AFK time: 2.9 hours (62.9%)
-- Productive time: 0.2 hours (10.1% of active time)
+- Total tracking time: 5.1 hours
+- Active time: 2.1 hours (41.0%)
+- AFK time: 3.0 hours (59.0%)
+- Productive time: 0.2 hours (9.1% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 1.5 hours (89.9% of active time)
+- Other time: 1.9 hours (90.9% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-28 13:22
-✓ Successfully updated index.html with time: 2025-05-28 13:22
+Using direct UTC+4 offset time: 2025-05-28 13:52
+✓ Successfully updated index.html with time: 2025-05-28 13:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Wed 05/28/2025 13:22:30.08] Checking file modifications... 
-[Wed 05/28/2025 13:22:30.08] data.js last modified: 05/28/2025 01:22 PM 
-[Wed 05/28/2025 13:22:30.08] index.html last modified: 05/28/2025 01:22 PM 
-[Wed 05/28/2025 13:22:30.10] Setting up Git credential helper... 
-[Wed 05/28/2025 13:22:30.14] Adding files to Git... 
+[Wed 05/28/2025 13:52:30.27] Checking file modifications... 
+[Wed 05/28/2025 13:52:30.27] data.js last modified: 05/28/2025 01:52 PM 
+[Wed 05/28/2025 13:52:30.27] index.html last modified: 05/28/2025 01:52 PM 
+[Wed 05/28/2025 13:52:30.29] Setting up Git credential helper... 
+[Wed 05/28/2025 13:52:30.33] Adding files to Git... 
