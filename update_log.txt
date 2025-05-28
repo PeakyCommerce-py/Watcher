@@ -1,10 +1,10 @@
  
-[Wed 05/28/2025 22:22:28.53] Starting update 
-[Wed 05/28/2025 22:22:28.54] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Wed 05/28/2025 22:22:28.54] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Wed 05/28/2025 22:52:28.49] Starting update 
+[Wed 05/28/2025 22:52:28.51] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Wed 05/28/2025 22:52:28.51] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Wed 05/28/2025 22:22:28.70] ActivityWatch is already running 
-[Wed 05/28/2025 22:22:28.70] Running export script... 
+[Wed 05/28/2025 22:52:28.84] ActivityWatch is already running 
+[Wed 05/28/2025 22:52:28.84] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Wednesday, May 28, 2025
-Found 8395 events
+Found 8445 events
 
 Significant event:
 App: cs2.exe
@@ -72,6 +72,12 @@ App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.36 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.32 hours
 
 Significant event:
 App: cs2.exe
@@ -254,16 +260,22 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 67.4 hours
-- Active time: 27.8 hours (41.2%)
-- AFK time: 39.6 hours (58.8%)
-- Productive time: 4.0 hours (14.3% of active time)
+- Total tracking time: 67.9 hours
+- Active time: 28.3 hours (41.7%)
+- AFK time: 39.6 hours (58.3%)
+- Productive time: 4.0 hours (14.2% of active time)
 - Non-productive time: 0.4 hours (1.5% of active time)
-- Other time: 23.4 hours (84.3% of active time)
+- Other time: 23.9 hours (84.4% of active time)
 
 Querying today's data:
 Time period: Wednesday, May 28, 2025 to Wednesday, May 28, 2025
-Found 1986 events
+Found 2036 events
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.32 hours
 
 Significant event:
 App: opera.exe
@@ -326,24 +338,24 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 15.8 hours
-- Active time: 6.8 hours (43.0%)
-- AFK time: 9.0 hours (57.0%)
-- Productive time: 1.0 hours (15.3% of active time)
-- Non-productive time: 0.1 hours (1.9% of active time)
-- Other time: 5.6 hours (82.8% of active time)
+- Total tracking time: 16.3 hours
+- Active time: 7.3 hours (44.7%)
+- AFK time: 9.0 hours (55.3%)
+- Productive time: 1.1 hours (14.9% of active time)
+- Non-productive time: 0.1 hours (1.8% of active time)
+- Other time: 6.1 hours (83.3% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-28 22:22
-✓ Successfully updated index.html with time: 2025-05-28 22:22
+Using direct UTC+4 offset time: 2025-05-28 22:52
+✓ Successfully updated index.html with time: 2025-05-28 22:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Wed 05/28/2025 22:22:30.97] Checking file modifications... 
-[Wed 05/28/2025 22:22:30.97] data.js last modified: 05/28/2025 10:22 PM 
-[Wed 05/28/2025 22:22:30.97] index.html last modified: 05/28/2025 10:22 PM 
-[Wed 05/28/2025 22:22:30.99] Setting up Git credential helper... 
-[Wed 05/28/2025 22:22:31.07] Adding files to Git... 
+[Wed 05/28/2025 22:52:32.71] Checking file modifications... 
+[Wed 05/28/2025 22:52:32.72] data.js last modified: 05/28/2025 10:52 PM 
+[Wed 05/28/2025 22:52:32.72] index.html last modified: 05/28/2025 10:52 PM 
+[Wed 05/28/2025 22:52:32.75] Setting up Git credential helper... 
+[Wed 05/28/2025 22:52:32.80] Adding files to Git... 
