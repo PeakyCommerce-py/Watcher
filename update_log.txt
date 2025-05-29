@@ -1,10 +1,10 @@
  
-[Thu 05/29/2025 19:22:28.43] Starting update 
-[Thu 05/29/2025 19:22:28.44] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Thu 05/29/2025 19:22:28.45] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Thu 05/29/2025 19:52:28.42] Starting update 
+[Thu 05/29/2025 19:52:28.42] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Thu 05/29/2025 19:52:28.43] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Thu 05/29/2025 19:22:28.61] ActivityWatch is already running 
-[Thu 05/29/2025 19:22:28.61] Running export script... 
+[Thu 05/29/2025 19:52:28.57] ActivityWatch is already running 
+[Thu 05/29/2025 19:52:28.57] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Thursday, May 29, 2025
-Found 10435 events
+Found 10537 events
 
 Significant event:
 App: cs2.exe
@@ -338,16 +338,16 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 83.5 hours
-- Active time: 36.6 hours (43.9%)
-- AFK time: 46.9 hours (56.1%)
-- Productive time: 4.8 hours (13.0% of active time)
+- Total tracking time: 84.1 hours
+- Active time: 37.0 hours (44.0%)
+- AFK time: 47.1 hours (56.0%)
+- Productive time: 4.8 hours (12.9% of active time)
 - Non-productive time: 0.5 hours (1.4% of active time)
-- Other time: 31.3 hours (85.5% of active time)
+- Other time: 31.7 hours (85.6% of active time)
 
 Querying today's data:
 Time period: Thursday, May 29, 2025 to Thursday, May 29, 2025
-Found 1850 events
+Found 1952 events
 
 Significant event:
 App: cs2.exe
@@ -374,24 +374,24 @@ Categories: General > Browsing
 Duration: 0.11 hours
 
 Data Collection Summary:
-- Total tracking time: 12.5 hours
-- Active time: 5.3 hours (42.0%)
-- AFK time: 7.3 hours (58.0%)
-- Productive time: 0.7 hours (14.0% of active time)
-- Non-productive time: 0.1 hours (1.8% of active time)
-- Other time: 4.4 hours (84.2% of active time)
+- Total tracking time: 13.1 hours
+- Active time: 5.6 hours (42.6%)
+- AFK time: 7.5 hours (57.4%)
+- Productive time: 0.7 hours (13.2% of active time)
+- Non-productive time: 0.1 hours (1.7% of active time)
+- Other time: 4.8 hours (85.1% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-29 19:22
-✓ Successfully updated index.html with time: 2025-05-29 19:22
+Using direct UTC+4 offset time: 2025-05-29 19:52
+✓ Successfully updated index.html with time: 2025-05-29 19:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Thu 05/29/2025 19:22:30.99] Checking file modifications... 
-[Thu 05/29/2025 19:22:31.00] data.js last modified: 05/29/2025 07:22 PM 
-[Thu 05/29/2025 19:22:31.00] index.html last modified: 05/29/2025 07:22 PM 
-[Thu 05/29/2025 19:22:31.02] Setting up Git credential helper... 
-[Thu 05/29/2025 19:22:31.07] Adding files to Git... 
+[Thu 05/29/2025 19:52:30.69] Checking file modifications... 
+[Thu 05/29/2025 19:52:30.70] data.js last modified: 05/29/2025 07:52 PM 
+[Thu 05/29/2025 19:52:30.70] index.html last modified: 05/29/2025 07:52 PM 
+[Thu 05/29/2025 19:52:30.72] Setting up Git credential helper... 
+[Thu 05/29/2025 19:52:30.76] Adding files to Git... 
