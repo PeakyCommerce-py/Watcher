@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Thursday, May 29, 2025",
-    "total_hours": 84.55653777777773,
-    "active_hours": 37.39192111111106,
-    "active_percentage": 44.221206418574546,
-    "afk_hours": 47.16461666666668,
-    "afk_percentage": 55.778793581425454,
+    "total_hours": 86.64931277777774,
+    "active_hours": 37.451678055555504,
+    "active_percentage": 43.22212935676097,
+    "afk_hours": 49.19763472222223,
+    "afk_percentage": 56.777870643239034,
     "productive_hours": 4.793637500000006,
-    "productive_percentage": 12.819981850506126,
+    "productive_percentage": 12.79952661370517,
     "non_productive_hours": 0.525781111111111,
-    "non_productive_percentage": 1.4061355915593075,
-    "other_hours": 32.07250249999995,
-    "other_percentage": 85.77388255793458,
+    "non_productive_percentage": 1.4038919973924047,
+    "other_hours": 32.132259444444394,
+    "other_percentage": 85.79658138890244,
     "labels": [
       "2025-05-27",
       "2025-05-28",
@@ -35,13 +35,13 @@ const activityData = {
       10.35632444444442,
       8.321934722222217,
       7.42535166666667,
-      5.96889166666664
+      6.028648611111087
     ],
     "afk": [
       13.336773055555556,
       9.02637,
       17.24013750000001,
-      7.5613361111111095
+      9.594354166666667
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -51,7 +51,7 @@ const activityData = {
       "chrome.exe"
     ],
     "top_apps_data": [
-      20.124458333333255,
+      20.184215277777692,
       11.283619999999996,
       1.2632241666666693,
       1.0656102777777774,
@@ -124,7 +124,7 @@ const activityData = {
       2.4474738888889,
       1.5726869444444436,
       1.43237388888889,
-      2.4547105555555553,
+      2.5144675000000003,
       2.3533319444444456,
       2.4696213888888887
     ],
@@ -141,7 +141,7 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      18.03499999999994,
+      18.094756944444384,
       14.037502500000018,
       1.7195761111111154,
       1.5837519444444443,
@@ -171,17 +171,17 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, May 29, 2025",
     "end_date": "Thursday, May 29, 2025",
-    "total_hours": 13.57277861111109,
-    "active_hours": 6.01144249999998,
-    "active_percentage": 44.29043361157331,
-    "afk_hours": 7.5613361111111095,
-    "afk_percentage": 55.70956638842668,
+    "total_hours": 15.662793333333317,
+    "active_hours": 6.068439166666649,
+    "active_percentage": 38.74429699427809,
+    "afk_hours": 9.594354166666667,
+    "afk_percentage": 61.255703005721905,
     "productive_hours": 0.7499908333333337,
-    "productive_percentage": 12.476054346911516,
+    "productive_percentage": 12.358875367045963,
     "non_productive_hours": 0.09422027777777778,
-    "non_productive_percentage": 1.56734889800207,
-    "other_hours": 5.167231388888869,
-    "other_percentage": 85.95659675508642,
+    "non_productive_percentage": 1.5526278700348628,
+    "other_hours": 5.224228055555537,
+    "other_percentage": 86.08849676291916,
     "labels": [
       "2025-05-29"
     ],
@@ -192,10 +192,10 @@ const activityData = {
       0.09422027777777778
     ],
     "other": [
-      5.167231388888869
+      5.224228055555537
     ],
     "afk": [
-      7.5613361111111095
+      9.594354166666667
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -205,7 +205,7 @@ const activityData = {
       "chrome.exe"
     ],
     "top_apps_data": [
-      4.7926888888888675,
+      4.849685555555537,
       0.43853916666666665,
       0.22855555555555554,
       0.12794416666666664,
@@ -272,7 +272,7 @@ const activityData = {
       0.7596283333333329,
       0.4400058333333332,
       0.5190044444444443,
-      0.35684944444444433,
+      0.41384611111111097,
       0,
       0
     ],
@@ -289,7 +289,7 @@ const activityData = {
       "Media > Games"
     ],
     "category_data": [
-      4.327345555555562,
+      4.384342222222228,
       0.8398858333333336,
       0.3586527777777778,
       0.20688472222222232,
