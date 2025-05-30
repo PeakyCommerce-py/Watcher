@@ -1,10 +1,10 @@
  
-[Thu 05/29/2025 22:22:28.42] Starting update 
-[Thu 05/29/2025 22:22:28.42] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Thu 05/29/2025 22:22:28.43] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Fri 05/30/2025  9:46:42.63] Starting update 
+[Fri 05/30/2025  9:46:42.63] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Fri 05/30/2025  9:46:42.68] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Thu 05/29/2025 22:22:28.53] Starting ActivityWatch... 
-[Thu 05/29/2025 22:22:38.38] Running export script... 
+[Fri 05/30/2025  9:46:42.91] ActivityWatch is already running 
+[Fri 05/30/2025  9:46:42.91] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -16,7 +16,7 @@ Available buckets:
 Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
-Time period: Monday, May 26, 2025 to Thursday, May 29, 2025
+Time period: Monday, May 26, 2025 to Friday, May 30, 2025
 Found 10816 events
 
 Significant event:
@@ -362,84 +362,36 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 88.8 hours
-- Active time: 38.3 hours (43.2%)
-- AFK time: 50.4 hours (56.8%)
+- Total tracking time: 89.6 hours
+- Active time: 38.3 hours (42.8%)
+- AFK time: 51.3 hours (57.2%)
 - Productive time: 4.9 hours (12.7% of active time)
 - Non-productive time: 0.5 hours (1.4% of active time)
 - Other time: 32.9 hours (85.9% of active time)
 
 Querying today's data:
-Time period: Thursday, May 29, 2025 to Thursday, May 29, 2025
-Found 2231 events
-
-Significant event:
-App: cs2.exe
-Title: Counter-Strike 2
-Categories: Uncategorized
-Duration: 0.22 hours
-
-Significant event:
-App: ApplicationFrameHost.exe
-Title: Solitaire & Casual Games
-Categories: Uncategorized
-Duration: 0.21 hours
-
-Significant event:
-App: ApplicationFrameHost.exe
-Title: Solitaire & Casual Games
-Categories: Uncategorized
-Duration: 0.20 hours
-
-Significant event:
-App: opera.exe
-Title: 9 - Google Kalkylark - Opera
-Categories: General > Browsing
-Duration: 0.12 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.11 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.09 hours
-
-Significant event:
-App: opera.exe
-Title: 🫰THE PIM🫰 - Google Sheets - Opera
-Categories: General > Browsing
-Duration: 0.08 hours
+Time period: Friday, May 30, 2025 to Friday, May 30, 2025
+Found 0 events
 
 Data Collection Summary:
-- Total tracking time: 17.8 hours
-- Active time: 6.9 hours (39.1%)
-- AFK time: 10.8 hours (60.9%)
-- Productive time: 0.8 hours (12.1% of active time)
-- Non-productive time: 0.1 hours (1.4% of active time)
-- Other time: 6.0 hours (86.5% of active time)
+- Total tracking time: 0.0 hours
+- Active time: 0.0 hours (0.0%)
+- AFK time: 0.0 hours (0.0%)
+- Productive time: 0.0 hours (0.0% of active time)
+- Non-productive time: 0.0 hours (0.0% of active time)
+- Other time: 0.0 hours (0.0% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-29 22:22
-✓ Successfully updated index.html with time: 2025-05-29 22:22
+Using direct UTC+4 offset time: 2025-05-30 09:46
+✓ Successfully updated index.html with time: 2025-05-30 09:46
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Thu 05/29/2025 22:22:40.32] Checking file modifications... 
-[Thu 05/29/2025 22:22:40.33] data.js last modified: 05/29/2025 10:22 PM 
-[Thu 05/29/2025 22:22:40.33] index.html last modified: 05/29/2025 10:22 PM 
-[Thu 05/29/2025 22:22:40.34] Setting up Git credential helper... 
-[Thu 05/29/2025 22:22:40.38] Adding files to Git... 
+[Fri 05/30/2025  9:46:45.05] Checking file modifications... 
+[Fri 05/30/2025  9:46:45.05] data.js last modified: 05/30/2025 09:46 AM 
+[Fri 05/30/2025  9:46:45.05] index.html last modified: 05/30/2025 09:46 AM 
+[Fri 05/30/2025  9:46:45.07] Setting up Git credential helper... 
+[Fri 05/30/2025  9:46:45.11] Adding files to Git... 
