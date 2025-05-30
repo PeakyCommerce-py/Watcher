@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Friday, May 30, 2025",
-    "total_hours": 104.62235305555554,
-    "active_hours": 49.85477222222219,
-    "active_percentage": 47.65212286493767,
+    "total_hours": 105.1206947222222,
+    "active_hours": 50.35311388888886,
+    "active_percentage": 47.90028644877702,
     "afk_hours": 54.76758083333334,
-    "afk_percentage": 52.34787713506234,
+    "afk_percentage": 52.09971355122298,
     "productive_hours": 5.209594444444451,
-    "productive_percentage": 10.449540158810182,
+    "productive_percentage": 10.346121703496122,
     "non_productive_hours": 0.6944827777777779,
-    "non_productive_percentage": 1.3930116352396456,
-    "other_hours": 43.95069499999995,
-    "other_percentage": 88.15744820595016,
+    "non_productive_percentage": 1.3792250848879983,
+    "other_hours": 44.44903666666663,
+    "other_percentage": 88.27465321161587,
     "labels": [
       "2025-05-30",
       "2025-05-27",
@@ -35,7 +35,7 @@ const activityData = {
       0.11126444444444443
     ],
     "other": [
-      11.033180000000009,
+      11.531521666666682,
       10.35632444444442,
       8.321934722222217,
       7.42535166666667,
@@ -57,7 +57,7 @@ const activityData = {
     ],
     "top_apps_data": [
       25.798505555555526,
-      17.51925611111111,
+      18.017597777777773,
       1.3843858333333365,
       1.0872788888888885,
       1.0758611111111112
@@ -110,7 +110,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      2.486697222222219,
+      2.985038888888886,
       3.07195111111111,
       1.9539650000000004,
       0.9885619444444446,
@@ -149,7 +149,7 @@ const activityData = {
     ],
     "category_data": [
       23.538808888888873,
-      20.411886111111084,
+      20.91022777777775,
       1.8848658333333377,
       1.5919249999999998,
       0.6932125,
@@ -178,17 +178,17 @@ const activityData = {
   "daily": {
     "start_date": "Friday, May 30, 2025",
     "end_date": "Friday, May 30, 2025",
-    "total_hours": 14.997909722222232,
-    "active_hours": 11.524600833333341,
-    "active_percentage": 76.84138021085346,
+    "total_hours": 15.496806111111125,
+    "active_hours": 12.023497222222238,
+    "active_percentage": 77.58693717927758,
     "afk_hours": 3.473308888888889,
-    "afk_percentage": 23.158619789146528,
+    "afk_percentage": 22.41306282072243,
     "productive_hours": 0.322719166666667,
-    "productive_percentage": 2.800263291837802,
+    "productive_percentage": 2.6840707050707877,
     "non_productive_hours": 0.16870166666666664,
-    "non_productive_percentage": 1.4638395646530333,
-    "other_hours": 11.033180000000009,
-    "other_percentage": 95.73589714350918,
+    "non_productive_percentage": 1.4030998098861491,
+    "other_hours": 11.532076388888905,
+    "other_percentage": 95.91282948504308,
     "labels": [
       "2025-05-30"
     ],
@@ -199,7 +199,7 @@ const activityData = {
       0.16870166666666664
     ],
     "other": [
-      11.033180000000009
+      11.532076388888905
     ],
     "afk": [
       3.473308888888889
@@ -212,7 +212,7 @@ const activityData = {
       "steamwebhelper.exe"
     ],
     "top_apps_data": [
-      6.23563611111111,
+      6.7345324999999985,
       4.800526388888888,
       0.16937555555555547,
       0.11268694444444442,
@@ -258,7 +258,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      0.34478833333333336,
+      0.8436847222222225,
       0,
       0,
       0,
@@ -296,7 +296,7 @@ const activityData = {
       "Work > AI Chatting"
     ],
     "category_data": [
-      6.368179999999997,
+      6.8670763888888855,
       4.664999999999991,
       0.1666313888888888,
       0.12757833333333332,
