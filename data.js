@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Friday, May 30, 2025",
-    "total_hours": 102.00305499999996,
-    "active_hours": 47.4977330555555,
-    "active_percentage": 46.56501028871686,
+    "total_hours": 102.50349416666664,
+    "active_hours": 47.998172222222195,
+    "active_percentage": 46.8258888269497,
     "afk_hours": 54.505321944444454,
-    "afk_percentage": 53.43498971128313,
+    "afk_percentage": 53.174111173050306,
     "productive_hours": 5.154101666666673,
-    "productive_percentage": 10.851258228762626,
+    "productive_percentage": 10.738120699272017,
     "non_productive_hours": 0.6944827777777779,
-    "non_productive_percentage": 1.4621387866353104,
-    "other_hours": 41.649148611111045,
-    "other_percentage": 87.68660298460206,
+    "non_productive_percentage": 1.4468942162265217,
+    "other_hours": 42.14958777777774,
+    "other_percentage": 87.81498508450144,
     "labels": [
       "2025-05-30",
       "2025-05-27",
@@ -35,7 +35,7 @@ const activityData = {
       0.11126444444444443
     ],
     "other": [
-      8.731633611111096,
+      9.232072777777791,
       10.35632444444442,
       8.321934722222217,
       7.42535166666667,
@@ -57,7 +57,7 @@ const activityData = {
     ],
     "top_apps_data": [
       25.70864833333331,
-      15.28085666666666,
+      15.78129583333333,
       1.3694302777777805,
       1.0872788888888885,
       1.0758611111111112
@@ -131,8 +131,8 @@ const activityData = {
       3.5996236111111233,
       2.175519166666666,
       2.100295833333333,
-      3.4604700000000053,
-      3.103187777777782,
+      3.8111641666666713,
+      3.252932777777782,
       2.4710280555555557
     ],
     "categories": [
@@ -149,7 +149,7 @@ const activityData = {
     ],
     "category_data": [
       23.48103638888888,
-      18.168112222222238,
+      18.66855138888888,
       1.869910277777782,
       1.5919249999999998,
       0.6611277777777779,
@@ -178,17 +178,17 @@ const activityData = {
   "daily": {
     "start_date": "Friday, May 30, 2025",
     "end_date": "Friday, May 30, 2025",
-    "total_hours": 12.37861166666665,
-    "active_hours": 9.167561666666652,
-    "active_percentage": 74.05969193906637,
+    "total_hours": 12.879050833333347,
+    "active_hours": 9.668000833333348,
+    "active_percentage": 75.06765023638845,
     "afk_hours": 3.21105,
-    "afk_percentage": 25.94030806093363,
+    "afk_percentage": 24.932349763611565,
     "productive_hours": 0.2672263888888887,
-    "productive_percentage": 2.9149123682530176,
+    "productive_percentage": 2.7640294358224007,
     "non_productive_hours": 0.16870166666666664,
-    "non_productive_percentage": 1.84020214753578,
-    "other_hours": 8.731633611111096,
-    "other_percentage": 95.24488548421121,
+    "non_productive_percentage": 1.7449488221496299,
+    "other_hours": 9.232072777777791,
+    "other_percentage": 95.49102174202797,
     "labels": [
       "2025-05-30"
     ],
@@ -199,7 +199,7 @@ const activityData = {
       0.16870166666666664
     ],
     "other": [
-      8.731633611111096
+      9.232072777777791
     ],
     "afk": [
       3.21105
@@ -213,7 +213,7 @@ const activityData = {
     ],
     "top_apps_data": [
       4.710669166666661,
-      3.997236666666666,
+      4.497675833333332,
       0.16937555555555547,
       0.09773138888888888,
       0.04112333333333334
@@ -279,13 +279,13 @@ const activityData = {
       1.1521497222222223,
       0.6028322222222222,
       0.6679219444444447,
-      0.8187716666666676,
-      0,
+      1.1694658333333325,
+      0.149745,
       0
     ],
     "categories": [
-      "General > Browsing",
       "Uncategorized",
+      "General > Browsing",
       "Work > Communication > Social Media",
       "Media > Video",
       "Work > Communication",
@@ -296,8 +296,8 @@ const activityData = {
       "Work > AI Chatting"
     ],
     "category_data": [
+      4.624845277777774,
       4.607227499999997,
-      4.124406111111111,
       0.13454666666666668,
       0.12757833333333332,
       0.09773138888888888,
