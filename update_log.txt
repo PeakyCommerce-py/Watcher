@@ -1,10 +1,10 @@
  
-[Fri 05/30/2025 22:52:28.44] Starting update 
-[Fri 05/30/2025 22:52:28.44] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Fri 05/30/2025 22:52:28.44] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Fri 05/30/2025 23:22:28.47] Starting update 
+[Fri 05/30/2025 23:22:28.47] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Fri 05/30/2025 23:22:28.48] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Fri 05/30/2025 22:52:28.62] ActivityWatch is already running 
-[Fri 05/30/2025 22:52:28.62] Running export script... 
+[Fri 05/30/2025 23:22:28.67] ActivityWatch is already running 
+[Fri 05/30/2025 23:22:28.67] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Friday, May 30, 2025
-Found 12223 events
+Found 12266 events
 
 Significant event:
 App: cs2.exe
@@ -54,6 +54,12 @@ App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.55 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.53 hours
 
 Significant event:
 App: cs2.exe
@@ -114,12 +120,6 @@ App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.41 hours
-
-Significant event:
-App: cs2.exe
-Title: Counter-Strike 2
-Categories: Uncategorized
-Duration: 0.39 hours
 
 Significant event:
 App: cs2.exe
@@ -308,6 +308,12 @@ Categories: General > Browsing
 Duration: 0.13 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.12 hours
+
+Significant event:
 App: ApplicationFrameHost.exe
 Title: Solitaire & Casual Games
 Categories: Uncategorized
@@ -446,6 +452,12 @@ Categories: Uncategorized
 Duration: 0.09 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
+Significant event:
 App: opera.exe
 Title: 9 - Google Kalkylark - Opera
 Categories: General > Browsing
@@ -476,16 +488,16 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 104.1 hours
-- Active time: 49.4 hours (47.4%)
-- AFK time: 54.8 hours (52.6%)
-- Productive time: 5.2 hours (10.5% of active time)
+- Total tracking time: 104.6 hours
+- Active time: 49.9 hours (47.7%)
+- AFK time: 54.8 hours (52.3%)
+- Productive time: 5.2 hours (10.4% of active time)
 - Non-productive time: 0.7 hours (1.4% of active time)
-- Other time: 43.5 hours (88.1% of active time)
+- Other time: 44.0 hours (88.2% of active time)
 
 Querying today's data:
 Time period: Friday, May 30, 2025 to Friday, May 30, 2025
-Found 1407 events
+Found 1450 events
 
 Significant event:
 App: cs2.exe
@@ -515,13 +527,13 @@ Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
-Duration: 0.45 hours
+Duration: 0.53 hours
 
 Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
-Duration: 0.39 hours
+Duration: 0.45 hours
 
 Significant event:
 App: cs2.exe
@@ -560,6 +572,12 @@ Categories: General > Browsing
 Duration: 0.18 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.12 hours
+
+Significant event:
 App: opera.exe
 Title: Swords and Sandals 2 🕹️ Play on CrazyGames - Opera
 Categories: General > Browsing
@@ -596,30 +614,36 @@ Categories: General > Browsing
 Duration: 0.09 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
+Significant event:
 App: opera.exe
 Title: Swords and Sandals 🕹️ Play on CrazyGames - Opera
 Categories: General > Browsing
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 14.5 hours
-- Active time: 11.0 hours (76.1%)
-- AFK time: 3.5 hours (23.9%)
-- Productive time: 0.3 hours (2.7% of active time)
+- Total tracking time: 15.0 hours
+- Active time: 11.5 hours (76.8%)
+- AFK time: 3.5 hours (23.2%)
+- Productive time: 0.3 hours (2.8% of active time)
 - Non-productive time: 0.2 hours (1.5% of active time)
-- Other time: 10.6 hours (95.8% of active time)
+- Other time: 11.0 hours (95.7% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-30 22:52
-✓ Successfully updated index.html with time: 2025-05-30 22:52
+Using direct UTC+4 offset time: 2025-05-30 23:22
+✓ Successfully updated index.html with time: 2025-05-30 23:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Fri 05/30/2025 22:52:32.13] Checking file modifications... 
-[Fri 05/30/2025 22:52:32.14] data.js last modified: 05/30/2025 10:52 PM 
-[Fri 05/30/2025 22:52:32.14] index.html last modified: 05/30/2025 10:52 PM 
-[Fri 05/30/2025 22:52:32.14] Setting up Git credential helper... 
-[Fri 05/30/2025 22:52:32.24] Adding files to Git... 
+[Fri 05/30/2025 23:22:32.45] Checking file modifications... 
+[Fri 05/30/2025 23:22:32.46] data.js last modified: 05/30/2025 11:22 PM 
+[Fri 05/30/2025 23:22:32.46] index.html last modified: 05/30/2025 11:22 PM 
+[Fri 05/30/2025 23:22:32.46] Setting up Git credential helper... 
+[Fri 05/30/2025 23:22:32.56] Adding files to Git... 
