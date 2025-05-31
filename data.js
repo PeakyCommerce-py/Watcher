@@ -2,17 +2,17 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, May 26, 2025",
     "end_date": "Saturday, May 31, 2025",
-    "total_hours": 106.55055444444444,
-    "active_hours": 51.25909944444442,
-    "active_percentage": 48.10777354628498,
-    "afk_hours": 55.29145500000002,
-    "afk_percentage": 51.89222645371502,
+    "total_hours": 107.51585888888889,
+    "active_hours": 51.26623388888887,
+    "active_percentage": 47.68248555952049,
+    "afk_hours": 56.24962500000002,
+    "afk_percentage": 52.31751444047952,
     "productive_hours": 5.252959166666673,
-    "productive_percentage": 10.247856914380499,
+    "productive_percentage": 10.246430775569742,
     "non_productive_hours": 0.6944827777777779,
-    "non_productive_percentage": 1.3548477934741545,
-    "other_hours": 45.31165749999996,
-    "other_percentage": 88.39729529214533,
+    "non_productive_percentage": 1.354659246635817,
+    "other_hours": 45.318791944444406,
+    "other_percentage": 88.39890997779443,
     "labels": [
       "2025-05-30",
       "2025-05-27",
@@ -43,7 +43,7 @@ const activityData = {
       8.321934722222217,
       7.42535166666667,
       6.813904166666642,
-      0.005668888888888889
+      0.012803333333333333
     ],
     "afk": [
       3.997183055555556,
@@ -51,7 +51,7 @@ const activityData = {
       9.02637,
       17.24013750000001,
       11.69099138888889,
-      0.0
+      0.9581700000000001
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -131,7 +131,7 @@ const activityData = {
       1.1655244444444446,
       3.6526874999999936,
       4.146896111111111,
-      4.043013611111113,
+      4.050148055555557,
       3.740038333333338,
       3.432156388888886,
       2.2146558333333335,
@@ -156,7 +156,7 @@ const activityData = {
     ],
     "category_data": [
       23.619494999999983,
-      21.692162499999974,
+      21.69929694444442,
       1.9217588888888928,
       1.5919249999999998,
       0.6988341666666666,
@@ -185,16 +185,16 @@ const activityData = {
   "daily": {
     "start_date": "Saturday, May 31, 2025",
     "end_date": "Saturday, May 31, 2025",
-    "total_hours": 0.012294166666666667,
-    "active_hours": 0.012294166666666667,
-    "active_percentage": 100.0,
-    "afk_hours": 0.0,
-    "afk_percentage": 0.0,
+    "total_hours": 0.9720055555555557,
+    "active_hours": 0.012803333333333333,
+    "active_percentage": 1.317207834888918,
+    "afk_hours": 0.9592022222222223,
+    "afk_percentage": 98.68279216511108,
     "productive_hours": 0.0,
     "productive_percentage": 0.0,
     "non_productive_hours": 0.0,
     "non_productive_percentage": 0.0,
-    "other_hours": 0.012294166666666667,
+    "other_hours": 0.012803333333333333,
     "other_percentage": 100.0,
     "labels": [
       "2025-05-31"
@@ -206,16 +206,16 @@ const activityData = {
       0.0
     ],
     "other": [
-      0.012294166666666667
+      0.012803333333333333
     ],
     "afk": [
-      0.0
+      0.9592022222222223
     ],
     "top_apps_labels": [
       "LockApp.exe"
     ],
     "top_apps_data": [
-      0.012294166666666667
+      0.012803333333333333
     ],
     "top_apps_colors": [
       "#FFC107"
@@ -267,7 +267,7 @@ const activityData = {
       0,
       0,
       0,
-      0.012294166666666667,
+      0.012803333333333333,
       0,
       0,
       0,
@@ -282,7 +282,7 @@ const activityData = {
       "Uncategorized"
     ],
     "category_data": [
-      0.012294166666666667
+      0.012803333333333333
     ],
     "category_colors": [
       "#FFC107"
