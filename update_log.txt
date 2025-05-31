@@ -1,10 +1,10 @@
  
-[Sat 05/31/2025 21:52:28.48] Starting update 
-[Sat 05/31/2025 21:52:28.48] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Sat 05/31/2025 21:52:28.49] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Sat 05/31/2025 22:22:28.42] Starting update 
+[Sat 05/31/2025 22:22:28.42] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Sat 05/31/2025 22:22:28.43] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Sat 05/31/2025 21:52:28.66] ActivityWatch is already running 
-[Sat 05/31/2025 21:52:28.66] Running export script... 
+[Sat 05/31/2025 22:22:28.59] ActivityWatch is already running 
+[Sat 05/31/2025 22:22:28.59] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, May 26, 2025 to Saturday, May 31, 2025
-Found 13906 events
+Found 13935 events
 
 Significant event:
 App: cs2.exe
@@ -143,7 +143,7 @@ Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
-Duration: 0.35 hours
+Duration: 0.36 hours
 
 Significant event:
 App: cs2.exe
@@ -180,6 +180,12 @@ App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.30 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.28 hours
 
 Significant event:
 App: cs2.exe
@@ -518,6 +524,12 @@ Categories: Uncategorized
 Duration: 0.09 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
+Significant event:
 App: opera.exe
 Title: 9 - Google Kalkylark - Opera
 Categories: General > Browsing
@@ -548,28 +560,34 @@ Categories: General > Browsing
 Duration: 0.08 hours
 
 Data Collection Summary:
-- Total tracking time: 125.2 hours
-- Active time: 56.0 hours (44.7%)
-- AFK time: 69.2 hours (55.3%)
-- Productive time: 5.8 hours (10.4% of active time)
+- Total tracking time: 125.8 hours
+- Active time: 56.5 hours (44.9%)
+- AFK time: 69.4 hours (55.1%)
+- Productive time: 5.8 hours (10.3% of active time)
 - Non-productive time: 3.2 hours (5.7% of active time)
-- Other time: 47.0 hours (83.9% of active time)
+- Other time: 47.5 hours (84.1% of active time)
 
 Querying today's data:
 Time period: Saturday, May 31, 2025 to Saturday, May 31, 2025
-Found 1580 events
+Found 1610 events
 
 Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
-Duration: 0.35 hours
+Duration: 0.36 hours
 
 Significant event:
 App: javaw.exe
 Title: Minecraft 1.21.5 - Multiplayer (LAN)
 Categories: Media > Games
 Duration: 0.33 hours
+
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.28 hours
 
 Significant event:
 App: cs2.exe
@@ -607,25 +625,31 @@ Title: Minecraft Launcher
 Categories: Media > Games
 Duration: 0.09 hours
 
+Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.09 hours
+
 Data Collection Summary:
-- Total tracking time: 18.7 hours
-- Active time: 4.7 hours (25.4%)
-- AFK time: 13.9 hours (74.6%)
-- Productive time: 0.6 hours (11.6% of active time)
-- Non-productive time: 2.5 hours (52.7% of active time)
-- Other time: 1.7 hours (35.6% of active time)
+- Total tracking time: 19.3 hours
+- Active time: 5.2 hours (27.0%)
+- AFK time: 14.1 hours (73.0%)
+- Productive time: 0.6 hours (10.6% of active time)
+- Non-productive time: 2.5 hours (48.1% of active time)
+- Other time: 2.2 hours (41.3% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-05-31 21:52
-✓ Successfully updated index.html with time: 2025-05-31 21:52
+Using direct UTC+4 offset time: 2025-05-31 22:22
+✓ Successfully updated index.html with time: 2025-05-31 22:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Sat 05/31/2025 21:52:32.51] Checking file modifications... 
-[Sat 05/31/2025 21:52:32.52] data.js last modified: 05/31/2025 09:52 PM 
-[Sat 05/31/2025 21:52:32.52] index.html last modified: 05/31/2025 09:52 PM 
-[Sat 05/31/2025 21:52:32.55] Setting up Git credential helper... 
-[Sat 05/31/2025 21:52:32.61] Adding files to Git... 
+[Sat 05/31/2025 22:22:32.51] Checking file modifications... 
+[Sat 05/31/2025 22:22:32.51] data.js last modified: 05/31/2025 10:22 PM 
+[Sat 05/31/2025 22:22:32.51] index.html last modified: 05/31/2025 10:22 PM 
+[Sat 05/31/2025 22:22:32.54] Setting up Git credential helper... 
+[Sat 05/31/2025 22:22:32.59] Adding files to Git... 
