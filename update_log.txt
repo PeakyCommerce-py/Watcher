@@ -1,10 +1,10 @@
  
-[Mon 06/02/2025 17:47:54.02] Starting update 
-[Mon 06/02/2025 17:47:54.02] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 06/02/2025 17:47:54.03] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 06/02/2025 17:52:28.39] Starting update 
+[Mon 06/02/2025 17:52:28.40] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 06/02/2025 17:52:28.40] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 06/02/2025 17:47:54.38] Starting ActivityWatch... 
-[Mon 06/02/2025 17:48:04.44] Running export script... 
+[Mon 06/02/2025 17:52:28.52] ActivityWatch is already running 
+[Mon 06/02/2025 17:52:28.52] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,39 +17,39 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 0 events
+Found 10 events
 
 Data Collection Summary:
-- Total tracking time: 0.0 hours
-- Active time: 0.0 hours (0.0%)
-- AFK time: 0.0 hours (0.0%)
+- Total tracking time: 0.3 hours
+- Active time: 0.0 hours (5.0%)
+- AFK time: 0.3 hours (95.0%)
 - Productive time: 0.0 hours (0.0% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 0.0 hours (0.0% of active time)
+- Other time: 0.0 hours (100.0% of active time)
 
 Querying today's data:
 Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 0 events
+Found 10 events
 
 Data Collection Summary:
-- Total tracking time: 0.0 hours
-- Active time: 0.0 hours (0.0%)
-- AFK time: 0.0 hours (0.0%)
+- Total tracking time: 0.3 hours
+- Active time: 0.0 hours (5.0%)
+- AFK time: 0.3 hours (95.0%)
 - Productive time: 0.0 hours (0.0% of active time)
 - Non-productive time: 0.0 hours (0.0% of active time)
-- Other time: 0.0 hours (0.0% of active time)
+- Other time: 0.0 hours (100.0% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-06-02 17:48
-✓ Successfully updated index.html with time: 2025-06-02 17:48
+Using direct UTC+4 offset time: 2025-06-02 17:52
+✓ Successfully updated index.html with time: 2025-06-02 17:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 06/02/2025 17:48:09.68] Checking file modifications... 
-[Mon 06/02/2025 17:48:09.70] data.js last modified: 06/02/2025 05:48 PM 
-[Mon 06/02/2025 17:48:09.70] index.html last modified: 06/02/2025 05:48 PM 
-[Mon 06/02/2025 17:48:11.42] Setting up Git credential helper... 
-[Mon 06/02/2025 17:48:36.51] Adding files to Git... 
+[Mon 06/02/2025 17:52:29.13] Checking file modifications... 
+[Mon 06/02/2025 17:52:29.14] data.js last modified: 06/02/2025 05:52 PM 
+[Mon 06/02/2025 17:52:29.14] index.html last modified: 06/02/2025 05:52 PM 
+[Mon 06/02/2025 17:52:29.16] Setting up Git credential helper... 
+[Mon 06/02/2025 17:52:29.20] Adding files to Git... 

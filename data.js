@@ -2,27 +2,50 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 0.0,
-    "active_hours": 0.0,
-    "active_percentage": 0,
-    "afk_hours": 0.0,
-    "afk_percentage": 0,
+    "total_hours": 0.2879352777777778,
+    "active_hours": 0.014428333333333333,
+    "active_percentage": 5.0109640766105805,
+    "afk_hours": 0.27350694444444446,
+    "afk_percentage": 94.98903592338942,
     "productive_hours": 0.0,
-    "productive_percentage": 0,
+    "productive_percentage": 0.0,
     "non_productive_hours": 0.0,
-    "non_productive_percentage": 0,
-    "other_hours": 0.0,
-    "other_percentage": 0,
-    "labels": [],
-    "productive": [],
-    "non_productive": [],
-    "other": [],
-    "afk": [],
-    "top_apps_labels": [],
-    "top_apps_data": [],
-    "top_apps_colors": [],
-    "trend_labels": [],
-    "trend_data": [],
+    "non_productive_percentage": 0.0,
+    "other_hours": 0.014428333333333333,
+    "other_percentage": 100.0,
+    "labels": [
+      "2025-06-02"
+    ],
+    "productive": [
+      0.0
+    ],
+    "non_productive": [
+      0.0
+    ],
+    "other": [
+      0.014428333333333333
+    ],
+    "afk": [
+      0.27350694444444446
+    ],
+    "top_apps_labels": [
+      "LockApp.exe",
+      "unknown"
+    ],
+    "top_apps_data": [
+      0.009921111111111111,
+      0.004507222222222222
+    ],
+    "top_apps_colors": [
+      "#FFC107",
+      "#FFC107"
+    ],
+    "trend_labels": [
+      "2025-06-02"
+    ],
+    "trend_data": [
+      0.0
+    ],
     "hour_labels": [
       "0:00",
       "1:00",
@@ -68,16 +91,22 @@ const activityData = {
       0,
       0,
       0,
-      0,
+      0.014428333333333333,
       0,
       0,
       0,
       0,
       0
     ],
-    "categories": [],
-    "category_data": [],
-    "category_colors": [],
+    "categories": [
+      "Uncategorized"
+    ],
+    "category_data": [
+      0.014428333333333333
+    ],
+    "category_colors": [
+      "#FFC107"
+    ],
     "web_labels": [],
     "web_data": [],
     "web_colors": []
@@ -85,27 +114,50 @@ const activityData = {
   "daily": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 0.0,
-    "active_hours": 0.0,
-    "active_percentage": 0,
-    "afk_hours": 0.0,
-    "afk_percentage": 0,
+    "total_hours": 0.2879352777777778,
+    "active_hours": 0.014428333333333333,
+    "active_percentage": 5.0109640766105805,
+    "afk_hours": 0.27350694444444446,
+    "afk_percentage": 94.98903592338942,
     "productive_hours": 0.0,
-    "productive_percentage": 0,
+    "productive_percentage": 0.0,
     "non_productive_hours": 0.0,
-    "non_productive_percentage": 0,
-    "other_hours": 0.0,
-    "other_percentage": 0,
-    "labels": [],
-    "productive": [],
-    "non_productive": [],
-    "other": [],
-    "afk": [],
-    "top_apps_labels": [],
-    "top_apps_data": [],
-    "top_apps_colors": [],
-    "trend_labels": [],
-    "trend_data": [],
+    "non_productive_percentage": 0.0,
+    "other_hours": 0.014428333333333333,
+    "other_percentage": 100.0,
+    "labels": [
+      "2025-06-02"
+    ],
+    "productive": [
+      0.0
+    ],
+    "non_productive": [
+      0.0
+    ],
+    "other": [
+      0.014428333333333333
+    ],
+    "afk": [
+      0.27350694444444446
+    ],
+    "top_apps_labels": [
+      "LockApp.exe",
+      "unknown"
+    ],
+    "top_apps_data": [
+      0.009921111111111111,
+      0.004507222222222222
+    ],
+    "top_apps_colors": [
+      "#FFC107",
+      "#FFC107"
+    ],
+    "trend_labels": [
+      "2025-06-02"
+    ],
+    "trend_data": [
+      0.0
+    ],
     "hour_labels": [
       "0:00",
       "1:00",
@@ -151,16 +203,22 @@ const activityData = {
       0,
       0,
       0,
-      0,
+      0.014428333333333333,
       0,
       0,
       0,
       0,
       0
     ],
-    "categories": [],
-    "category_data": [],
-    "category_colors": [],
+    "categories": [
+      "Uncategorized"
+    ],
+    "category_data": [
+      0.014428333333333333
+    ],
+    "category_colors": [
+      "#FFC107"
+    ],
     "web_labels": [],
     "web_data": [],
     "web_colors": []
