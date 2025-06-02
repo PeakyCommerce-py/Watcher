@@ -2,22 +2,22 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 7.311966388888893,
-    "active_hours": 2.8657861111111127,
-    "active_percentage": 39.19309743362469,
-    "afk_hours": 4.4461802777777795,
-    "afk_percentage": 60.8069025663753,
-    "productive_hours": 0.7621436111111113,
-    "productive_percentage": 26.59457410851976,
+    "total_hours": 9.243124444444446,
+    "active_hours": 2.8673183333333347,
+    "active_percentage": 31.021094117765863,
+    "afk_hours": 6.375806111111113,
+    "afk_percentage": 68.97890588223414,
+    "productive_hours": 0.7636758333333333,
+    "productive_percentage": 26.633800107068673,
     "non_productive_hours": 0.015479166666666672,
-    "non_productive_percentage": 0.5401368443601378,
+    "non_productive_percentage": 0.5398482089245991,
     "other_hours": 2.0881633333333345,
-    "other_percentage": 72.8652890471201,
+    "other_percentage": 72.82635168400672,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.7621436111111113
+      0.7636758333333333
     ],
     "non_productive": [
       0.015479166666666672
@@ -26,7 +26,7 @@ const activityData = {
       2.0881633333333345
     ],
     "afk": [
-      4.4461802777777795
+      6.375806111111113
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -38,7 +38,7 @@ const activityData = {
     "top_apps_data": [
       1.1517688888888902,
       0.9846741666666666,
-      0.44302888888888897,
+      0.44456111111111113,
       0.19777138888888893,
       0.029282777777777783
     ],
@@ -53,7 +53,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.7621436111111113
+      0.7636758333333333
     ],
     "hour_labels": [
       "0:00",
@@ -104,7 +104,7 @@ const activityData = {
       1.360052222222222,
       0.18669805555555558,
       0.8705477777777773,
-      0.43405972222222183,
+      0.43559194444444405,
       0
     ],
     "categories": [
@@ -119,7 +119,7 @@ const activityData = {
     "category_data": [
       1.0451222222222225,
       1.043041111111111,
-      0.6262141666666667,
+      0.6277463888888888,
       0.0971888888888889,
       0.029282777777777783,
       0.015479166666666672,
@@ -141,22 +141,22 @@ const activityData = {
   "daily": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 7.311966388888893,
-    "active_hours": 2.8657861111111127,
-    "active_percentage": 39.19309743362469,
-    "afk_hours": 4.4461802777777795,
-    "afk_percentage": 60.8069025663753,
-    "productive_hours": 0.7621436111111113,
-    "productive_percentage": 26.59457410851976,
+    "total_hours": 9.243124444444446,
+    "active_hours": 2.8673183333333347,
+    "active_percentage": 31.021094117765863,
+    "afk_hours": 6.375806111111113,
+    "afk_percentage": 68.97890588223414,
+    "productive_hours": 0.7636758333333333,
+    "productive_percentage": 26.633800107068673,
     "non_productive_hours": 0.015479166666666672,
-    "non_productive_percentage": 0.5401368443601378,
+    "non_productive_percentage": 0.5398482089245991,
     "other_hours": 2.0881633333333345,
-    "other_percentage": 72.8652890471201,
+    "other_percentage": 72.82635168400672,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.7621436111111113
+      0.7636758333333333
     ],
     "non_productive": [
       0.015479166666666672
@@ -165,7 +165,7 @@ const activityData = {
       2.0881633333333345
     ],
     "afk": [
-      4.4461802777777795
+      6.375806111111113
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -177,7 +177,7 @@ const activityData = {
     "top_apps_data": [
       1.1517688888888902,
       0.9846741666666666,
-      0.44302888888888897,
+      0.44456111111111113,
       0.19777138888888893,
       0.029282777777777783
     ],
@@ -192,7 +192,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.7621436111111113
+      0.7636758333333333
     ],
     "hour_labels": [
       "0:00",
@@ -243,7 +243,7 @@ const activityData = {
       1.360052222222222,
       0.18669805555555558,
       0.8705477777777773,
-      0.43405972222222183,
+      0.43559194444444405,
       0
     ],
     "categories": [
@@ -258,7 +258,7 @@ const activityData = {
     "category_data": [
       1.0451222222222225,
       1.043041111111111,
-      0.6262141666666667,
+      0.6277463888888888,
       0.0971888888888889,
       0.029282777777777783,
       0.015479166666666672,
