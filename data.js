@@ -2,31 +2,31 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 9.743564722222228,
-    "active_hours": 2.876269166666668,
-    "active_percentage": 29.51968041128456,
-    "afk_hours": 6.867295555555559,
-    "afk_percentage": 70.48031958871543,
-    "productive_hours": 0.7726266666666667,
-    "productive_percentage": 26.862112754282663,
-    "non_productive_hours": 0.015479166666666672,
-    "non_productive_percentage": 0.5381682231293258,
-    "other_hours": 2.0881633333333345,
-    "other_percentage": 72.599719022588,
+    "total_hours": 11.216182222222224,
+    "active_hours": 3.140412777777779,
+    "active_percentage": 27.99894576922788,
+    "afk_hours": 8.075769444444447,
+    "afk_percentage": 72.00105423077213,
+    "productive_hours": 0.7813977777777775,
+    "productive_percentage": 24.882008610686864,
+    "non_productive_hours": 0.02818222222222222,
+    "non_productive_percentage": 0.897405029735121,
+    "other_hours": 2.330832777777779,
+    "other_percentage": 74.22058635957801,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.7726266666666667
+      0.7813977777777775
     ],
     "non_productive": [
-      0.015479166666666672
+      0.02818222222222222
     ],
     "other": [
-      2.0881633333333345
+      2.330832777777779
     ],
     "afk": [
-      6.867295555555559
+      8.075769444444447
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -36,9 +36,9 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      1.1517688888888902,
-      0.9846741666666666,
-      0.4535119444444444,
+      1.229635833333335,
+      1.1514716666666667,
+      0.4554791666666667,
       0.19777138888888893,
       0.029282777777777783
     ],
@@ -53,7 +53,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.7726266666666667
+      0.7813977777777775
     ],
     "hour_labels": [
       "0:00",
@@ -82,7 +82,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      0,
+      0.18747861111111108,
       0,
       0,
       0,
@@ -105,11 +105,11 @@ const activityData = {
       0.18669805555555558,
       0.8705477777777773,
       0.43559194444444405,
-      0.008950833333333333
+      0.08561583333333334
     ],
     "categories": [
-      "General > Browsing",
       "Uncategorized",
+      "General > Browsing",
       "Work > Communication",
       "Work > Communication > Social Media",
       "Work > General",
@@ -117,13 +117,13 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      1.0451222222222225,
-      1.043041111111111,
-      0.6366972222222221,
+      1.2146474999999992,
+      1.1161852777777779,
+      0.6386644444444441,
       0.0971888888888889,
       0.029282777777777783,
-      0.015479166666666672,
-      0.009457777777777778
+      0.02818222222222222,
+      0.016261666666666667
     ],
     "category_colors": [
       "#FFC107",
@@ -141,31 +141,31 @@ const activityData = {
   "daily": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 9.743564722222228,
-    "active_hours": 2.876269166666668,
-    "active_percentage": 29.51968041128456,
-    "afk_hours": 6.867295555555559,
-    "afk_percentage": 70.48031958871543,
-    "productive_hours": 0.7726266666666667,
-    "productive_percentage": 26.862112754282663,
-    "non_productive_hours": 0.015479166666666672,
-    "non_productive_percentage": 0.5381682231293258,
-    "other_hours": 2.0881633333333345,
-    "other_percentage": 72.599719022588,
+    "total_hours": 11.217948611111115,
+    "active_hours": 3.1421791666666676,
+    "active_percentage": 28.01028312390746,
+    "afk_hours": 8.075769444444447,
+    "afk_percentage": 71.98971687609253,
+    "productive_hours": 0.7813977777777775,
+    "productive_percentage": 24.868021087629813,
+    "non_productive_hours": 0.02818222222222222,
+    "non_productive_percentage": 0.8969005498218898,
+    "other_hours": 2.3325991666666677,
+    "other_percentage": 74.23507836254831,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.7726266666666667
+      0.7813977777777775
     ],
     "non_productive": [
-      0.015479166666666672
+      0.02818222222222222
     ],
     "other": [
-      2.0881633333333345
+      2.3325991666666677
     ],
     "afk": [
-      6.867295555555559
+      8.075769444444447
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -175,9 +175,9 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      1.1517688888888902,
-      0.9846741666666666,
-      0.4535119444444444,
+      1.229635833333335,
+      1.1532380555555553,
+      0.4554791666666667,
       0.19777138888888893,
       0.029282777777777783
     ],
@@ -192,7 +192,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.7726266666666667
+      0.7813977777777775
     ],
     "hour_labels": [
       "0:00",
@@ -221,7 +221,7 @@ const activityData = {
       "23:00"
     ],
     "hour_data": [
-      0,
+      0.18924499999999997,
       0,
       0,
       0,
@@ -244,11 +244,11 @@ const activityData = {
       0.18669805555555558,
       0.8705477777777773,
       0.43559194444444405,
-      0.008950833333333333
+      0.08561583333333334
     ],
     "categories": [
-      "General > Browsing",
       "Uncategorized",
+      "General > Browsing",
       "Work > Communication",
       "Work > Communication > Social Media",
       "Work > General",
@@ -256,13 +256,13 @@ const activityData = {
       "Work > Communication > Email"
     ],
     "category_data": [
-      1.0451222222222225,
-      1.043041111111111,
-      0.6366972222222221,
+      1.216413888888888,
+      1.1161852777777779,
+      0.6386644444444441,
       0.0971888888888889,
       0.029282777777777783,
-      0.015479166666666672,
-      0.009457777777777778
+      0.02818222222222222,
+      0.016261666666666667
     ],
     "category_colors": [
       "#FFC107",
