@@ -2,28 +2,28 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 3.053398333333333,
-    "active_hours": 0.9187669444444446,
-    "active_percentage": 30.089979889438318,
+    "total_hours": 3.5498286111111104,
+    "active_hours": 1.4151972222222222,
+    "active_percentage": 39.86663518888197,
     "afk_hours": 2.1346313888888884,
-    "afk_percentage": 69.91002011056169,
-    "productive_hours": 0.33443277777777786,
-    "productive_percentage": 36.4001752348634,
-    "non_productive_hours": 0.008007777777777777,
-    "non_productive_percentage": 0.8715787856973762,
-    "other_hours": 0.5763263888888889,
-    "other_percentage": 62.72824597943922,
+    "afk_percentage": 60.13336481111803,
+    "productive_hours": 0.36895,
+    "productive_percentage": 26.070571239579877,
+    "non_productive_hours": 0.013567222222222227,
+    "non_productive_percentage": 0.9586806707349392,
+    "other_hours": 1.03268,
+    "other_percentage": 72.97074808968519,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.33443277777777786
+      0.36895
     ],
     "non_productive": [
-      0.008007777777777777
+      0.013567222222222227
     ],
     "other": [
-      0.5763263888888889
+      1.03268
     ],
     "afk": [
       2.1346313888888884
@@ -36,10 +36,10 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      0.5289605555555555,
+      0.9846741666666666,
       0.18282416666666668,
       0.12374999999999997,
-      0.028333055555555556,
+      0.06285027777777777,
       0.027426388888888896
     ],
     "top_apps_colors": [
@@ -53,7 +53,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.33443277777777786
+      0.36895
     ],
     "hour_labels": [
       "0:00",
@@ -101,8 +101,8 @@ const activityData = {
       0,
       0,
       0.014428333333333333,
-      0.9043386111111112,
-      0,
+      1.360052222222222,
+      0.04071666666666665,
       0,
       0,
       0
@@ -116,12 +116,12 @@ const activityData = {
       "Media > Games"
     ],
     "category_data": [
-      0.5480644444444445,
-      0.2115183333333333,
+      1.0044180555555555,
+      0.2460355555555555,
       0.09548805555555556,
       0.028261944444444454,
       0.027426388888888896,
-      0.008007777777777777
+      0.013567222222222227
     ],
     "category_colors": [
       "#FFC107",
@@ -138,28 +138,28 @@ const activityData = {
   "daily": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Monday, Jun 02, 2025",
-    "total_hours": 3.053398333333333,
-    "active_hours": 0.9187669444444446,
-    "active_percentage": 30.089979889438318,
+    "total_hours": 3.5498286111111104,
+    "active_hours": 1.4151972222222222,
+    "active_percentage": 39.86663518888197,
     "afk_hours": 2.1346313888888884,
-    "afk_percentage": 69.91002011056169,
-    "productive_hours": 0.33443277777777786,
-    "productive_percentage": 36.4001752348634,
-    "non_productive_hours": 0.008007777777777777,
-    "non_productive_percentage": 0.8715787856973762,
-    "other_hours": 0.5763263888888889,
-    "other_percentage": 62.72824597943922,
+    "afk_percentage": 60.13336481111803,
+    "productive_hours": 0.36895,
+    "productive_percentage": 26.070571239579877,
+    "non_productive_hours": 0.013567222222222227,
+    "non_productive_percentage": 0.9586806707349392,
+    "other_hours": 1.03268,
+    "other_percentage": 72.97074808968519,
     "labels": [
       "2025-06-02"
     ],
     "productive": [
-      0.33443277777777786
+      0.36895
     ],
     "non_productive": [
-      0.008007777777777777
+      0.013567222222222227
     ],
     "other": [
-      0.5763263888888889
+      1.03268
     ],
     "afk": [
       2.1346313888888884
@@ -172,10 +172,10 @@ const activityData = {
       "explorer.exe"
     ],
     "top_apps_data": [
-      0.5289605555555555,
+      0.9846741666666666,
       0.18282416666666668,
       0.12374999999999997,
-      0.028333055555555556,
+      0.06285027777777777,
       0.027426388888888896
     ],
     "top_apps_colors": [
@@ -189,7 +189,7 @@ const activityData = {
       "2025-06-02"
     ],
     "trend_data": [
-      0.33443277777777786
+      0.36895
     ],
     "hour_labels": [
       "0:00",
@@ -237,8 +237,8 @@ const activityData = {
       0,
       0,
       0.014428333333333333,
-      0.9043386111111112,
-      0,
+      1.360052222222222,
+      0.04071666666666665,
       0,
       0,
       0
@@ -252,12 +252,12 @@ const activityData = {
       "Media > Games"
     ],
     "category_data": [
-      0.5480644444444445,
-      0.2115183333333333,
+      1.0044180555555555,
+      0.2460355555555555,
       0.09548805555555556,
       0.028261944444444454,
       0.027426388888888896,
-      0.008007777777777777
+      0.013567222222222227
     ],
     "category_colors": [
       "#FFC107",
