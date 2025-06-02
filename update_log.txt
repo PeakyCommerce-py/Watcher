@@ -1,10 +1,10 @@
  
-[Mon 06/02/2025 20:52:28.37] Starting update 
-[Mon 06/02/2025 20:52:28.38] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 06/02/2025 20:52:28.38] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Mon 06/02/2025 21:22:28.36] Starting update 
+[Mon 06/02/2025 21:22:28.36] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Mon 06/02/2025 21:22:28.36] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 06/02/2025 20:52:28.52] ActivityWatch is already running 
-[Mon 06/02/2025 20:52:28.53] Running export script... 
+[Mon 06/02/2025 21:22:28.47] ActivityWatch is already running 
+[Mon 06/02/2025 21:22:28.47] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 302 events
+Found 315 events
 
 Significant event:
 App: cs2.exe
@@ -37,17 +37,23 @@ Title: WhatsApp
 Categories: Work > Communication
 Duration: 0.10 hours
 
+Significant event:
+App: opera.exe
+Title: Block Blast | Play Now Online for Free - Y8.com - Opera
+Categories: General > Browsing
+Duration: 0.10 hours
+
 Data Collection Summary:
-- Total tracking time: 4.7 hours
-- Active time: 2.3 hours (48.8%)
-- AFK time: 2.4 hours (51.2%)
-- Productive time: 0.6 hours (27.0% of active time)
-- Non-productive time: 0.0 hours (0.7% of active time)
-- Other time: 1.7 hours (72.3% of active time)
+- Total tracking time: 6.4 hours
+- Active time: 2.5 hours (38.7%)
+- AFK time: 3.9 hours (61.3%)
+- Productive time: 0.6 hours (25.3% of active time)
+- Non-productive time: 0.0 hours (0.6% of active time)
+- Other time: 1.8 hours (74.1% of active time)
 
 Querying today's data:
 Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 302 events
+Found 315 events
 
 Significant event:
 App: cs2.exe
@@ -67,25 +73,31 @@ Title: WhatsApp
 Categories: Work > Communication
 Duration: 0.10 hours
 
+Significant event:
+App: opera.exe
+Title: Block Blast | Play Now Online for Free - Y8.com - Opera
+Categories: General > Browsing
+Duration: 0.10 hours
+
 Data Collection Summary:
-- Total tracking time: 4.7 hours
-- Active time: 2.3 hours (48.8%)
-- AFK time: 2.4 hours (51.2%)
-- Productive time: 0.6 hours (27.0% of active time)
-- Non-productive time: 0.0 hours (0.7% of active time)
-- Other time: 1.7 hours (72.3% of active time)
+- Total tracking time: 6.4 hours
+- Active time: 2.5 hours (38.7%)
+- AFK time: 3.9 hours (61.3%)
+- Productive time: 0.6 hours (25.3% of active time)
+- Non-productive time: 0.0 hours (0.6% of active time)
+- Other time: 1.8 hours (74.1% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-06-02 20:52
-✓ Successfully updated index.html with time: 2025-06-02 20:52
+Using direct UTC+4 offset time: 2025-06-02 21:22
+✓ Successfully updated index.html with time: 2025-06-02 21:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 06/02/2025 20:52:29.40] Checking file modifications... 
-[Mon 06/02/2025 20:52:29.41] data.js last modified: 06/02/2025 08:52 PM 
-[Mon 06/02/2025 20:52:29.41] index.html last modified: 06/02/2025 08:52 PM 
-[Mon 06/02/2025 20:52:29.43] Setting up Git credential helper... 
-[Mon 06/02/2025 20:52:29.50] Adding files to Git... 
+[Mon 06/02/2025 21:22:29.05] Checking file modifications... 
+[Mon 06/02/2025 21:22:29.06] data.js last modified: 06/02/2025 09:22 PM 
+[Mon 06/02/2025 21:22:29.06] index.html last modified: 06/02/2025 09:22 PM 
+[Mon 06/02/2025 21:22:29.08] Setting up Git credential helper... 
+[Mon 06/02/2025 21:22:29.12] Adding files to Git... 
