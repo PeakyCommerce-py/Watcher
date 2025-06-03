@@ -1,10 +1,10 @@
  
-[Mon 06/02/2025 23:22:28.50] Starting update 
-[Mon 06/02/2025 23:22:28.50] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Mon 06/02/2025 23:22:28.51] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 06/03/2025  9:46:43.61] Starting update 
+[Tue 06/03/2025  9:46:43.77] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 06/03/2025  9:46:43.82] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Mon 06/02/2025 23:22:28.71] ActivityWatch is already running 
-[Mon 06/02/2025 23:22:28.71] Running export script... 
+[Tue 06/03/2025  9:46:43.98] Starting ActivityWatch... 
+[Tue 06/03/2025  9:46:55.38] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -16,8 +16,8 @@ Available buckets:
 Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
-Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 633 events
+Time period: Monday, Jun 02, 2025 to Tuesday, Jun 03, 2025
+Found 645 events
 
 Significant event:
 App: cs2.exe
@@ -29,7 +29,7 @@ Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
-Duration: 0.17 hours
+Duration: 0.48 hours
 
 Significant event:
 App: opera.exe
@@ -50,66 +50,36 @@ Categories: General > Browsing
 Duration: 0.10 hours
 
 Data Collection Summary:
-- Total tracking time: 11.2 hours
-- Active time: 3.1 hours (28.0%)
-- AFK time: 8.1 hours (72.0%)
-- Productive time: 0.8 hours (24.9% of active time)
-- Non-productive time: 0.0 hours (0.9% of active time)
-- Other time: 2.3 hours (74.2% of active time)
+- Total tracking time: 11.5 hours
+- Active time: 3.5 hours (30.0%)
+- AFK time: 8.1 hours (70.0%)
+- Productive time: 0.8 hours (22.6% of active time)
+- Non-productive time: 0.0 hours (1.0% of active time)
+- Other time: 2.6 hours (76.5% of active time)
 
 Querying today's data:
-Time period: Monday, Jun 02, 2025 to Monday, Jun 02, 2025
-Found 633 events
-
-Significant event:
-App: cs2.exe
-Title: Counter-Strike 2
-Categories: Uncategorized
-Duration: 0.96 hours
-
-Significant event:
-App: cs2.exe
-Title: Counter-Strike 2
-Categories: Uncategorized
-Duration: 0.17 hours
-
-Significant event:
-App: opera.exe
-Title: Slope | Play Now Online for Free - Y8.com - Opera
-Categories: General > Browsing
-Duration: 0.13 hours
-
-Significant event:
-App: ApplicationFrameHost.exe
-Title: WhatsApp
-Categories: Work > Communication
-Duration: 0.10 hours
-
-Significant event:
-App: opera.exe
-Title: Block Blast | Play Now Online for Free - Y8.com - Opera
-Categories: General > Browsing
-Duration: 0.10 hours
+Time period: Tuesday, Jun 03, 2025 to Tuesday, Jun 03, 2025
+Found 3 events
 
 Data Collection Summary:
-- Total tracking time: 11.2 hours
-- Active time: 3.1 hours (28.0%)
-- AFK time: 8.1 hours (72.0%)
-- Productive time: 0.8 hours (24.9% of active time)
-- Non-productive time: 0.0 hours (0.9% of active time)
-- Other time: 2.3 hours (74.2% of active time)
+- Total tracking time: 0.0 hours
+- Active time: 0.0 hours (100.0%)
+- AFK time: 0.0 hours (0.0%)
+- Productive time: 0.0 hours (0.0% of active time)
+- Non-productive time: 0.0 hours (0.0% of active time)
+- Other time: 0.0 hours (100.0% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-06-02 23:22
-✓ Successfully updated index.html with time: 2025-06-02 23:22
+Using direct UTC+4 offset time: 2025-06-03 09:47
+✓ Successfully updated index.html with time: 2025-06-03 09:47
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Mon 06/02/2025 23:22:30.25] Checking file modifications... 
-[Mon 06/02/2025 23:22:30.26] data.js last modified: 06/02/2025 11:22 PM 
-[Mon 06/02/2025 23:22:30.26] index.html last modified: 06/02/2025 11:22 PM 
-[Mon 06/02/2025 23:22:30.29] Setting up Git credential helper... 
-[Mon 06/02/2025 23:22:30.39] Adding files to Git... 
+[Tue 06/03/2025  9:47:35.09] Checking file modifications... 
+[Tue 06/03/2025  9:47:35.11] data.js last modified: 06/03/2025 09:47 AM 
+[Tue 06/03/2025  9:47:35.11] index.html last modified: 06/03/2025 09:47 AM 
+[Tue 06/03/2025  9:47:35.20] Setting up Git credential helper... 
+[Tue 06/03/2025  9:47:35.82] Adding files to Git... 
