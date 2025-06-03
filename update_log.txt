@@ -1,10 +1,10 @@
  
-[Tue 06/03/2025 17:22:28.38] Starting update 
-[Tue 06/03/2025 17:22:28.39] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 06/03/2025 17:22:28.39] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 06/03/2025 17:52:28.39] Starting update 
+[Tue 06/03/2025 17:52:28.39] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 06/03/2025 17:52:28.40] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 06/03/2025 17:22:28.55] ActivityWatch is already running 
-[Tue 06/03/2025 17:22:28.55] Running export script... 
+[Tue 06/03/2025 17:52:28.53] ActivityWatch is already running 
+[Tue 06/03/2025 17:52:28.53] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, Jun 02, 2025 to Tuesday, Jun 03, 2025
-Found 1500 events
+Found 1504 events
 
 Significant event:
 App: cs2.exe
@@ -36,6 +36,12 @@ App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.34 hours
+
+Significant event:
+App: opera.exe
+Title: (3) Kids la nueva melody - YouTube - Opera
+Categories: Media > Video
+Duration: 0.27 hours
 
 Significant event:
 App: cs2.exe
@@ -74,22 +80,28 @@ Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 22.9 hours
-- Active time: 6.7 hours (29.2%)
-- AFK time: 16.2 hours (70.8%)
-- Productive time: 1.4 hours (20.4% of active time)
-- Non-productive time: 0.5 hours (7.4% of active time)
-- Other time: 4.8 hours (72.2% of active time)
+- Total tracking time: 24.1 hours
+- Active time: 7.0 hours (28.9%)
+- AFK time: 17.1 hours (71.1%)
+- Productive time: 1.4 hours (19.7% of active time)
+- Non-productive time: 0.8 hours (11.0% of active time)
+- Other time: 4.8 hours (69.4% of active time)
 
 Querying today's data:
 Time period: Tuesday, Jun 03, 2025 to Tuesday, Jun 03, 2025
-Found 858 events
+Found 862 events
 
 Significant event:
 App: cs2.exe
 Title: Counter-Strike 2
 Categories: Uncategorized
 Duration: 0.34 hours
+
+Significant event:
+App: opera.exe
+Title: (3) Kids la nueva melody - YouTube - Opera
+Categories: Media > Video
+Duration: 0.27 hours
 
 Significant event:
 App: cs2.exe
@@ -110,24 +122,24 @@ Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 11.4 hours
-- Active time: 3.2 hours (28.4%)
-- AFK time: 8.1 hours (71.6%)
-- Productive time: 0.6 hours (18.2% of active time)
-- Non-productive time: 0.5 hours (14.3% of active time)
-- Other time: 2.2 hours (67.6% of active time)
+- Total tracking time: 12.5 hours
+- Active time: 3.5 hours (27.9%)
+- AFK time: 9.0 hours (72.1%)
+- Productive time: 0.6 hours (16.8% of active time)
+- Non-productive time: 0.7 hours (20.9% of active time)
+- Other time: 2.2 hours (62.4% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-06-03 17:22
-✓ Successfully updated index.html with time: 2025-06-03 17:22
+Using direct UTC+4 offset time: 2025-06-03 17:52
+✓ Successfully updated index.html with time: 2025-06-03 17:52
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 06/03/2025 17:22:29.91] Checking file modifications... 
-[Tue 06/03/2025 17:22:29.91] data.js last modified: 06/03/2025 05:22 PM 
-[Tue 06/03/2025 17:22:29.91] index.html last modified: 06/03/2025 05:22 PM 
-[Tue 06/03/2025 17:22:29.93] Setting up Git credential helper... 
-[Tue 06/03/2025 17:22:30.00] Adding files to Git... 
+[Tue 06/03/2025 17:52:29.62] Checking file modifications... 
+[Tue 06/03/2025 17:52:29.63] data.js last modified: 06/03/2025 05:52 PM 
+[Tue 06/03/2025 17:52:29.63] index.html last modified: 06/03/2025 05:52 PM 
+[Tue 06/03/2025 17:52:29.65] Setting up Git credential helper... 
+[Tue 06/03/2025 17:52:29.71] Adding files to Git... 
