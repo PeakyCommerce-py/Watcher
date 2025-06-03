@@ -1,10 +1,10 @@
  
-[Tue 06/03/2025 19:52:28.39] Starting update 
-[Tue 06/03/2025 19:52:28.39] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
-[Tue 06/03/2025 19:52:28.40] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
+[Tue 06/03/2025 20:22:27.91] Starting update 
+[Tue 06/03/2025 20:22:27.91] Working directory: C:\Users\Dejan\PycharmProjects\watcher\ 
+[Tue 06/03/2025 20:22:27.92] Using Python: C:\Users\Dejan\PycharmProjects\watcher\venv\Scripts\python.exe 
 Python 3.9.0
-[Tue 06/03/2025 19:52:28.52] ActivityWatch is already running 
-[Tue 06/03/2025 19:52:28.52] Running export script... 
+[Tue 06/03/2025 20:22:28.09] ActivityWatch is already running 
+[Tue 06/03/2025 20:22:28.09] Running export script... 
 
 Available buckets:
 - aw-watcher-afk_DESKTOP-FRC9TT4
@@ -17,7 +17,7 @@ Found web bucket: aw-watcher-web-opera_DESKTOP-FRC9TT4
 
 Querying weekly data:
 Time period: Monday, Jun 02, 2025 to Tuesday, Jun 03, 2025
-Found 1526 events
+Found 1591 events
 
 Significant event:
 App: cs2.exe
@@ -56,6 +56,12 @@ Categories: Media > Video
 Duration: 0.21 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.14 hours
+
+Significant event:
 App: opera.exe
 Title: Slope | Play Now Online for Free - Y8.com - Opera
 Categories: General > Browsing
@@ -80,16 +86,16 @@ Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 29.0 hours
-- Active time: 7.1 hours (24.6%)
-- AFK time: 21.8 hours (75.4%)
-- Productive time: 1.4 hours (19.6% of active time)
-- Non-productive time: 0.9 hours (12.4% of active time)
-- Other time: 4.8 hours (67.9% of active time)
+- Total tracking time: 29.8 hours
+- Active time: 7.5 hours (25.3%)
+- AFK time: 22.3 hours (74.7%)
+- Productive time: 1.5 hours (19.7% of active time)
+- Non-productive time: 1.1 hours (14.0% of active time)
+- Other time: 5.0 hours (66.3% of active time)
 
 Querying today's data:
 Time period: Tuesday, Jun 03, 2025 to Tuesday, Jun 03, 2025
-Found 884 events
+Found 949 events
 
 Significant event:
 App: cs2.exe
@@ -116,30 +122,36 @@ Categories: Media > Video
 Duration: 0.21 hours
 
 Significant event:
+App: cs2.exe
+Title: Counter-Strike 2
+Categories: Uncategorized
+Duration: 0.14 hours
+
+Significant event:
 App: Discord.exe
 Title: 🕵 Extreme private 🕵 | La Familia - Discord
 Categories: Work > Communication
 Duration: 0.09 hours
 
 Data Collection Summary:
-- Total tracking time: 17.4 hours
-- Active time: 3.7 hours (21.1%)
-- AFK time: 13.7 hours (78.9%)
-- Productive time: 0.6 hours (16.9% of active time)
-- Non-productive time: 0.9 hours (23.2% of active time)
-- Other time: 2.2 hours (59.9% of active time)
+- Total tracking time: 18.3 hours
+- Active time: 4.1 hours (22.3%)
+- AFK time: 14.2 hours (77.7%)
+- Productive time: 0.7 hours (17.2% of active time)
+- Non-productive time: 1.0 hours (25.2% of active time)
+- Other time: 2.3 hours (57.6% of active time)
 
 Writing data to data.js...
 ✓ Successfully wrote data.js
 
 Updating index.html with direct time display...
-Using direct UTC+4 offset time: 2025-06-03 19:52
-✓ Successfully updated index.html with time: 2025-06-03 19:52
+Using direct UTC+4 offset time: 2025-06-03 20:22
+✓ Successfully updated index.html with time: 2025-06-03 20:22
 
 ✓ Data has been updated successfully!
   Open 'index.html' in a browser to view the activity charts and statistics.
-[Tue 06/03/2025 19:52:29.52] Checking file modifications... 
-[Tue 06/03/2025 19:52:29.53] data.js last modified: 06/03/2025 07:52 PM 
-[Tue 06/03/2025 19:52:29.53] index.html last modified: 06/03/2025 07:52 PM 
-[Tue 06/03/2025 19:52:29.54] Setting up Git credential helper... 
-[Tue 06/03/2025 19:52:29.61] Adding files to Git... 
+[Tue 06/03/2025 20:22:29.18] Checking file modifications... 
+[Tue 06/03/2025 20:22:29.18] data.js last modified: 06/03/2025 08:22 PM 
+[Tue 06/03/2025 20:22:29.18] index.html last modified: 06/03/2025 08:22 PM 
+[Tue 06/03/2025 20:22:29.20] Setting up Git credential helper... 
+[Tue 06/03/2025 20:22:29.29] Adding files to Git... 
