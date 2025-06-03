@@ -2,36 +2,36 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Tuesday, Jun 03, 2025",
-    "total_hours": 18.888755555555562,
-    "active_hours": 5.442588055555557,
-    "active_percentage": 28.813904862857857,
-    "afk_hours": 13.446167500000003,
-    "afk_percentage": 71.18609513714213,
-    "productive_hours": 0.9742405555555553,
-    "productive_percentage": 17.900317746096782,
-    "non_productive_hours": 0.11774305555555556,
-    "non_productive_percentage": 2.1633651923255255,
-    "other_hours": 4.350604444444447,
-    "other_percentage": 79.9363170615777,
+    "total_hours": 20.226164722222226,
+    "active_hours": 5.6453925000000025,
+    "active_percentage": 27.911334538858384,
+    "afk_hours": 14.580772222222224,
+    "afk_percentage": 72.08866546114162,
+    "productive_hours": 1.0230205555555552,
+    "productive_percentage": 18.1213362145423,
+    "non_productive_hours": 0.2496722222222222,
+    "non_productive_percentage": 4.422583942962728,
+    "other_hours": 4.372699722222224,
+    "other_percentage": 77.45607984249497,
     "labels": [
       "2025-06-02",
       "2025-06-03"
     ],
     "productive": [
       0.7813977777777775,
-      0.19284277777777772
+      0.24162277777777774
     ],
     "non_productive": [
       0.032973055555555554,
-      0.08477000000000001
+      0.21669916666666666
     ],
     "other": [
       2.6461441666666707,
-      1.704460277777776
+      1.7265555555555538
     ],
     "afk": [
       8.075769444444447,
-      5.370398055555556
+      6.5050027777777775
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -41,9 +41,9 @@ const activityData = {
       "steamwebhelper.exe"
     ],
     "top_apps_data": [
-      2.4002822222222213,
+      2.549111944444445,
       2.1043113888888887,
-      0.4637486111111112,
+      0.47778138888888894,
       0.2120830555555556,
       0.10342388888888895
     ],
@@ -60,7 +60,7 @@ const activityData = {
     ],
     "trend_data": [
       0.7813977777777775,
-      0.19284277777777772
+      0.24162277777777774
     ],
     "hour_labels": [
       "0:00",
@@ -105,7 +105,7 @@ const activityData = {
       0,
       0,
       0.6753625000000002,
-      0.3338791666666668,
+      0.5366836111111112,
       0,
       0.014428333333333333,
       1.360052222222222,
@@ -119,20 +119,20 @@ const activityData = {
       "General > Browsing",
       "Work > Communication",
       "Work > Communication > Social Media",
+      "Media > Video",
       "Media > Games",
       "Work > General",
-      "Work > Communication > Email",
-      "Media > Video"
+      "Work > Communication > Email"
     ],
     "category_data": [
-      2.245268333333332,
-      2.105336111111112,
-      0.6469338888888884,
+      2.2504630555555543,
+      2.122236666666668,
+      0.6609666666666663,
       0.2529730555555555,
+      0.14624833333333329,
       0.10342388888888895,
-      0.04667972222222223,
-      0.02765388888888889,
-      0.014319166666666666
+      0.08142694444444443,
+      0.02765388888888889
     ],
     "category_colors": [
       "#FFC107",
@@ -140,9 +140,9 @@ const activityData = {
       "#4CAF50",
       "#4CAF50",
       "#FF5722",
+      "#FF5722",
       "#4CAF50",
-      "#4CAF50",
-      "#FF5722"
+      "#4CAF50"
     ],
     "web_labels": [],
     "web_data": [],
@@ -151,58 +151,58 @@ const activityData = {
   "daily": {
     "start_date": "Tuesday, Jun 03, 2025",
     "end_date": "Tuesday, Jun 03, 2025",
-    "total_hours": 7.35247111111111,
-    "active_hours": 1.9820730555555537,
-    "active_percentage": 26.9579169452326,
-    "afk_hours": 5.370398055555556,
-    "afk_percentage": 73.0420830547674,
-    "productive_hours": 0.19284277777777772,
-    "productive_percentage": 9.729347626075567,
-    "non_productive_hours": 0.08477000000000001,
-    "non_productive_percentage": 4.27683529436002,
-    "other_hours": 1.704460277777776,
-    "other_percentage": 85.99381707956442,
+    "total_hours": 8.689880277777776,
+    "active_hours": 2.1848774999999985,
+    "active_percentage": 25.14278022434076,
+    "afk_hours": 6.5050027777777775,
+    "afk_percentage": 74.85721977565925,
+    "productive_hours": 0.24162277777777774,
+    "productive_percentage": 11.058870704548788,
+    "non_productive_hours": 0.21669916666666666,
+    "non_productive_percentage": 9.918138049692343,
+    "other_hours": 1.7265555555555538,
+    "other_percentage": 79.02299124575887,
     "labels": [
       "2025-06-03"
     ],
     "productive": [
-      0.19284277777777772
+      0.24162277777777774
     ],
     "non_productive": [
-      0.08477000000000001
+      0.21669916666666666
     ],
     "other": [
-      1.704460277777776
+      1.7265555555555538
     ],
     "afk": [
-      5.370398055555556
+      6.5050027777777775
     ],
     "top_apps_labels": [
       "opera.exe",
       "cs2.exe",
       "steamwebhelper.exe",
-      "Notion.exe",
-      "LockApp.exe"
+      "explorer.exe",
+      "Notion.exe"
     ],
     "top_apps_data": [
-      1.1702616666666663,
+      1.3190913888888884,
       0.6379130555555556,
       0.07045083333333335,
-      0.03163694444444445,
-      0.018524166666666664
+      0.052144166666666665,
+      0.03163694444444445
     ],
     "top_apps_colors": [
       "#FFC107",
       "#FFC107",
       "#FF5722",
-      "#FFC107",
+      "#4CAF50",
       "#FFC107"
     ],
     "trend_labels": [
       "2025-06-03"
     ],
     "trend_data": [
-      0.19284277777777772
+      0.24162277777777774
     ],
     "hour_labels": [
       "0:00",
@@ -247,7 +247,7 @@ const activityData = {
       0,
       0,
       0.6753625000000002,
-      0.3338791666666668,
+      0.5366836111111112,
       0,
       0,
       0,
@@ -260,29 +260,29 @@ const activityData = {
       "General > Browsing",
       "Uncategorized",
       "Work > Communication > Social Media",
+      "Media > Video",
       "Media > Games",
       "Work > General",
-      "Media > Video",
-      "Work > Communication > Email",
-      "Work > Communication"
+      "Work > Communication",
+      "Work > Communication > Email"
     ],
     "category_data": [
-      0.9887661111111112,
-      0.7156941666666665,
+      1.0056666666666667,
+      0.7208888888888887,
       0.15578416666666664,
+      0.14624833333333329,
       0.07045083333333335,
-      0.01739694444444444,
-      0.014319166666666666,
-      0.011392222222222222,
-      0.008269444444444446
+      0.052144166666666665,
+      0.02230222222222222,
+      0.011392222222222222
     ],
     "category_colors": [
       "#FFC107",
       "#FFC107",
       "#4CAF50",
       "#FF5722",
-      "#4CAF50",
       "#FF5722",
+      "#4CAF50",
       "#4CAF50",
       "#4CAF50"
     ],
