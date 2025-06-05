@@ -2,11 +2,11 @@ const activityData = {
   "weekly": {
     "start_date": "Monday, Jun 02, 2025",
     "end_date": "Thursday, Jun 05, 2025",
-    "total_hours": 33.54135055555555,
+    "total_hours": 34.87745361111111,
     "active_hours": 8.91070972222222,
-    "active_percentage": 26.566341469951077,
-    "afk_hours": 24.630640833333334,
-    "afk_percentage": 73.43365853004893,
+    "active_percentage": 25.548624683378506,
+    "afk_hours": 25.966743888888885,
+    "afk_percentage": 74.4513753166215,
     "productive_hours": 2.4181261111111105,
     "productive_percentage": 27.137300916453373,
     "non_productive_hours": 1.0649266666666664,
@@ -36,7 +36,7 @@ const activityData = {
     "afk": [
       8.075769444444447,
       14.205724166666664,
-      2.3491472222222223
+      3.685250277777777
     ],
     "top_apps_labels": [
       "opera.exe",
@@ -164,11 +164,11 @@ const activityData = {
   "daily": {
     "start_date": "Thursday, Jun 05, 2025",
     "end_date": "Thursday, Jun 05, 2025",
-    "total_hours": 3.682391111111112,
+    "total_hours": 5.018494166666666,
     "active_hours": 1.3332438888888893,
-    "active_percentage": 36.20592839435247,
-    "afk_hours": 2.3491472222222223,
-    "afk_percentage": 63.79407160564753,
+    "active_percentage": 26.566612306624304,
+    "afk_hours": 3.685250277777777,
+    "afk_percentage": 73.4333876933757,
     "productive_hours": 0.8972322222222227,
     "productive_percentage": 67.2969311691326,
     "non_productive_hours": 0.008206388888888888,
@@ -188,7 +188,7 @@ const activityData = {
       0.4278052777777779
     ],
     "afk": [
-      2.3491472222222223
+      3.685250277777777
     ],
     "top_apps_labels": [
       "opera.exe",
